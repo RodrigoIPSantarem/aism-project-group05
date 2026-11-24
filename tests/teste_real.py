@@ -7,9 +7,10 @@ Crítico e o veredicto final. Não usa nenhum modelo simulado: é o mesmo caminh
 Utilização (na pasta do projeto, com o Ollama aberto):
     python experiments/teste_real.py                      (as 14 empresas por defeito, cerca de 1 hora e meia)
     python experiments/teste_real.py --tickers KO,AAPL    (só estas)
-    python experiments/teste_real.py --refazer            (ignora o que já está no ficheiro de saída)
-O resultado fica em saidas/teste_real.json (atualizado depois de cada empresa; se parar a meio, volte a correr e continua).
-Empresas que já foram analisadas no vosso computador saem em segundos (cache do modelo em dados/cache_llm).
+    python experiments/teste_real.py --continuar          (retoma: salta as empresas que já estão no ficheiro de saída)
+    python experiments/teste_real.py --sem-cache          (pergunta sempre ao modelo, em vez de reutilizar respostas guardadas)
+Por defeito analisa SEMPRE todas as empresas pedidas, de raiz. O resultado fica em saidas/teste_real.json (atualizado depois de
+cada empresa). Perguntas idênticas a uma análise anterior reutilizam a resposta guardada (cache em dados/cache_llm): saem em segundos.
 """
 import argparse, datetime, json, sys, time
 from pathlib import Path
@@ -44,7 +45,7 @@ def resumir(ticker, fonte, r, dt, chamadas_llm):
     return {
         "ticker": ticker, "fonte": fonte, "ok": True, "empresa": e.get("nome"), "setor": e.get("setor"),
         "veredicto_final": op.get("categoria"),                       # o que o utilizador vê
-        "veredicto_das_regras": op.get("categoria_regras") or op.get("categoria"),   # só difere quando é REVISÃO MANUAL
+        "veredicto_das_regras": op.get("categoria_regras") or op.get("categoria"),   # igual ao veredicto final; a ressalva vai em "decisor"/"descricao"
         "descricao": op.get("descricao"), "limite": op.get("limite"),
         "portoes_ok": r.get("portoes_ok"), "motivos": r.get("motivos"),
         "avaliacao": _escalares(r.get("avaliacao")),
@@ -74,18 +75,21 @@ def main():
     p.add_argument("--tickers", help="lista separada por vírgulas (defeito: " + ",".join(POR_DEFEITO) + ")")
     p.add_argument("--anos", type=int, choices=[5, 10], default=10)
     p.add_argument("--saida", default=str(RAIZ / "saidas" / "teste_real.json"))
-    p.add_argument("--refazer", action="store_true", help="ignora o que já existe no ficheiro de saída")
+    p.add_argument("--continuar", action="store_true", help="retoma: salta as empresas que já estão no ficheiro de saída")
+    p.add_argument("--sem-cache", action="store_true", help="pergunta sempre ao modelo, sem reutilizar respostas guardadas")
     a = p.parse_args()
     garantir_env(); _carregar_env()
     llm = _criar_llm(RAIZ / "dados" / "cache_llm")
+    llm.usar_cache = not a.sem_cache
     inst = modelos_ollama()
     if inst is None: print("ERRO: o Ollama não está a correr. Abra o Ollama e volte a correr."); sys.exit(2)
     if not tem_modelo(llm.modelo, inst): print(f"ERRO: o modelo {llm.modelo} não está instalado: ollama pull {llm.modelo}"); sys.exit(2)
 
+    print("A carregar o modelo na memória (pode demorar um minuto)...", flush=True); llm.aquecer()
     lista = [t.strip().upper() for t in (a.tickers.split(",") if a.tickers else POR_DEFEITO) if t.strip()]
     saida = Path(a.saida)
     feitas = {}
-    if saida.exists() and not a.refazer:
+    if saida.exists() and a.continuar:
         try: feitas = {l["ticker"]: l for l in json.loads(saida.read_text(encoding="utf-8")).get("empresas", []) if l.get("ok")}
         except Exception: feitas = {}
     meta = {"data": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"), "modelo": f"{llm.backend}:{llm.modelo}",

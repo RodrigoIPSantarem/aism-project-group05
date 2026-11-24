@@ -3,7 +3,7 @@
 Um sistema multiagente que aplica um protocolo pessoal de investimento em valor (inspirado em Warren Buffett, versão v4.27) a
 uma empresa cotada. Dada uma empresa e um período de análise (5 ou 10 anos), cinco agentes que trocam mensagens FIPA-ACL recolhem os
 dados, aplicam as regras de exclusão, avaliam o negócio e o preço, criticam a avaliação e decidem. O resultado é um veredicto
-(COMPRAR, CAIXA DEDICADA, REVISÃO MANUAL ou REJEITAR) com os motivos e as objeções do Crítico.
+(COMPRAR, CAIXA DEDICADA ou REJEITAR, os três do protocolo) com os motivos e as objeções do Crítico.
 
 *Projeto académico de Agentes Inteligentes e Sistemas Multiagentes (ESGTS, Universidade Politécnica de Santarém).
 Não constitui aconselhamento financeiro.*
@@ -65,7 +65,9 @@ ollama pull qwen2.5:7b
 | Analisar uma empresa real (SEC) | `python main.py KO` (`--anos 5` para 5 anos) |
 | Analisar uma empresa sintética | `python main.py AURORA` |
 | Listar as empresas sintéticas | `python main.py --listar` |
-| Testes dos agentes (sem Ollama nem rede) | `python tests/test_agentes.py` |
+| Testes das regras (sem Ollama nem rede) | `python -m pytest -q` ou `python tests/test_agentes.py --so-regras` |
+| As 19 empresas sintéticas com o modelo real (Ollama aberto; devolve `saidas/teste_sinteticos.json`) | `python tests/test_agentes.py` |
+| Empresas reais da SEC com o modelo real (Ollama aberto; devolve `saidas/teste_real.json`) | `python experiments/teste_real.py` (`--tickers KO,PG` para só algumas) |
 | Repetir as experiências do relatório | `python experiments/run_experiments.py --rapido` (E1, E2 e E4; a E2 descarrega 13 empresas da SEC) ou sem `--rapido` (E1 a E4; a E3 demora cerca de 1 hora) |
 | Redesenhar os gráficos do relatório | `pip install -r experiments/requirements-experiments.txt`, `python experiments/make_figures.py` e `python experiments/make_architecture.py` (`--lingua en` nos gráficos para a versão inglesa) |
 
@@ -100,8 +102,8 @@ AURORA [A5 Decisor]    COMPRAR · Portões 10/10 · TACE 17,0%
 ```
 
 A seguir aparece o relatório completo, passo a passo como no protocolo. Veredictos: `COMPRAR`, `CAIXA DEDICADA` (bom negócio,
-mas o preço ainda não é atrativo: esperar), `REVISÃO MANUAL` (passaria, mas o modelo discordou de si próprio ou o Crítico manteve
-uma objeção séria: decide o utilizador) e `REJEITAR`.
+mas o preço ainda não é atrativo: esperar), e `REJEITAR`. Se um COMPRAR ou CAIXA DEDICADA tiver uma ressalva (o modelo discordou de si próprio
+ou o Crítico manteve uma objeção grave), o veredicto é o mesmo e o relatório junta-lhe a palavra RESSALVA com o motivo.
 
 | Ficheiro | Conteúdo |
 |---|---|
@@ -143,7 +145,7 @@ fontes/                 SEC (sec.py, xbrl.py), mercado (mercado.py), reservas (r
 interface/              janela Tkinter: app.py (janela principal), fluxo.py (as 5 caixas dos agentes), pensamento.py,
                         historico.py, tema.py (cores e letra)
 dados/                  dataset sintético (as caches são criadas aqui durante a execução)
-tests/                  testes dos agentes (modelos simulados e dados inventados, sem Ollama nem rede)
+tests/                  test_agentes.py: testes das regras (sem Ollama) e as 19 empresas sintéticas com o modelo real (JSON)
 experiments/            experiências do relatório: modelos simulados, script das experiências, gráficos, resultados
 docs/                   guia do protocolo e roteiro da apresentação
 ```

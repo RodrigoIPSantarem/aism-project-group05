@@ -4,7 +4,8 @@
                                                 2) as 19 empresas sintéticas com o Ollama real -> saidas/teste_sinteticos.json
   python tests/test_agentes.py --so-regras      só a parte 1
   python tests/test_agentes.py --tickers AURORA,BOREAL   só estas sintéticas na parte 2
-  python tests/test_agentes.py --refazer        ignora o que já está no ficheiro de saída
+  python tests/test_agentes.py --continuar      retoma: salta as empresas que já estão no ficheiro de saída
+  python tests/test_agentes.py --sem-cache      pergunta sempre ao modelo, sem reutilizar respostas guardadas
   python -m pytest -q                           só a parte 1 (as funções teste_*)
 
 A parte 2 não "passa" nem "falha": cada empresa sintética foi desenhada para um comportamento (campo "esperado" do JSON) e o
@@ -74,16 +75,20 @@ def teste_critico_revisao_e_cp():
     # uma objeção grave mantida pelo Crítico: o programa não compra sozinho
     cr = {"objecoes": [{"gravidade": "grave", "campo": "franquia", "descricao": "F4 contrariada pelos dados"}, {"gravidade": "baixa", "campo": None, "descricao": "x"}]}
     r = Decisor._ressalvas(ver, {}, {}, cr)
-    assert r["categoria"] == "REVISÃO MANUAL" and "Crítico" in r["descricao"] and r["categoria_regras"] == "COMPRAR"
-    # objeções médias ou baixas ficam no relatório, mas não travam o veredicto das regras
+    assert r["categoria"] == "COMPRAR" and r["ressalva"] and "RESSALVA" in r["descricao"] and "Crítico" in r["descricao"]
+    # objeções médias ou baixas ficam no relatório, mas não são ressalva
     media = {"objecoes": [{"gravidade": "media", "campo": "franquia", "descricao": "discutível"}, {"gravidade": "media", "campo": None, "descricao": "x"}]}
-    assert Decisor._ressalvas(ver, {}, {}, media)["categoria"] == "COMPRAR"
-    assert Decisor._ressalvas(ver, {}, {}, None)["categoria"] == "COMPRAR"
-    # a CAIXA DEDICADA também passa a REVISÃO MANUAL com uma objeção grave, e mantém o veredicto das regras
+    assert not Decisor._ressalvas(ver, {}, {}, media).get("ressalva")
+    assert not Decisor._ressalvas(ver, {}, {}, None).get("ressalva")
+    # a CAIXA DEDICADA também leva a ressalva com uma objeção grave, e o veredicto continua a ser o das regras
     cx = Decisor._ressalvas({**ver, "categoria": "CAIXA DEDICADA"}, {}, {}, cr)
-    assert cx["categoria"] == "REVISÃO MANUAL" and cx["categoria_regras"] == "CAIXA DEDICADA"
-    # uma empresa rejeitada pelas regras nunca passa a REVISÃO MANUAL
-    assert Decisor._ressalvas({**ver, "categoria": "REJEITAR"}, {}, {}, cr)["categoria"] == "REJEITAR"
+    assert cx["categoria"] == "CAIXA DEDICADA" and cx["ressalva"]
+    # as dúvidas da segunda leitura do modelo também são ressalva, sem mudar o veredicto
+    dv = Decisor._ressalvas(ver, {}, {"duvidas": [{"campo": "t1", "primeira": "não", "segunda": "sim"}]}, None)
+    assert dv["categoria"] == "COMPRAR" and dv["ressalva"] and "T1" in dv["descricao"]
+    # uma empresa rejeitada pelas regras nunca leva ressalva: continua REJEITAR
+    rj = Decisor._ressalvas({**ver, "categoria": "REJEITAR"}, {}, {}, cr)
+    assert rj["categoria"] == "REJEITAR" and not rj.get("ressalva")
 
 def teste_rejeicao_imediata():
     """Uma regra de exclusão do Guardião salta o Avaliador e o Crítico (caminho vermelho da proposta); não chega a usar o modelo."""
@@ -129,7 +134,7 @@ ESPERADO = {
     "BOREAL": ("excelente, preço um pouco acima do valor: esperar", ("CAIXA DEDICADA",)),
     "CASTOR": ("excelente mas muito cara: esperar", ("CAIXA DEDICADA",)),
     "DUNA": ("empresa muito boa: passa os Portões de qualidade", ("COMPRAR", "CAIXA DEDICADA")),
-    "ESTEIO": ("empresa razoável perto do valor justo: não comprar", ("CAIXA DEDICADA", "REJEITAR", "REVISÃO MANUAL")),
+    "ESTEIO": ("empresa razoável perto do valor justo: não comprar", ("CAIXA DEDICADA", "REJEITAR")),
     "FAROL": ("empresa fraca: rejeitar", ("REJEITAR",)),
     "GRANITO": ("fluxo de caixa operacional negativo: rejeitar na triagem T7", ("REJEITAR",)),
     "HORIZONTE": ("energia: fora do método (Passo 0)", ("REJEITAR",)),
@@ -147,21 +152,22 @@ ESPERADO = {
 }
 
 def correr_sinteticos(argv):
-    from experiments.teste_real import resumir, guardar            # o mesmo formato de JSON do teste com empresas reais
+    try: from experiments.teste_real import resumir, guardar       # o mesmo formato de JSON do teste com empresas reais
+    except ImportError: from teste_real import resumir, guardar    # se o ficheiro estiver na pasta tests/
     from nucleo.configuracao import garantir_env, modelos_ollama, tem_modelo
     from nucleo.llm import _criar_llm
     from nucleo.util import _carregar_env
     p = argparse.ArgumentParser(description="As empresas sintéticas com o modelo real; devolve um JSON.")
-    p.add_argument("--tickers"); p.add_argument("--refazer", action="store_true")
+    p.add_argument("--tickers"); p.add_argument("--continuar", action="store_true"); p.add_argument("--sem-cache", action="store_true")
     p.add_argument("--saida", default=str(RAIZ / "saidas" / "teste_sinteticos.json"))
     a = p.parse_args(argv)
     garantir_env(); _carregar_env()
-    llm = _criar_llm(RAIZ / "dados" / "cache_llm"); inst = modelos_ollama()
+    llm = _criar_llm(RAIZ / "dados" / "cache_llm"); llm.usar_cache = not a.sem_cache; inst = modelos_ollama()
     if inst is None: print("ERRO: o Ollama não está a correr. Abra o Ollama, espere uns 20 s e volte a correr."); return 2
     if not tem_modelo(llm.modelo, inst): print(f"ERRO: o modelo {llm.modelo} não está instalado: ollama pull {llm.modelo}"); return 2
     lista = [t.strip().upper() for t in (a.tickers.split(",") if a.tickers else ESPERADO) if t.strip()]
     saida = pathlib.Path(a.saida); feitas = {}
-    if saida.exists() and not a.refazer:
+    if saida.exists() and a.continuar:
         try: feitas = {l["ticker"]: l for l in json.loads(saida.read_text(encoding="utf-8")).get("empresas", []) if l.get("ok")}
         except Exception: feitas = {}
     meta = {"data": datetime.datetime.now().strftime("%Y-%m-%d %H:%M"), "modelo": f"{llm.backend}:{llm.modelo}", "anos": 10, "pedidas": lista}
@@ -171,8 +177,13 @@ def correr_sinteticos(argv):
             if t in feitas: continue
             print(f"[{i}/{len(lista)}] {t} (sintético) ...", flush=True)
             n0 = len(llm.metricas); t0 = time.perf_counter()
-            try: r = analisar(t, 10, "sintetico", llm, mostrar=False, jsonl=RAIZ / "saidas" / f"{t}.jsonl")
-            except Exception as e: r = {"performativa": "failure", "motivo": f"{type(e).__name__}: {e}"}
+            try:
+                llm.aquecer()
+                try: r = analisar(t, 10, "sintetico", llm, mostrar=False, jsonl=RAIZ / "saidas" / f"{t}.jsonl")
+                except Exception as e: r = {"performativa": "failure", "motivo": f"{type(e).__name__}: {e}"}
+            finally:
+                # Mantém o modelo durante a análise inteira e pede para o descarregar antes da próxima empresa.
+                llm._descarregar_modelo()
             linha = resumir(t, "sintetico", r, time.perf_counter() - t0, len(llm.metricas) - n0)
             desc, ok = ESPERADO.get(t, ("", None))
             linha["esperado"] = desc
@@ -180,7 +191,8 @@ def correr_sinteticos(argv):
             linhas.append(linha); meta["terminado_em"] = datetime.datetime.now().strftime("%H:%M")
             guardar(saida, meta, linhas)
             print(f"      {linha.get('veredicto_final', 'ERRO')} · {linha.get('segundos')} s · {linha.get('chamadas_ao_modelo', 0)} chamadas ao modelo"
-                  + ("" if linha["como_esperado"] is None else (" · como esperado" if linha["como_esperado"] else " · DIFERENTE do esperado")), flush=True)
+                  + ("" if linha["como_esperado"] is None else (" · como esperado" if linha["como_esperado"] else " · DIFERENTE do esperado"))
+                  + " · descarga pedida ao Ollama", flush=True)
     except KeyboardInterrupt:
         print("\nInterrompido: o que já foi feito está guardado; volte a correr para continuar.")
     meta["segundos_total"] = round(time.perf_counter() - t_total); guardar(saida, meta, linhas)

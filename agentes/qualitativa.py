@@ -248,7 +248,7 @@ class AnaliseQualitativa:
 
     def _segunda_leitura(self, prop, msg):
         """Quando a 1.ª leitura diz "não" a T1, Círculo ou Wrigley, faz uma 2.ª leitura com outra formulação. Se as duas
-        discordam, a empresa não é rejeitada: fica com dúvida e vai para REVISÃO MANUAL (decide o utilizador)."""
+        discordam, a empresa não é rejeitada: fica com dúvida e o veredicto leva uma ressalva (decide o utilizador)."""
         nao = [k for k in ("t1", "circulo", "wrigley") if prop.get(k) == NAO_]
         if not nao or not self.llm: return
         try: r2 = self.llm.json(self._LLM + "_2", _SIS_AN2, msg)

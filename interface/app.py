@@ -415,7 +415,7 @@ class App(FluxoMixin, PensamentoMixin, HistoricoMixin, tk.Tk if tk else object):
         t=self._txt_r; t.config(state="normal"); t.delete("1.0","end")
         for ln in r.get("relatorio","").splitlines():
             x=ln.strip()
-            if ln.startswith("VEREDICTO"): tag="ok" if ": COMPRAR" in ln else ("cond" if any(k in ln for k in ("CAIXA DEDICADA","REVISÃO MANUAL")) else "nao")
+            if ln.startswith("VEREDICTO"): tag="ok" if ": COMPRAR" in ln else ("cond" if any(k in ln for k in ("CAIXA DEDICADA",)) else "nao")
             elif ln.startswith(("RESUMO PARA DECISÃO","Passo ","RELATÓRIO")) or ln.startswith("  => ") or x.startswith(("Bloco C","=")): tag="dest"
             elif ln.startswith(("  Ao preço atual","  Preço Máximo de Compra","  Para ","  10 Portões")): tag="cond"
             elif " FALHA " in ln or "[!]" in ln or x.startswith("[ ]") or " NÃO " in ln or ln.startswith("  REJEIÇÃO"): tag="disp"

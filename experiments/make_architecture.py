@@ -15,7 +15,7 @@ T = {
             a1=("A1 Coletor", "obtém e normaliza\nos dados (JSON)"), a2=("A2 Guardião", "regras de exclusão\n(triagem, setor)"),
             a3=("A3 Avaliador", "perguntas qualitativas\n+ testes, Portões, preço"), a4=("A4 Crítico", "procura falhas\n(regras + modelo)"),
             a5=("A5 Decisor", "veredicto e relatório"),
-            rel=("RELATÓRIO", "COMPRAR / CAIXA DEDICADA / REVISÃO MANUAL / REJEITAR\n+ motivos e objeções do Crítico"),
+            rel=("RELATÓRIO", "COMPRAR / CAIXA DEDICADA / REJEITAR\n+ motivos e objeções do Crítico"),
             rev="reject-proposal: revisão pedida pelo Crítico (máx. 1)", rej="inform: rejeição imediata (Guardião ou Avaliador)",
             leg_llm="usa o modelo de linguagem (Ollama, qwen2.5:7b)", leg_py="só regras em Python"),
  "en": dict(ent=("INPUT", "ticker and years (5 or 10)"), fonte=("DATA SOURCE", "SEC EDGAR (10-K, 20-F)\nor synthetic dataset"),

@@ -68,7 +68,7 @@ class Avaliador(AnaliseQualitativa, Agente):
             else: self.dizer(f"T1 {prop['t1']}, círculo {prop['circulo']}, Wrigley {prop['wrigley']}, modelo {prop['modelo']}, "
                              f"C3 {prop['c3_verificado']}, franquia {n_fr}/4 sim")
             if prop.get("duvidas"):
-                self.dizer("segunda leitura discorda da primeira em: " + ", ".join(x["campo"] for x in prop["duvidas"]) + " (fica para revisão manual)")
+                self.dizer("segunda leitura discorda da primeira em: " + ", ".join(x["campo"] for x in prop["duvidas"]) + " (fica como ressalva no veredicto)")
             self._emitir(prop)
             rev = 0
         rej = self.rejeicao(prop, g)

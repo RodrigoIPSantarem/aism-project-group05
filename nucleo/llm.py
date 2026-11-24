@@ -38,6 +38,7 @@ class LLM:
         self.modelo, self.cache = modelo, cache
         self.cache.mkdir(parents=True, exist_ok=True)
         self.falhas=0
+        self.usar_cache=True      # False: pergunta sempre ao modelo (a resposta nova também fica guardada)
         self.metricas=[]          # uma entrada por chamada ao modelo: tokens e segundos a ler, a escrever e a carregar
         self._ult=None
 
@@ -53,6 +54,14 @@ class LLM:
         """Pede ao Ollama para descarregar o modelo (keep_alive 0): o processo do modelo que rebentou é deitado fora e o próximo pedido
         arranca um novo, limpo. Se não for possível, não faz mal: a próxima tentativa segue na mesma."""
         try: _post_http(self._url()+"/api/generate",{"model":self.modelo,"keep_alive":0},{},30)
+        except Exception: pass
+
+    def aquecer(self):
+        """Carrega o modelo na memória e espera que acabe, ANTES do primeiro pedido real. Um pedido que chega a um modelo ainda a
+        arrancar pode levar um erro 500 (o processo do modelo ainda não responde); assim esse pedido só chega com tudo pronto.
+        Usa o mesmo contexto dos pedidos reais, para o Ollama não ter de recarregar o modelo."""
+        try: _post_http(self._url()+"/api/generate",{"model":self.modelo,"prompt":"","stream":False,"keep_alive":"30m",
+                                                     "options":{"num_ctx":LLM_NUM_CTX}},{},300)
         except Exception: pass
 
     def _chamar(self, sistema, msg):
@@ -71,7 +80,7 @@ class LLM:
         """Pede ao modelo uma resposta JSON. Há cache em disco (agente + modelo + pergunta): a mesma pergunta nunca é feita duas vezes, o que torna as análises repetíveis. Se a ligação falha espera e tenta de novo; se o JSON vem mal formado repete o pedido."""
         ch=hashlib.sha256(f"{self.modelo}|{sistema}|{msg}".encode()).hexdigest()[:24]
         fc=self.cache/f"{agente}_{ch}.json"
-        if fc.exists(): return json.loads(fc.read_text(encoding="utf-8"))
+        if self.usar_cache and fc.exists(): return json.loads(fc.read_text(encoding="utf-8"))
         pedido,erro=msg,None
         with LLM._trinco:
             for i in range(tentativas):
@@ -92,6 +101,7 @@ class LLM:
                         self._descarregar_modelo()             # o processo do modelo rebentou: o próximo pedido arranca um novo
                         time.sleep(espera)
                         self._ollama_vivo()   # acorda o servidor antes de repetir
+                        self.aquecer()        # e carrega o modelo já, para o pedido seguinte não apanhar um processo a meio do arranque
                 except (ValueError,json.JSONDecodeError) as e:
                     erro=e; pedido=msg+"\n\nResponde APENAS com o objeto JSON pedido."
         raise ErroLLM(f"{agente}: falhou após {tentativas} tentativas ({erro})")

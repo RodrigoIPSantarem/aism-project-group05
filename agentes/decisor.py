@@ -8,7 +8,7 @@ pela parte qualitativa do Avaliador, (b) as aceites pelo Crítico, com Portões 
 `veredicto_final` (nucleo/valorizacao.py), que é Python puro; o modelo só escreve uma síntese de 3 frases, que é descartada se
 citar números inexistentes. Depois o Decisor monta o relatório de texto (`_relatorio`) e entrega-o ao utilizador (inform)."""
 import json
-from config import CAIXA_V, COMPRAR, COMPRAR_V, FRANQUIA_PERGUNTAS, NAO, REVISAO_V, TACE_MINIMA
+from config import CAIXA_V, COMPRAR, COMPRAR_V, FRANQUIA_PERGUNTAS, NAO, TACE_MINIMA
 from nucleo.llm import ErroLLM, _PERSONA_BUFFETT
 from nucleo.plataforma import Agente, Msg
 from nucleo.util import _ao90, _num, _numeros_nao_verificados, _pct
@@ -61,24 +61,25 @@ class Decisor(Agente):
 
     @staticmethod
     def _ressalvas(ver, g, aq, cr=None):
-        """Uma empresa que passaria (COMPRAR ou CAIXA DEDICADA) mas tem uma ressalva não é comprada nem rejeitada pelo programa:
-        REVISÃO MANUAL (o modelo discordou de si próprio numa pergunta qualitativa, ou o Crítico manteve uma objeção grave).
-        O veredicto das regras mantém-se COMPRAR só para empresas sem ressalvas."""
+        """O veredicto é sempre um dos três do protocolo (COMPRAR, CAIXA DEDICADA ou REJEITAR) e é o das regras. Quando uma empresa que
+        passa (COMPRAR ou CAIXA DEDICADA) tem uma ressalva, o veredicto não muda: junta-se-lhe um aviso (campos "ressalva" e "ressalvas")
+        a pedir ao utilizador que confirme antes de agir. Ressalvas: o modelo discordou de si próprio numa pergunta qualitativa
+        (segunda leitura), ou o Crítico manteve uma objeção grave."""
         if ver["categoria"] not in (COMPRAR_V, CAIXA_V): return ver
         duv = (aq or {}).get("duvidas") or []
-        # Só travam as objeções graves que o Crítico manteve depois da revisão ("grave" = claramente contrariado pelos dados).
-        # As médias ("discutível") e as baixas ficam listadas no relatório, mas não impedem o veredicto das regras: o modelo
-        # pequeno levanta objeções médias a quase tudo, sobretudo a afirmações qualitativas que não consegue verificar.
+        # Só contam as objeções graves que o Crítico manteve depois da revisão ("grave" = claramente contrariado pelos dados).
+        # As médias ("discutível") e as baixas ficam listadas no relatório, mas não são ressalva: o modelo pequeno levanta
+        # objeções médias a quase tudo, sobretudo a afirmações qualitativas que não consegue verificar.
         obj = [o for o in ((cr or {}).get("objecoes") or []) if o.get("gravidade") == "grave"]
         if not duv and not obj: return ver
         partes = []
         if duv: partes.append("a segunda leitura do modelo discorda da primeira em " + ", ".join(
             {"t1": "T1 (produto)", "circulo": "Círculo de Competência", "wrigley": "Teste Wrigley"}.get(x["campo"], x["campo"]) for x in duv)
-            + ": decide tu, lendo as duas justificações no relatório")
+            + ": lê as duas justificações no relatório")
         if obj: partes.append("o Crítico (Munger) manteve " + ("uma objeção" if len(obj) == 1 else f"{len(obj)} objeções") + " sobre " + "; ".join(
             f"{o['campo'] or 'a análise'}: {o['descricao']}" for o in obj[:2]))
-        base = "Passa os 10 Portões" + (" e o preço" if ver["categoria"] == COMPRAR_V else "") + ", mas " + "; ".join(partes) + "."
-        return {**ver, "categoria": REVISAO_V, "cor": "cond", "descricao": base, "categoria_regras": ver["categoria"]}
+        return {**ver, "descricao": ver["descricao"] + " RESSALVA, confirma antes de agir: " + "; ".join(partes) + ".",
+                "ressalva": True, "ressalvas": partes, "categoria_regras": ver["categoria"]}
 
     def _sintese(self, factos):
         """Síntese de 3 frases na voz de Buffett. O modelo recebe só factos já decididos e não pode mudar o veredicto;
@@ -216,7 +217,7 @@ class Decisor(Agente):
 
     def receber(self, m: Msg) -> list[Msg]:
         """Decide. Primeiro procura um motivo de rejeição (Guardião, parte qualitativa do Avaliador ou um Portão falhado); depois
-        pede o veredicto às regras, aplica as ressalvas (revisão manual), monta o relatório e entrega-o ao utilizador."""
+        pede o veredicto às regras, junta as ressalvas (aviso, sem mudar o veredicto), monta o relatório e entrega-o ao utilizador."""
         c = m.conteudo; d, g = c["dados"], c["guardiao"]
         aq = d.get("analise_qualitativa"); tst = c.get("testes"); av = c.get("avaliacao"); cond = c.get("condicoes") or []; cr = c.get("critica")
         motivo = None      # o primeiro motivo de rejeição que existir, por ordem de passo do protocolo

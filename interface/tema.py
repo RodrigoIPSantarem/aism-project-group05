@@ -38,7 +38,7 @@ def fmo(tam=None, peso=""):
     return t + (peso,) if peso else t
 
 def cor_veredicto(categoria: str) -> str:
-    """COMPRAR a verde, CAIXA DEDICADA e REVISÃO MANUAL a laranja, REJEITAR (e erros) a vermelho."""
+    """COMPRAR a verde, CAIXA DEDICADA a laranja, REJEITAR (e erros) a vermelho."""
     c = (categoria or "").upper()
     if c.startswith("COMPRAR"): return COR["ok"]
     if c.startswith(("CAIXA", "REVIS")): return COR["cond"]
