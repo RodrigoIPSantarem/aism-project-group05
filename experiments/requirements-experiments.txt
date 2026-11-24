@@ -1,0 +1,2 @@
+# Biblioteca extra usada só para desenhar os gráficos do relatório (experiments/make_figures.py)
+matplotlib==3.11.2

@@ -1,0 +1,9 @@
+.env
+saidas/
+dados/cache_llm/
+dados/cache_sec/
+dados/cache_mercado/
+__pycache__/
+dados/cache_esef/
+dados/preferencias.json
+dados/cache_pdf/

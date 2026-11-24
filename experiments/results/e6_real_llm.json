@@ -1,0 +1,62 @@
+{
+ "analyses": 56,
+ "seconds_median": 247.5,
+ "seconds_p90": 479,
+ "seconds_max": 1563,
+ "llm_call_seconds_median": {
+  "A2.5": 142,
+  "A24": 161.0
+ },
+ "llm_call_seconds_max": {
+  "A2.5": 459,
+  "A24": 474
+ },
+ "llm_calls_started": {
+  "A2.5": 27,
+  "A24": 45,
+  "A4": 6
+ },
+ "llm_calls_failed": {
+  "A4": 1,
+  "A2.5": 14,
+  "A24": 22
+ },
+ "a25_answers_ok": 12,
+ "a25_T1": {
+  "Sim": 4,
+  "Não": 8
+ },
+ "a25_circle": {
+  "Sim": 4,
+  "Não": 8
+ },
+ "a25_C3": {
+  "Sim": 1,
+  "Não": 11
+ },
+ "a25_franchise_yes": {
+  "0": 2,
+  "4": 3,
+  "2": 5,
+  "3": 2
+ },
+ "a24_answers_ok": 22,
+ "a24_moat": {
+  "NARROW": 17,
+  "WIDE": 5
+ },
+ "a24_pricing_quote": {
+  "sem_evidencia": 14,
+  "nao_verificada": 3,
+  "verificada": 5
+ },
+ "v427": {
+  "REJEITAR": 56
+ },
+ "v424": {
+  "NÃO COMPRAR": 56
+ },
+ "same_decision": 56,
+ "same_quality": 53,
+ "rows": 56
+}

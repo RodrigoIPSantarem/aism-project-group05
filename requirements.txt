@@ -1,0 +1,3 @@
+# Bibliotecas usadas pela aplicação (testada com Python 3.12.3; é preciso Python 3.10 ou mais recente).
+# O resto vem da biblioteca padrão do Python (tkinter, urllib, json, threading, csv, statistics).
+yfinance==1.8.0          # Yahoo Finance: preço, beta, dividendos, câmbios e dados de reserva (sem ela, a análise corre na mesma, sem esses dados)

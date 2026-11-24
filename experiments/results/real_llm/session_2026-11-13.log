@@ -1,0 +1,1078 @@
+17:35:47 ==================== AAPL · fonte sec · 10 anos · início ====================
+17:35:50 AAPL   [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 320193 · 10 anos
+17:35:50 AAPL   [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+17:35:52 AAPL   [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+17:36:01 ==================== PG · fonte sec · 10 anos · início ====================
+17:36:01 PG     [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 80424 · 10 anos
+17:36:01 PG     [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+17:36:02 PG     [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+17:36:03 AAPL   [A1 Coletor]    13 em falta na SEC; 11 preenchidos por reserva; 11 continuam em falta em todas as fontes
+17:36:03 AAPL   [A1 Coletor]    503 valores, 11 em falta
+17:36:03 AAPL   [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+17:36:03 AAPL   [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+17:36:03 AAPL   [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Tech Big
+17:36:04 AAPL   [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+17:36:04 AAPL   [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+17:36:12 PG     [A1 Coletor]    3 em falta na SEC; 15 preenchidos por reserva; 2 continuam em falta em todas as fontes
+17:36:12 PG     [A1 Coletor]    512 valores, 2 em falta
+17:36:12 PG     [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+17:36:12 PG     [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+17:36:12 PG     [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Defensivas
+17:36:12 PG     [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+17:36:12 PG     [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+17:39:03 AAPL   [A2.5 Analista] T1 Sim, círculo Sim, Wrigley Sim, modelo M1, C3 Não, franquia 4/4 sim
+17:39:05 AAPL   [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+17:43:51 PG     [A2.5 Analista] T1 Sim, círculo Sim, Wrigley Sim, modelo M1, C3 Sim, franquia 0/4 sim
+17:43:52 PG     [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+17:46:59 AAPL   [A24 Analista]  círculo: sim · fontes de moat: 4 · poder de preço: sem_evidencia · moat: NARROW
+17:46:59 AAPL   [A3 Avaliador]  Portões 9/10 (falham P8) · franquia não · TACE 4,4% · PMC 136,48 (P_EB)
+17:47:00 AAPL   [V24 Avaliador] modo normal · arquétipo 1 · Quantitativa 62.0/70 · Qualitativa 42.5/100 · Nota Final 74.8 · PJ 49.6 · NÃO COMPRAR
+17:48:44 PG     [A24 Analista]  círculo: sim · fontes de moat: 3 · poder de preço: nao_verificada · moat: NARROW
+17:48:44 PG     [A3 Avaliador]  Portões 9/10 (falham P1) · franquia não · TACE 6,3% · PMC 77,17 (P_EB)
+17:48:46 PG     [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 59.0/70 · Qualitativa 42.5/100 · Nota Final 71.8 · PJ 155.05 · NÃO COMPRAR
+17:52:02 AAPL   [A4 Crítico]    modelo indisponível (critico: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"Post \"http://127.0.0.1:54737/tokenize\": read tcp 127.0.0.1:54839-\u003e127.0.0.1:54737: wsarecv: An existing connection was forcibly closed by the remote host."})); só verificações em Python
+17:52:02 AAPL   [A4 Crítico]    aceite com 1 objeção(ões), 0 grave(s)
+17:52:02 AAPL   [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 74,8
+17:52:02 AAPL   [A5 Decisor]    REJEITAR · Portões 9/10 · TACE 4,4%
+17:53:44 PG     [A4 Crítico]    aceite com 3 objeção(ões), 0 grave(s)
+17:53:44 PG     [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 71,8
+17:53:44 PG     [A5 Decisor]    REJEITAR · Portões 9/10 · TACE 6,3%
+17:56:14 AAPL   [A7 Comparador] à espera do outro relatório…
+17:56:14 AAPL   [A6 Buffett]    Passo 9: inversão de Munger e divergência com o veredicto…
+17:58:47 PG     [A7 Comparador] à espera do outro relatório…
+17:58:47 PG     [A6 Buffett]    Passo 9: inversão de Munger e divergência com o veredicto…
+18:01:35 AAPL   [A6 Buffett]    concorda do veredicto (sem divergência)
+18:01:35 AAPL   [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+18:01:35 ==================== AAPL · REJEITAR · Portões 9/10 · v4.24 NÃO COMPRAR · 1547 s · 1 aviso(s) ====================
+18:02:05 PG     [A6 Buffett]    concorda do veredicto (sem divergência)
+18:02:05 PG     [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+18:02:05 ==================== PG · REJEITAR · Portões 9/10 · v4.24 NÃO COMPRAR · 1563 s ====================
+18:02:05 ==================== KO · fonte sec · 10 anos · início ====================
+18:02:06 KO     [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 21344 · 10 anos
+18:02:06 KO     [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+18:02:07 KO     [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+18:02:09 KO     [A1 Coletor]    1 em falta na SEC; 16 preenchidos por reserva; 0 continuam em falta em todas as fontes
+18:02:09 KO     [A1 Coletor]    514 valores, 0 em falta
+18:02:09 KO     [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+18:02:09 KO     [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+18:02:09 KO     [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Defensivas
+18:02:09 KO     [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+18:02:09 KO     [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+18:04:19 KO     [A2.5 Analista] T1 Sim, círculo Sim, Wrigley Sim, modelo M1, C3 Não, franquia 4/4 sim
+18:04:20 KO     [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+18:06:14 KO     [A24 Analista]  círculo: sim · fontes de moat: 4 · poder de preço: verificada · moat: WIDE
+18:06:14 KO     [A3 Avaliador]  Portões 9/10 (falham P8) · franquia não · TACE 5,8% · PMC 43,12 (P_EB)
+18:06:16 KO     [V24 Avaliador] modo normal · arquétipo especial · Quantitativa 52.0/70 · Qualitativa 90.0/100 · Nota Final 79.0 · PJ 59.83 · NÃO COMPRAR
+18:07:16 KO     [A4 Crítico]    aceite com 5 objeção(ões), 0 grave(s)
+18:07:16 KO     [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 79,0
+18:07:16 KO     [A5 Decisor]    REJEITAR · Portões 9/10 · TACE 5,8%
+18:08:45 KO     [A7 Comparador] à espera do outro relatório…
+18:08:45 KO     [A6 Buffett]    Passo 9: inversão de Munger e divergência com o veredicto…
+18:09:11 KO     [A6 Buffett]    concorda do veredicto (sem divergência)
+18:09:11 KO     [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+18:09:11 ==================== KO · REJEITAR · Portões 9/10 · v4.24 NÃO COMPRAR · 425 s ====================
+18:09:11 ==================== PEP · fonte sec · 10 anos · início ====================
+18:09:12 PEP    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 77476 · 10 anos
+18:09:12 PEP    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+18:09:12 PEP    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+18:09:23 PEP    [A1 Coletor]    11 em falta na SEC; 16 preenchidos por reserva; 6 continuam em falta em todas as fontes
+18:09:23 PEP    [A1 Coletor]    508 valores, 6 em falta
+18:09:23 PEP    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+18:09:23 PEP    [A2 Guardião]   rejeitada: Triagem T4: A dívida de longo prazo paga-se com 4 anos de lucro ou menos? Não — dívida LP = 4,87 anos de lucro médio (5 anos)
+18:09:23 PEP    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Defensivas
+18:09:23 PEP    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+18:09:23 PEP    [A5 Decisor]    REJEITAR
+18:09:25 PEP    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+18:14:41 PEP    [A24 Analista]  círculo: sim · fontes de moat: 2 · poder de preço: sem_evidencia · moat: NARROW
+18:14:41 PEP    [A7 Comparador] à espera do outro relatório…
+18:14:43 PEP    [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 48.0/70 · Qualitativa 42.5/100 · Nota Final 60.8 · PJ 114.65 · NÃO COMPRAR
+18:14:43 PEP    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 60,8
+18:14:43 PEP    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+18:14:43 ==================== PEP · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 332 s ====================
+18:14:43 ==================== CL · fonte sec · 10 anos · início ====================
+18:14:44 CL     [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 21665 · 10 anos
+18:14:44 CL     [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+18:14:45 CL     [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+18:14:46 CL     [A1 Coletor]    1 em falta na SEC; 28 preenchidos por reserva; 0 continuam em falta em todas as fontes
+18:14:46 CL     [A1 Coletor]    514 valores, 0 em falta
+18:14:46 CL     [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+18:14:46 CL     [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+18:14:46 CL     [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Defensivas
+18:14:46 CL     [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+18:14:46 CL     [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+18:17:19 CL     [A2.5 Analista] modelo indisponível (analista: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"Post \"http://127.0.0.1:54855/tokenize\": read tcp 127.0.0.1:59861-\u003e127.0.0.1:54855: wsarecv: An existing connection was forcibly closed by the remote host."}))
+18:17:19 CL     [A2.5 Analista] T1 Sim, círculo Sim, Wrigley Sim, modelo hibrido, C3 Não, franquia 0/4 sim
+18:17:20 CL     [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+18:19:18 CL     [A24 Analista]  círculo: sim · fontes de moat: 2 · poder de preço: verificada · moat: WIDE
+18:19:18 CL     [A5 Decisor]    REJEITAR
+18:19:20 CL     [V24 Avaliador] modo normal · arquétipo especial · Quantitativa 52.0/70 · Qualitativa 90.0/100 · Nota Final 79.0 · PJ 82.43 · NÃO COMPRAR
+18:19:20 CL     [A7 Comparador] à espera do outro relatório…
+18:19:20 CL     [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 79,0
+18:19:20 CL     [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+18:19:20 ==================== CL · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 276 s · 1 aviso(s) ====================
+18:19:20 ==================== KMB · fonte sec · 10 anos · início ====================
+18:19:21 KMB    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 55785 · 10 anos
+18:19:21 KMB    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+18:19:21 KMB    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+18:19:30 KMB    [A1 Coletor]    11 em falta na SEC; 9 preenchidos por reserva; 6 continuam em falta em todas as fontes
+18:19:30 KMB    [A1 Coletor]    508 valores, 6 em falta
+18:19:30 KMB    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+18:19:30 KMB    [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+18:19:30 KMB    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Defensivas
+18:19:31 KMB    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+18:19:31 KMB    [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+18:24:50 KMB    [A2.5 Analista] T1 Sim, círculo Sim, Wrigley Sim, modelo M1, C3 Não, franquia 4/4 sim
+18:24:52 KMB    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+18:27:03 KMB    [A24 Analista]  modelo indisponível (analista24: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"Post \"http://127.0.0.1:56724/tokenize\": read tcp 127.0.0.1:56635-\u003e127.0.0.1:56724: wsarecv: An existing connection was forcibly closed by the remote host."})); moat não avaliado
+18:27:03 KMB    [A3 Avaliador]  Portões 7/10 (falham P7, P8, P9) · franquia não · TACE 5,0% · PMC 43,86 (P_EB)
+18:27:04 KMB    [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 36.0/70 · Qualitativa 0.0/100 · Nota Final 36.0 · PJ 98.03 · NÃO COMPRAR
+18:29:23 KMB    [A4 Crítico]    aceite com 3 objeção(ões), 0 grave(s)
+18:29:23 KMB    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 36,0
+18:29:23 KMB    [A5 Decisor]    REJEITAR · Portões 7/10 · TACE 5,0%
+18:32:23 KMB    [A7 Comparador] à espera do outro relatório…
+18:32:23 KMB    [A6 Buffett]    Passo 9: inversão de Munger e divergência com o veredicto…
+18:32:53 KMB    [A6 Buffett]    concorda do veredicto (sem divergência)
+18:32:53 KMB    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+18:32:53 ==================== KMB · REJEITAR · Portões 7/10 · v4.24 NÃO COMPRAR · 813 s · 1 aviso(s) ====================
+18:32:53 ==================== GIS · fonte sec · 10 anos · início ====================
+18:32:54 GIS    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 40704 · 10 anos
+18:32:54 GIS    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+18:32:55 GIS    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+18:33:04 GIS    [A1 Coletor]    12 em falta na SEC; 13 preenchidos por reserva; 6 continuam em falta em todas as fontes
+18:33:04 GIS    [A1 Coletor]    508 valores, 6 em falta
+18:33:04 GIS    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+18:33:04 GIS    [A2 Guardião]   rejeitada: Triagem T2: O LPA não teve prejuízos e está mais alto do que há 5–10 anos? Não — LPA 2017 2,77 -> 2026 -0,93; prejuízo em [2026]; Triagem T4: A dívida de longo prazo paga-se com 4 anos de lucro ou menos? Não — dívida LP 
+18:33:04 GIS    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Defensivas
+18:33:05 GIS    [G24 Guardião]  REJEITADA: Secção 6.1: prejuízo em 2026
+18:33:05 GIS    [A5 Decisor]    REJEITAR
+18:33:05 GIS    [D24 Decisor]   v4.24: NÃO COMPRAR · rejeitada nos Kill Switches
+18:33:05 GIS    [A7 Comparador] à espera do outro relatório…
+18:33:05 GIS    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+18:33:05 ==================== GIS · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 12 s ====================
+18:33:05 ==================== HSY · fonte sec · 10 anos · início ====================
+18:33:07 HSY    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 47111 · 10 anos
+18:33:07 HSY    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+18:33:07 HSY    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+18:33:16 HSY    [A1 Coletor]    11 em falta na SEC; 20 preenchidos por reserva; 0 continuam em falta em todas as fontes
+18:33:16 HSY    [A1 Coletor]    514 valores, 0 em falta
+18:33:16 HSY    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+18:33:16 HSY    [A2 Guardião]   rejeitada: Triagem T2: O LPA não teve prejuízos e está mais alto do que há 5–10 anos? Não — LPA 2016 4,41 -> 2025 4,34
+18:33:16 HSY    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Defensivas
+18:33:16 HSY    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+18:33:16 HSY    [A5 Decisor]    REJEITAR
+18:33:19 HSY    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+18:38:53 HSY    [A24 Analista]  modelo indisponível (analista24: falhou após 5 tentativas (Ligação interrompida ([WinError 10054] Uma ligação existente foi forçada a fechar pelo anfitrião remoto). Modelo ainda a carregar?)); moat não avaliado
+18:38:53 HSY    [A7 Comparador] à espera do outro relatório…
+18:38:54 HSY    [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 41.0/70 · Qualitativa 0.0/100 · Nota Final 41.0 · PJ 111.75 · NÃO COMPRAR
+18:38:54 HSY    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 41,0
+18:38:54 HSY    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+18:38:54 ==================== HSY · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 349 s · 1 aviso(s) ====================
+18:38:54 ==================== MKC · fonte sec · 10 anos · início ====================
+18:38:56 MKC    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 63754 · 10 anos
+18:38:56 MKC    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+18:38:56 MKC    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+18:38:58 MKC    [A1 Coletor]    1 em falta na SEC; 12 preenchidos por reserva; 0 continuam em falta em todas as fontes
+18:38:58 MKC    [A1 Coletor]    514 valores, 0 em falta
+18:38:58 MKC    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+18:38:58 MKC    [A2 Guardião]   rejeitada: Triagem T4: A dívida de longo prazo paga-se com 4 anos de lucro ou menos? Não — dívida LP = 4,20 anos de lucro médio (5 anos)
+18:38:58 MKC    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Defensivas
+18:38:58 MKC    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+18:38:58 MKC    [A5 Decisor]    REJEITAR
+18:39:00 MKC    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+18:40:40 MKC    [A24 Analista]  círculo: sim · fontes de moat: 2 · poder de preço: verificada · moat: WIDE
+18:40:40 MKC    [A7 Comparador] à espera do outro relatório…
+18:40:41 MKC    [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 47.0/70 · Qualitativa 80.0/100 · Nota Final 71.0 · PJ 37.32 · NÃO COMPRAR
+18:40:41 MKC    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 71,0
+18:40:41 MKC    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+18:40:41 ==================== MKC · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 106 s ====================
+18:40:41 ==================== SJM · fonte sec · 10 anos · início ====================
+18:40:42 SJM    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 91419 · 10 anos
+18:40:42 SJM    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+18:40:42 SJM    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+18:40:47 SJM    [A1 Coletor]    12 em falta na SEC; 20 preenchidos por reserva; 7 continuam em falta em todas as fontes
+18:40:47 SJM    [A1 Coletor]    507 valores, 7 em falta
+18:40:47 SJM    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+18:40:47 SJM    [A2 Guardião]   rejeitada: Triagem T2: O LPA não teve prejuízos e está mais alto do que há 5–10 anos? Não — LPA 2017 5,12 -> 2026 -1,30; prejuízo em [2023, 2025, 2026]; Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 4,6%; Triagem T4:
+18:40:47 SJM    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Defensivas
+18:40:48 SJM    [G24 Guardião]  REJEITADA: KS2 Dívida impagável: dívida líquida / EBITDA médio 5 anos = 5,49x (máximo 4x) (+2)
+18:40:48 SJM    [A5 Decisor]    REJEITAR
+18:40:48 SJM    [D24 Decisor]   v4.24: NÃO COMPRAR · rejeitada nos Kill Switches
+18:40:48 SJM    [A7 Comparador] à espera do outro relatório…
+18:40:48 SJM    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+18:40:48 ==================== SJM · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 6 s ====================
+18:40:48 ==================== CHD · fonte sec · 10 anos · início ====================
+18:40:49 CHD    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 313927 · 10 anos
+18:40:49 CHD    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+18:40:49 CHD    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+18:40:50 CHD    [A1 Coletor]    1 em falta na SEC; 9 preenchidos por reserva; 0 continuam em falta em todas as fontes
+18:40:50 CHD    [A1 Coletor]    514 valores, 0 em falta
+18:40:50 CHD    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+18:40:50 CHD    [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+18:40:50 CHD    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Defensivas
+18:40:51 CHD    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+18:40:51 CHD    [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+18:43:13 CHD    [A2.5 Analista] T1 Não, círculo Não, Wrigley Não, modelo hibrido, C3 Não, franquia 2/4 sim
+18:43:15 CHD    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+18:45:03 CHD    [A24 Analista]  círculo: sim · fontes de moat: 2 · poder de preço: sem_evidencia · moat: NARROW
+18:45:03 CHD    [A5 Decisor]    REJEITAR
+18:45:05 CHD    [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 53.0/70 · Qualitativa 42.5/100 · Nota Final 65.8 · PJ 101.64 · NÃO COMPRAR
+18:45:05 CHD    [A7 Comparador] à espera do outro relatório…
+18:45:05 CHD    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 65,8
+18:45:05 CHD    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+18:45:05 ==================== CHD · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 257 s ====================
+18:45:05 ==================== JNJ · fonte sec · 10 anos · início ====================
+18:45:06 JNJ    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 200406 · 10 anos
+18:45:06 JNJ    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+18:45:06 JNJ    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+18:45:09 JNJ    [A1 Coletor]    11 em falta na SEC; 20 preenchidos por reserva; 6 continuam em falta em todas as fontes
+18:45:09 JNJ    [A1 Coletor]    508 valores, 6 em falta
+18:45:09 JNJ    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+18:45:09 JNJ    [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+18:45:09 JNJ    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Defensivas
+18:45:10 JNJ    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+18:45:10 JNJ    [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+18:47:23 JNJ    [A2.5 Analista] T1 Não, círculo Não, Wrigley Não, modelo M1, C3 Não, franquia 2/4 sim
+18:47:25 JNJ    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+18:49:03 JNJ    [A24 Analista]  círculo: sim · fontes de moat: 3 · poder de preço: sem_evidencia · moat: NARROW
+18:49:03 JNJ    [A5 Decisor]    REJEITAR
+18:49:04 JNJ    [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 52.0/70 · Qualitativa 42.5/100 · Nota Final 64.8 · PJ 192.49 · NÃO COMPRAR
+18:49:04 JNJ    [A7 Comparador] à espera do outro relatório…
+18:49:04 JNJ    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 64,8
+18:49:04 JNJ    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+18:49:04 ==================== JNJ · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 239 s ====================
+18:49:04 ==================== ABT · fonte sec · 10 anos · início ====================
+18:49:06 ABT    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 1800 · 10 anos
+18:49:06 ABT    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+18:49:06 ABT    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+18:49:07 ABT    [A1 Coletor]    1 em falta na SEC; 27 preenchidos por reserva; 0 continuam em falta em todas as fontes
+18:49:07 ABT    [A1 Coletor]    514 valores, 0 em falta
+18:49:07 ABT    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+18:49:07 ABT    [A2 Guardião]   rejeitada: Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 13,6%
+18:49:07 ABT    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Defensivas
+18:49:08 ABT    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+18:49:08 ABT    [A5 Decisor]    REJEITAR
+18:49:09 ABT    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+18:53:09 ABT    [A24 Analista]  círculo: sim · fontes de moat: 2 · poder de preço: verificada · moat: WIDE
+18:53:09 ABT    [A7 Comparador] à espera do outro relatório…
+18:53:10 ABT    [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 54.0/70 · Qualitativa 90.0/100 · Nota Final 81.0 · PJ 114.44 · NÃO COMPRAR
+18:53:10 ABT    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 81,0
+18:53:10 ABT    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+18:53:10 ==================== ABT · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 245 s ====================
+18:53:10 ==================== MDT · fonte sec · 10 anos · início ====================
+18:53:11 MDT    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 1613103 · 10 anos
+18:53:11 MDT    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+18:53:12 MDT    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+18:53:13 MDT    [A1 Coletor]    1 em falta na SEC; 9 preenchidos por reserva; 0 continuam em falta em todas as fontes
+18:53:13 MDT    [A1 Coletor]    514 valores, 0 em falta
+18:53:13 MDT    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+18:53:13 MDT    [A2 Guardião]   rejeitada: Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 8,3%; Triagem T4: A dívida de longo prazo paga-se com 4 anos de lucro ou menos? Não — dívida LP = 5,97 anos de lucro médio (5 anos)
+18:53:13 MDT    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Defensivas
+18:53:13 MDT    [G24 Guardião]  REJEITADA: KS3 Margem bruta em queda: 2023: 65,7% -> 2024: 65,3% -> 2025: 65,3% -> 2026: 65,0%
+18:53:13 MDT    [A5 Decisor]    REJEITAR
+18:53:13 MDT    [D24 Decisor]   v4.24: NÃO COMPRAR · rejeitada nos Kill Switches
+18:53:13 MDT    [A7 Comparador] à espera do outro relatório…
+18:53:13 MDT    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+18:53:13 ==================== MDT · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 3 s ====================
+18:53:13 ==================== TMO · fonte sec · 10 anos · início ====================
+18:53:14 TMO    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 97745 · 10 anos
+18:53:14 TMO    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+18:53:15 TMO    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+18:53:18 TMO    [A1 Coletor]    9 em falta na SEC; 16 preenchidos por reserva; 4 continuam em falta em todas as fontes
+18:53:18 TMO    [A1 Coletor]    510 valores, 4 em falta
+18:53:18 TMO    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+18:53:18 TMO    [A2 Guardião]   rejeitada: Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 13,3%; Triagem T4: A dívida de longo prazo paga-se com 4 anos de lucro ou menos? Não — dívida LP = 5,32 anos de lucro médio (5 anos)
+18:53:18 TMO    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Defensivas
+18:53:18 TMO    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+18:53:18 TMO    [A5 Decisor]    REJEITAR
+18:53:20 TMO    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+18:56:29 TMO    [A24 Analista]  círculo: sim · fontes de moat: 2 · poder de preço: sem_evidencia · moat: NARROW
+18:56:29 TMO    [A7 Comparador] à espera do outro relatório…
+18:56:31 TMO    [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 41.0/70 · Qualitativa 42.5/100 · Nota Final 53.8 · PJ 566.92 · NÃO COMPRAR
+18:56:31 TMO    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 53,8
+18:56:31 TMO    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+18:56:31 ==================== TMO · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 197 s ====================
+18:56:31 ==================== DHR · fonte sec · 10 anos · início ====================
+18:56:33 DHR    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 313616 · 10 anos
+18:56:33 DHR    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+18:56:33 DHR    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+18:56:35 DHR    [A1 Coletor]    1 em falta na SEC; 20 preenchidos por reserva; 0 continuam em falta em todas as fontes
+18:56:35 DHR    [A1 Coletor]    514 valores, 0 em falta
+18:56:35 DHR    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+18:56:35 DHR    [A2 Guardião]   rejeitada: Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 10,1%
+18:56:35 DHR    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Defensivas
+18:56:35 DHR    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+18:56:35 DHR    [A5 Decisor]    REJEITAR
+18:56:37 DHR    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+19:02:38 DHR    [A24 Analista]  modelo indisponível (analista24: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"Post \"http://127.0.0.1:64997/tokenize\": read tcp 127.0.0.1:62392-\u003e127.0.0.1:64997: wsarecv: An existing connection was forcibly closed by the remote host."})); moat não avaliado
+19:02:38 DHR    [A7 Comparador] à espera do outro relatório…
+19:02:40 DHR    [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 41.0/70 · Qualitativa 0.0/100 · Nota Final 41.0 · PJ 184.11 · NÃO COMPRAR
+19:02:40 DHR    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 41,0
+19:02:40 DHR    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+19:02:40 ==================== DHR · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 369 s · 1 aviso(s) ====================
+19:02:40 ==================== SYK · fonte sec · 10 anos · início ====================
+19:02:42 SYK    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 310764 · 10 anos
+19:02:42 SYK    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+19:02:42 SYK    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+19:02:44 SYK    [A1 Coletor]    1 em falta na SEC; 11 preenchidos por reserva; 0 continuam em falta em todas as fontes
+19:02:44 SYK    [A1 Coletor]    514 valores, 0 em falta
+19:02:44 SYK    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+19:02:44 SYK    [A2 Guardião]   rejeitada: Triagem T4: A dívida de longo prazo paga-se com 4 anos de lucro ou menos? Não — dívida LP = 5,40 anos de lucro médio (5 anos)
+19:02:44 SYK    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Defensivas
+19:02:44 SYK    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+19:02:44 SYK    [A5 Decisor]    REJEITAR
+19:02:46 SYK    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+19:06:54 SYK    [A24 Analista]  modelo indisponível (analista24: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"Post \"http://127.0.0.1:53971/tokenize\": read tcp 127.0.0.1:61266-\u003e127.0.0.1:53971: wsarecv: An existing connection was forcibly closed by the remote host."})); moat não avaliado
+19:06:54 SYK    [A7 Comparador] à espera do outro relatório…
+19:06:56 SYK    [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 57.0/70 · Qualitativa 0.0/100 · Nota Final 57.0 · PJ 69.33 · NÃO COMPRAR
+19:06:56 SYK    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 57,0
+19:06:56 SYK    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+19:06:56 ==================== SYK · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 255 s · 1 aviso(s) ====================
+19:06:56 ==================== BSX · fonte sec · 10 anos · início ====================
+19:06:57 BSX    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 885725 · 10 anos
+19:06:57 BSX    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+19:06:57 BSX    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+19:07:00 BSX    [A1 Coletor]    11 em falta na SEC; 17 preenchidos por reserva; 6 continuam em falta em todas as fontes
+19:07:00 BSX    [A1 Coletor]    508 valores, 6 em falta
+19:07:00 BSX    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+19:07:00 BSX    [A2 Guardião]   rejeitada: Triagem T2: O LPA não teve prejuízos e está mais alto do que há 5–10 anos? Não — LPA 2016 0,25 -> 2025 1,94; prejuízo em [2020]; Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 9,7%; Triagem T4: A dívida de 
+19:07:00 BSX    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Defensivas
+19:07:01 BSX    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+19:07:01 BSX    [A5 Decisor]    REJEITAR
+19:07:03 BSX    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+19:09:13 BSX    [A24 Analista]  modelo indisponível (analista24: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"Post \"http://127.0.0.1:53971/tokenize\": read tcp 127.0.0.1:50468-\u003e127.0.0.1:53971: wsarecv: An existing connection was forcibly closed by the remote host."})); moat não avaliado
+19:09:13 BSX    [A7 Comparador] à espera do outro relatório…
+19:09:15 BSX    [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 54.0/70 · Qualitativa 0.0/100 · Nota Final 54.0 · PJ 76.09 · NÃO COMPRAR
+19:09:15 BSX    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 54,0
+19:09:15 BSX    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+19:09:15 ==================== BSX · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 139 s · 1 aviso(s) ====================
+19:09:15 ==================== ZBH · fonte sec · 10 anos · início ====================
+19:09:16 ZBH    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 1136869 · 10 anos
+19:09:16 ZBH    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+19:09:17 ZBH    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+19:09:20 ZBH    [A1 Coletor]    10 em falta na SEC; 19 preenchidos por reserva; 4 continuam em falta em todas as fontes
+19:09:20 ZBH    [A1 Coletor]    510 valores, 4 em falta
+19:09:20 ZBH    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+19:09:20 ZBH    [A2 Guardião]   rejeitada: Triagem T2: O LPA não teve prejuízos e está mais alto do que há 5–10 anos? Não — LPA 2016 1,51 -> 2025 4,65; prejuízo em [2018, 2020]; Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 4,9%; Triagem T4: A dívi
+19:09:20 ZBH    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Defensivas
+19:09:21 ZBH    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+19:09:21 ZBH    [A5 Decisor]    REJEITAR
+19:09:25 ZBH    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+19:13:33 ZBH    [A24 Analista]  círculo: nao · fontes de moat: 2 · poder de preço: sem_evidencia · moat: NARROW
+19:13:33 ZBH    [A7 Comparador] à espera do outro relatório…
+19:13:34 ZBH    [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 48.0/70 · Qualitativa 42.5/100 · Nota Final 60.8 · PJ 167.8 · NÃO COMPRAR
+19:13:35 ZBH    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 60,8
+19:13:35 ZBH    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+19:13:35 ==================== ZBH · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 259 s ====================
+19:13:35 ==================== ISRG · fonte sec · 10 anos · início ====================
+19:13:36 ISRG   [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 1035267 · 10 anos
+19:13:36 ISRG   [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+19:13:37 ISRG   [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+19:13:40 ISRG   [A1 Coletor]    21 em falta na SEC; 13 preenchidos por reserva; 19 continuam em falta em todas as fontes
+19:13:40 ISRG   [A1 Coletor]    495 valores, 19 em falta
+19:13:40 ISRG   [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+19:13:40 ISRG   [A2 Guardião]   rejeitada: Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 14,1%
+19:13:40 ISRG   [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Defensivas
+19:13:40 ISRG   [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+19:13:40 ISRG   [A5 Decisor]    REJEITAR
+19:13:42 ISRG   [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+19:15:52 ISRG   [A24 Analista]  modelo indisponível (analista24: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"health resp: Get \"http://127.0.0.1:50242/health\": read tcp 127.0.0.1:51435-\u003e127.0.0.1:50242: wsarecv: An existing connection was forcibly closed by the remote host."})); moat não avaliado
+19:15:52 ISRG   [A7 Comparador] à espera do outro relatório…
+19:15:53 ISRG   [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 59.0/70 · Qualitativa 0.0/100 · Nota Final 59.0 · PJ 470.68 · NÃO COMPRAR
+19:15:53 ISRG   [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 59,0
+19:15:53 ISRG   [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+19:15:53 ==================== ISRG · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 138 s · 1 aviso(s) ====================
+19:15:53 ==================== EW · fonte sec · 10 anos · início ====================
+19:15:54 EW     [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 1099800 · 10 anos
+19:15:54 EW     [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+19:15:55 EW     [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+19:15:56 EW     [A1 Coletor]    1 em falta na SEC; 16 preenchidos por reserva; 0 continuam em falta em todas as fontes
+19:15:56 EW     [A1 Coletor]    514 valores, 0 em falta
+19:15:56 EW     [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+19:15:56 EW     [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+19:15:56 EW     [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Defensivas
+19:15:56 EW     [G24 Guardião]  REJEITADA: KS3 Margem bruta em queda: 2022: 83,8% -> 2023: 80,5% -> 2024: 79,5% -> 2025: 78,0%
+19:15:56 EW     [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+19:18:03 EW     [A2.5 Analista] T1 Não, círculo Não, Wrigley Não, modelo M3, C3 Não, franquia 3/4 sim
+19:18:03 EW     [D24 Decisor]   v4.24: NÃO COMPRAR · rejeitada nos Kill Switches
+19:18:03 EW     [A5 Decisor]    REJEITAR
+19:18:03 EW     [A7 Comparador] à espera do outro relatório…
+19:18:03 EW     [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+19:18:03 ==================== EW · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 129 s ====================
+19:18:03 ==================== MSFT · fonte sec · 10 anos · início ====================
+19:18:05 MSFT   [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 789019 · 10 anos
+19:18:05 MSFT   [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+19:18:05 MSFT   [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+19:18:07 MSFT   [A1 Coletor]    1 em falta na SEC; 25 preenchidos por reserva; 0 continuam em falta em todas as fontes
+19:18:07 MSFT   [A1 Coletor]    514 valores, 0 em falta
+19:18:07 MSFT   [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+19:18:07 MSFT   [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+19:18:07 MSFT   [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Tech Big
+19:18:08 MSFT   [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+19:18:08 MSFT   [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+19:22:27 MSFT   [A2.5 Analista] modelo indisponível (analista: falhou após 5 tentativas (Ligação interrompida ([WinError 10054] Uma ligação existente foi forçada a fechar pelo anfitrião remoto). Modelo ainda a carregar?))
+19:22:27 MSFT   [A2.5 Analista] T1 Sim, círculo Sim, Wrigley Sim, modelo hibrido, C3 Não, franquia 0/4 sim
+19:22:28 MSFT   [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+19:27:31 MSFT   [A24 Analista]  modelo indisponível (analista24: falhou após 5 tentativas (Ligação interrompida ([WinError 10054] Uma ligação existente foi forçada a fechar pelo anfitrião remoto). Modelo ainda a carregar?)); moat não avaliado
+19:27:31 MSFT   [A5 Decisor]    REJEITAR
+19:27:32 MSFT   [V24 Avaliador] modo normal · arquétipo 1 · Quantitativa 47.0/70 · Qualitativa 0.0/100 · Nota Final 47.0 · PJ 82.44 · NÃO COMPRAR
+19:27:32 MSFT   [A7 Comparador] à espera do outro relatório…
+19:27:32 MSFT   [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 47,0
+19:27:32 MSFT   [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+19:27:32 ==================== MSFT · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 569 s · 2 aviso(s) ====================
+19:27:32 ==================== AAPL · fonte sec · 10 anos · início ====================
+19:27:32 AAPL   [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 320193 · 10 anos
+19:27:32 AAPL   [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+19:27:32 AAPL   [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+19:27:33 AAPL   [A1 Coletor]    13 em falta na SEC; 11 preenchidos por reserva; 11 continuam em falta em todas as fontes
+19:27:33 AAPL   [A1 Coletor]    503 valores, 11 em falta
+19:27:33 AAPL   [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+19:27:33 AAPL   [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+19:27:33 AAPL   [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Tech Big
+19:27:33 AAPL   [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+19:27:33 AAPL   [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+19:33:08 AAPL   [A2.5 Analista] modelo indisponível (analista: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"health resp: Get \"http://127.0.0.1:54442/health\": read tcp 127.0.0.1:49683-\u003e127.0.0.1:54442: wsarecv: An existing connection was forcibly closed by the remote host."}))
+19:33:08 AAPL   [A2.5 Analista] T1 Sim, círculo Sim, Wrigley Sim, modelo hibrido, C3 Não, franquia 0/4 sim
+19:33:10 AAPL   [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+19:35:32 AAPL   [A24 Analista]  modelo indisponível (analista24: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"Post \"http://127.0.0.1:61732/tokenize\": read tcp 127.0.0.1:61748-\u003e127.0.0.1:61732: wsarecv: An existing connection was forcibly closed by the remote host."})); moat não avaliado
+19:35:32 AAPL   [A5 Decisor]    REJEITAR
+19:35:32 AAPL   [V24 Avaliador] modo normal · arquétipo 1 · Quantitativa 62.0/70 · Qualitativa 0.0/100 · Nota Final 62.0 · PJ 49.6 · NÃO COMPRAR
+19:35:32 AAPL   [A7 Comparador] à espera do outro relatório…
+19:35:32 AAPL   [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 62,0
+19:35:32 AAPL   [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+19:35:32 ==================== AAPL · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 479 s · 2 aviso(s) ====================
+19:35:32 ==================== GOOGL · fonte sec · 10 anos · início ====================
+19:35:33 GOOGL  [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 1652044 · 10 anos
+19:35:33 GOOGL  [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+19:35:34 GOOGL  [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+19:35:37 GOOGL  [A1 Coletor]    11 em falta na SEC; 28 preenchidos por reserva; 10 continuam em falta em todas as fontes
+19:35:37 GOOGL  [A1 Coletor]    504 valores, 10 em falta
+19:35:37 GOOGL  [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+19:35:38 GOOGL  [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+19:35:38 GOOGL  [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Tech Big
+19:35:38 GOOGL  [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+19:35:38 GOOGL  [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+19:37:51 GOOGL  [A2.5 Analista] modelo indisponível (analista: falhou após 5 tentativas (Ligação interrompida ([WinError 10054] Uma ligação existente foi forçada a fechar pelo anfitrião remoto). Modelo ainda a carregar?))
+19:37:51 GOOGL  [A2.5 Analista] T1 Sim, círculo Sim, Wrigley Sim, modelo hibrido, C3 Não, franquia 0/4 sim
+19:37:52 GOOGL  [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+19:40:12 GOOGL  [A24 Analista]  modelo indisponível (analista24: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"Post \"http://127.0.0.1:60813/tokenize\": read tcp 127.0.0.1:60835-\u003e127.0.0.1:60813: wsarecv: An existing connection was forcibly closed by the remote host."})); moat não avaliado
+19:40:12 GOOGL  [A5 Decisor]    REJEITAR
+19:40:13 GOOGL  [V24 Avaliador] modo normal · arquétipo 1 · Quantitativa 47.0/70 · Qualitativa 0.0/100 · Nota Final 47.0 · PJ 40.15 · NÃO COMPRAR
+19:40:13 GOOGL  [A7 Comparador] à espera do outro relatório…
+19:40:13 GOOGL  [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 47,0
+19:40:13 GOOGL  [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+19:40:13 ==================== GOOGL · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 280 s · 2 aviso(s) ====================
+19:40:13 ==================== META · fonte sec · 10 anos · início ====================
+19:40:14 META   [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 1326801 · 10 anos
+19:40:14 META   [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+19:40:14 META   [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+19:40:18 META   [A1 Coletor]    7 em falta na SEC; 24 preenchidos por reserva; 6 continuam em falta em todas as fontes
+19:40:18 META   [A1 Coletor]    508 valores, 6 em falta
+19:40:18 META   [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+19:40:18 META   [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+19:40:18 META   [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Tech Big
+19:40:18 META   [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+19:40:18 META   [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+19:42:48 META   [A2.5 Analista] modelo indisponível (analista: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"Post \"http://127.0.0.1:51152/tokenize\": read tcp 127.0.0.1:51171-\u003e127.0.0.1:51152: wsarecv: An existing connection was forcibly closed by the remote host."}))
+19:42:48 META   [A2.5 Analista] T1 Sim, círculo Sim, Wrigley Sim, modelo hibrido, C3 Não, franquia 0/4 sim
+19:42:50 META   [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+19:44:32 META   [A24 Analista]  círculo: sim · fontes de moat: 3 · poder de preço: sem_evidencia · moat: NARROW
+19:44:32 META   [A5 Decisor]    REJEITAR
+19:44:34 META   [V24 Avaliador] modo normal · arquétipo 1 · Quantitativa 47.0/70 · Qualitativa 32.5/100 · Nota Final 56.8 · PJ 105.65 · NÃO COMPRAR
+19:44:34 META   [A7 Comparador] à espera do outro relatório…
+19:44:34 META   [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 56,8
+19:44:34 META   [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+19:44:34 ==================== META · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 260 s · 1 aviso(s) ====================
+19:44:34 ==================== ADBE · fonte sec · 10 anos · início ====================
+19:44:35 ADBE   [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 796343 · 10 anos
+19:44:35 ADBE   [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+19:44:36 ADBE   [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+19:44:38 ADBE   [A1 Coletor]    1 em falta na SEC; 24 preenchidos por reserva; 0 continuam em falta em todas as fontes
+19:44:38 ADBE   [A1 Coletor]    514 valores, 0 em falta
+19:44:38 ADBE   [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+19:44:38 ADBE   [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+19:44:38 ADBE   [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Tech Big
+19:44:38 ADBE   [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+19:44:38 ADBE   [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+19:47:04 ADBE   [A2.5 Analista] modelo indisponível (analista: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"Post \"http://127.0.0.1:61511/tokenize\": read tcp 127.0.0.1:61530-\u003e127.0.0.1:61511: wsarecv: An existing connection was forcibly closed by the remote host."}))
+19:47:04 ADBE   [A2.5 Analista] T1 Sim, círculo Sim, Wrigley Sim, modelo hibrido, C3 Não, franquia 0/4 sim
+19:47:05 ADBE   [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+19:51:05 ADBE   [A24 Analista]  modelo indisponível (analista24: falhou após 5 tentativas (Ligação interrompida ([WinError 10054] Uma ligação existente foi forçada a fechar pelo anfitrião remoto). Modelo ainda a carregar?)); moat não avaliado
+19:51:05 ADBE   [A5 Decisor]    REJEITAR
+19:51:07 ADBE   [V24 Avaliador] modo normal · arquétipo 1 · Quantitativa 58.0/70 · Qualitativa 0.0/100 · Nota Final 58.0 · PJ 147.24 · NÃO COMPRAR
+19:51:07 ADBE   [A7 Comparador] à espera do outro relatório…
+19:51:07 ADBE   [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 58,0
+19:51:07 ADBE   [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+19:51:07 ==================== ADBE · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 393 s · 2 aviso(s) ====================
+19:51:07 ==================== CRM · fonte sec · 10 anos · início ====================
+19:51:10 CRM    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 1108524 · 10 anos
+19:51:10 CRM    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+19:51:10 CRM    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+19:51:12 CRM    [A1 Coletor]    1 em falta na SEC; 21 preenchidos por reserva; 0 continuam em falta em todas as fontes
+19:51:12 CRM    [A1 Coletor]    514 valores, 0 em falta
+19:51:12 CRM    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+19:51:12 CRM    [A2 Guardião]   rejeitada: Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 5,7%; COMMODITY: margem bruta média 74,8%, ROE médio 5,7%, 3 ano(s) de LPA com prejuízo ou queda > 50%
+19:51:12 CRM    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Tech Big
+19:51:12 CRM    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+19:51:12 CRM    [A5 Decisor]    REJEITAR
+19:51:14 CRM    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+19:53:33 CRM    [A24 Analista]  modelo indisponível (analista24: falhou após 5 tentativas (Ligação interrompida ([WinError 10054] Uma ligação existente foi forçada a fechar pelo anfitrião remoto). Modelo ainda a carregar?)); moat não avaliado
+19:53:33 CRM    [A7 Comparador] à espera do outro relatório…
+19:53:35 CRM    [V24 Avaliador] modo normal · arquétipo 1 · Quantitativa 47.0/70 · Qualitativa 0.0/100 · Nota Final 47.0 · PJ 72.09 · NÃO COMPRAR
+19:53:35 CRM    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 47,0
+19:53:35 CRM    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+19:53:35 ==================== CRM · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 147 s · 1 aviso(s) ====================
+19:53:35 ==================== NOW · fonte sec · 10 anos · início ====================
+19:53:36 NOW    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 1373715 · 10 anos
+19:53:36 NOW    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+19:53:37 NOW    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+19:53:40 NOW    [A1 Coletor]    14 em falta na SEC; 32 preenchidos por reserva; 6 continuam em falta em todas as fontes
+19:53:40 NOW    [A1 Coletor]    508 valores, 6 em falta
+19:53:40 NOW    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+19:53:40 NOW    [A2 Guardião]   rejeitada: Triagem T2: O LPA não teve prejuízos e está mais alto do que há 5–10 anos? Não — LPA 2016 -0,50 -> 2025 1,67; prejuízo em [2016, 2017, 2018]; Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 0,3%; COMMODITY: 
+19:53:40 NOW    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Tech Big
+19:53:41 NOW    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+19:53:41 NOW    [A5 Decisor]    REJEITAR
+19:53:43 NOW    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+19:56:28 NOW    [A24 Analista]  círculo: sim · fontes de moat: 3 · poder de preço: sem_evidencia · moat: NARROW
+19:56:28 NOW    [A7 Comparador] à espera do outro relatório…
+19:56:29 NOW    [V24 Avaliador] modo normal · arquétipo 1 · Quantitativa 56.0/70 · Qualitativa 42.5/100 · Nota Final 68.8 · PJ 14.26 · NÃO COMPRAR
+19:56:29 NOW    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 68,8
+19:56:29 NOW    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+19:56:29 ==================== NOW · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 174 s ====================
+19:56:29 ==================== INTU · fonte sec · 10 anos · início ====================
+19:56:32 INTU   [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 896878 · 10 anos
+19:56:32 INTU   [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+19:56:32 INTU   [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+19:56:36 INTU   [A1 Coletor]    10 em falta na SEC; 21 preenchidos por reserva; 5 continuam em falta em todas as fontes
+19:56:36 INTU   [A1 Coletor]    509 valores, 5 em falta
+19:56:36 INTU   [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+19:56:36 INTU   [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+19:56:36 INTU   [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Tech Big
+19:56:36 INTU   [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+19:56:36 INTU   [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+19:59:04 INTU   [A2.5 Analista] modelo indisponível (analista: falhou após 5 tentativas (Ligação interrompida ([WinError 10054] Uma ligação existente foi forçada a fechar pelo anfitrião remoto). Modelo ainda a carregar?))
+19:59:04 INTU   [A2.5 Analista] T1 Sim, círculo Sim, Wrigley Sim, modelo hibrido, C3 Não, franquia 0/4 sim
+19:59:05 INTU   [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+20:01:26 INTU   [A24 Analista]  modelo indisponível (analista24: falhou após 5 tentativas (Ligação interrompida ([WinError 10054] Uma ligação existente foi forçada a fechar pelo anfitrião remoto). Modelo ainda a carregar?)); moat não avaliado
+20:01:26 INTU   [A5 Decisor]    REJEITAR
+20:01:28 INTU   [V24 Avaliador] modo normal · arquétipo 1 · Quantitativa 56.0/70 · Qualitativa 0.0/100 · Nota Final 56.0 · PJ 146.67 · NÃO COMPRAR
+20:01:28 INTU   [A7 Comparador] à espera do outro relatório…
+20:01:28 INTU   [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 56,0
+20:01:28 INTU   [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+20:01:28 ==================== INTU · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 298 s · 2 aviso(s) ====================
+20:01:28 ==================== CDNS · fonte sec · 10 anos · início ====================
+20:01:29 CDNS   [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 813672 · 10 anos
+20:01:29 CDNS   [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+20:01:30 CDNS   [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+20:01:33 CDNS   [A1 Coletor]    21 em falta na SEC; 38 preenchidos por reserva; 12 continuam em falta em todas as fontes
+20:01:33 CDNS   [A1 Coletor]    502 valores, 12 em falta
+20:01:33 CDNS   [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+20:01:33 CDNS   [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+20:01:33 CDNS   [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Tech Big
+20:01:33 CDNS   [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+20:01:33 CDNS   [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+20:04:08 CDNS   [A2.5 Analista] modelo indisponível (analista: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"Post \"http://127.0.0.1:60021/tokenize\": read tcp 127.0.0.1:60036-\u003e127.0.0.1:60021: wsarecv: An existing connection was forcibly closed by the remote host."}))
+20:04:08 CDNS   [A2.5 Analista] T1 Sim, círculo Sim, Wrigley Sim, modelo hibrido, C3 Não, franquia 0/4 sim
+20:04:09 CDNS   [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+20:06:20 CDNS   [A24 Analista]  modelo indisponível (analista24: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"Post \"http://127.0.0.1:60021/tokenize\": read tcp 127.0.0.1:53570-\u003e127.0.0.1:60021: wsarecv: An existing connection was forcibly closed by the remote host."})); moat não avaliado
+20:06:20 CDNS   [A5 Decisor]    REJEITAR
+20:06:21 CDNS   [V24 Avaliador] modo normal · arquétipo 1 · Quantitativa 55.0/70 · Qualitativa 0.0/100 · Nota Final 55.0 · PJ 35.08 · NÃO COMPRAR
+20:06:21 CDNS   [A7 Comparador] à espera do outro relatório…
+20:06:21 CDNS   [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 55,0
+20:06:21 CDNS   [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+20:06:21 ==================== CDNS · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 293 s · 2 aviso(s) ====================
+20:06:21 ==================== SNPS · fonte sec · 10 anos · início ====================
+20:06:23 SNPS   [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 883241 · 10 anos
+20:06:23 SNPS   [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+20:06:23 SNPS   [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+20:06:27 SNPS   [A1 Coletor]    2 em falta na SEC; 20 preenchidos por reserva; 1 continuam em falta em todas as fontes
+20:06:27 SNPS   [A1 Coletor]    513 valores, 1 em falta
+20:06:27 SNPS   [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+20:06:27 SNPS   [A2 Guardião]   rejeitada: Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 13,4%; Triagem T4: A dívida de longo prazo paga-se com 4 anos de lucro ou menos? Não — dívida LP = 10,25 anos de lucro médio (5 anos)
+20:06:27 SNPS   [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Tech Big
+20:06:28 SNPS   [G24 Guardião]  REJEITADA: KS2 Dívida impagável: dívida líquida / EBITDA médio 5 anos = 7,50x (máximo 4x)
+20:06:28 SNPS   [A5 Decisor]    REJEITAR
+20:06:28 SNPS   [D24 Decisor]   v4.24: NÃO COMPRAR · rejeitada nos Kill Switches
+20:06:28 SNPS   [A7 Comparador] à espera do outro relatório…
+20:06:28 SNPS   [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+20:06:28 ==================== SNPS · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 6 s ====================
+20:06:28 ==================== V · fonte sec · 10 anos · início ====================
+20:06:30 V      [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 1403161 · 10 anos
+20:06:30 V      [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+20:06:30 V      [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+20:06:33 V      [A1 Coletor]    26 em falta na SEC; 30 preenchidos por reserva; 17 continuam em falta em todas as fontes
+20:06:33 V      [A1 Coletor]    497 valores, 17 em falta
+20:06:33 V      [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+20:06:33 V      [A2 Guardião]   rejeitada: Dados insuficientes para a Triagem T2: só 4 anos de LPA nas fontes (a SEC guarda as ações por classe nalgumas empresas) (completar com a chave gratuita da Alpha Vantage no .env (histórico de LPA) ou com o roic.ai)
+20:06:33 V      [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Não Classificado
+20:06:33 V      [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+20:06:33 V      [A5 Decisor]    REJEITAR
+20:06:34 V      [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+20:09:24 V      [A24 Analista]  círculo: sim · fontes de moat: 4 · poder de preço: sem_evidencia · moat: NARROW
+20:09:24 V      [A7 Comparador] à espera do outro relatório…
+20:09:25 V      [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 54.0/70 · Qualitativa 42.5/100 · Nota Final 66.8 · PJ 413.59 · NÃO COMPRAR
+20:09:25 V      [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 66,8
+20:09:25 V      [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+20:09:25 ==================== V · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 177 s ====================
+20:09:25 ==================== MA · fonte sec · 10 anos · início ====================
+20:09:27 MA     [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 1141391 · 10 anos
+20:09:27 MA     [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+20:09:27 MA     [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+20:09:31 MA     [A1 Coletor]    11 em falta na SEC; 20 preenchidos por reserva; 6 continuam em falta em todas as fontes
+20:09:31 MA     [A1 Coletor]    508 valores, 6 em falta
+20:09:31 MA     [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+20:09:31 MA     [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+20:09:31 MA     [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Não Classificado
+20:09:31 MA     [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+20:09:31 MA     [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+20:12:24 MA     [A2.5 Analista] modelo indisponível (analista: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"Post \"http://127.0.0.1:57026/tokenize\": read tcp 127.0.0.1:65371-\u003e127.0.0.1:57026: wsarecv: An existing connection was forcibly closed by the remote host."}))
+20:12:24 MA     [A2.5 Analista] T1 Sim, círculo Sim, Wrigley Sim, modelo hibrido, C3 Não, franquia 0/4 sim
+20:12:25 MA     [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+20:17:28 MA     [A24 Analista]  modelo indisponível (analista24: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"health resp: Get \"http://127.0.0.1:50755/health\": read tcp 127.0.0.1:56675-\u003e127.0.0.1:50755: wsarecv: An existing connection was forcibly closed by the remote host."})); moat não avaliado
+20:17:28 MA     [A5 Decisor]    REJEITAR
+20:17:30 MA     [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 64.0/70 · Qualitativa 0.0/100 · Nota Final 64.0 · PJ 568.26 · NÃO COMPRAR
+20:17:30 MA     [A7 Comparador] à espera do outro relatório…
+20:17:30 MA     [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 64,0
+20:17:30 MA     [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+20:17:30 ==================== MA · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 484 s · 2 aviso(s) ====================
+20:17:30 ==================== AXP · fonte sec · 10 anos · início ====================
+20:17:31 AXP    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 4962 · 10 anos
+20:17:31 AXP    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+20:17:31 AXP    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+20:17:35 AXP    [A1 Coletor]    banco: a recolher CET1, crédito malparado e margem financeira na FDIC…
+20:17:39 AXP    [A1 Coletor]    FDIC BankFind (call reports), banco principal: American Express National  Bank (CERT 27471)
+20:17:39 AXP    [A1 Coletor]    44 em falta na SEC; 19 preenchidos por reserva; 36 continuam em falta em todas as fontes
+20:17:39 AXP    [A1 Coletor]    478 valores, 36 em falta
+20:17:39 AXP    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+20:17:39 AXP    [A2 Guardião]   setor banco: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+20:17:39 AXP    [G24 Guardião]  v4.24 · Passo 0: banco · linha da Secção 6.2: Banca
+20:17:39 AXP    [G24 Guardião]  REJEITADA: KSB1 Capital insuficiente (CET1): CET1 10,94% em 2025 (mínimo 12%)
+20:17:39 AXP    [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+20:20:11 AXP    [A2.5 Analista] modelo indisponível (analista: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"health resp: Get \"http://127.0.0.1:65333/health\": read tcp 127.0.0.1:53702-\u003e127.0.0.1:65333: wsarecv: An existing connection was forcibly closed by the remote host."}))
+20:20:11 AXP    [A2.5 Analista] T1 Sim, círculo Sim, Wrigley Sim, modelo hibrido, C3 Não, franquia 0/4 sim
+20:20:11 AXP    [D24 Decisor]   v4.24: NÃO COMPRAR · rejeitada nos Kill Switches
+20:20:11 AXP    [A5 Decisor]    REJEITAR
+20:20:11 AXP    [A7 Comparador] à espera do outro relatório…
+20:20:11 AXP    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+20:20:11 ==================== AXP · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 160 s · 1 aviso(s) ====================
+20:20:11 ==================== PYPL · fonte sec · 10 anos · início ====================
+20:20:12 PYPL   [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 1633917 · 10 anos
+20:20:12 PYPL   [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+20:20:12 PYPL   [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+20:20:17 PYPL   [A1 Coletor]    13 em falta na SEC; 21 preenchidos por reserva; 8 continuam em falta em todas as fontes
+20:20:17 PYPL   [A1 Coletor]    506 valores, 8 em falta
+20:20:17 PYPL   [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+20:20:17 PYPL   [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+20:20:17 PYPL   [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Não Classificado
+20:20:17 PYPL   [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+20:20:17 PYPL   [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+20:22:52 PYPL   [A2.5 Analista] modelo indisponível (analista: falhou após 5 tentativas (Ligação interrompida ([WinError 10054] Uma ligação existente foi forçada a fechar pelo anfitrião remoto). Modelo ainda a carregar?))
+20:22:52 PYPL   [A2.5 Analista] T1 Sim, círculo Sim, Wrigley Sim, modelo hibrido, C3 Não, franquia 0/4 sim
+20:22:53 PYPL   [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+20:25:34 PYPL   [A24 Analista]  modelo indisponível (analista24: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"Post \"http://127.0.0.1:58950/tokenize\": read tcp 127.0.0.1:65185-\u003e127.0.0.1:58950: wsarecv: An existing connection was forcibly closed by the remote host."})); moat não avaliado
+20:25:34 PYPL   [A5 Decisor]    REJEITAR
+20:25:36 PYPL   [V24 Avaliador] modo normal · arquétipo 1 · Quantitativa 34.0/70 · Qualitativa 0.0/100 · Nota Final 34.0 · PJ 34.94 · NÃO COMPRAR
+20:25:36 PYPL   [A7 Comparador] à espera do outro relatório…
+20:25:36 PYPL   [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 34,0
+20:25:36 PYPL   [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+20:25:36 ==================== PYPL · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 325 s · 2 aviso(s) ====================
+20:25:36 ==================== FI · fonte sec · 10 anos · início ====================
+20:25:36 FI     [A1 Coletor]    a procurar a empresa noutras fontes oficiais (SEC pelo nome, ESEF)…
+20:25:38 FI     [A1 Coletor]    falhou: sem dados em nenhuma fonte — SEC pelo ticker: 'FI' não existe na lista da SEC. | Yahoo Finance: 'FI' sem demonstrações no Yahoo Finance.
+20:25:38 ==================== FI · - · Portões -/10 · 1 s ====================
+20:25:38 ==================== FIS · fonte sec · 10 anos · início ====================
+20:25:39 FIS    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 1136893 · 10 anos
+20:25:39 FIS    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+20:25:40 FIS    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+20:25:41 FIS    [A1 Coletor]    6 em falta na SEC; 13 preenchidos por reserva; 0 continuam em falta em todas as fontes
+20:25:41 FIS    [A1 Coletor]    514 valores, 0 em falta, 1 inconsistências
+20:25:41 FIS    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+20:25:41 FIS    [A2 Guardião]   rejeitada: Triagem T2: O LPA não teve prejuízos e está mais alto do que há 5–10 anos? Não — LPA 2016 1,59 -> 2025 0,73; prejuízo em [2022, 2023]; Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio -5,7%; Triagem T4: A dív
+20:25:41 FIS    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Tech Big
+20:25:41 FIS    [G24 Guardião]  REJEITADA: KS4 Histórico irregular: prejuízo em [2022, 2023]
+20:25:41 FIS    [A5 Decisor]    REJEITAR
+20:25:41 FIS    [D24 Decisor]   v4.24: NÃO COMPRAR · rejeitada nos Kill Switches
+20:25:41 FIS    [A7 Comparador] à espera do outro relatório…
+20:25:41 FIS    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+20:25:41 ==================== FIS · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 3 s ====================
+20:25:41 ==================== GPN · fonte sec · 10 anos · início ====================
+20:25:42 GPN    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 1123360 · 10 anos
+20:25:42 GPN    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+20:25:42 GPN    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+20:25:44 GPN    [A1 Coletor]    1 em falta na SEC; 13 preenchidos por reserva; 0 continuam em falta em todas as fontes
+20:25:44 GPN    [A1 Coletor]    514 valores, 0 em falta
+20:25:44 GPN    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+20:25:44 GPN    [A2 Guardião]   rejeitada: Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 5,9%; Triagem T4: A dívida de longo prazo paga-se com 4 anos de lucro ou menos? Não — dívida LP = 19,41 anos de lucro médio (5 anos)
+20:25:44 GPN    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Consumo
+20:25:44 GPN    [G24 Guardião]  REJEITADA: KS2 Dívida impagável: dívida líquida / EBITDA médio 5 anos = 4,72x (máximo 4x)
+20:25:44 GPN    [A5 Decisor]    REJEITAR
+20:25:44 GPN    [D24 Decisor]   v4.24: NÃO COMPRAR · rejeitada nos Kill Switches
+20:25:44 GPN    [A7 Comparador] à espera do outro relatório…
+20:25:44 GPN    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+20:25:44 ==================== GPN · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 3 s ====================
+20:25:44 ==================== WEX · fonte sec · 10 anos · início ====================
+20:25:46 WEX    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 1309108 · 10 anos
+20:25:46 WEX    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+20:25:46 WEX    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+20:25:49 WEX    [A1 Coletor]    14 em falta na SEC; 24 preenchidos por reserva; 6 continuam em falta em todas as fontes
+20:25:49 WEX    [A1 Coletor]    508 valores, 6 em falta
+20:25:49 WEX    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+20:25:49 WEX    [A2 Guardião]   rejeitada: Triagem T2: O LPA não teve prejuízos e está mais alto do que há 5–10 anos? Não — LPA 2016 1,48 -> 2025 8,47; prejuízo em [2020]; Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 9,4%; Triagem T4: A dívida de 
+20:25:49 WEX    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Tech Big
+20:25:49 WEX    [G24 Guardião]  REJEITADA: KS5 FCO negativo: FCO negativo em [2016, 2021]
+20:25:49 WEX    [A5 Decisor]    REJEITAR
+20:25:49 WEX    [D24 Decisor]   v4.24: NÃO COMPRAR · rejeitada nos Kill Switches
+20:25:49 WEX    [A7 Comparador] à espera do outro relatório…
+20:25:49 WEX    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+20:25:49 ==================== WEX · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 4 s ====================
+20:25:49 ==================== JKHY · fonte sec · 10 anos · início ====================
+20:25:51 JKHY   [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 779152 · 10 anos
+20:25:51 JKHY   [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+20:25:51 JKHY   [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+20:25:54 JKHY   [A1 Coletor]    6 em falta na SEC; 22 preenchidos por reserva; 2 continuam em falta em todas as fontes
+20:25:54 JKHY   [A1 Coletor]    512 valores, 2 em falta
+20:25:54 JKHY   [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+20:25:54 JKHY   [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+20:25:54 JKHY   [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Tech Big
+20:25:55 JKHY   [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+20:25:55 JKHY   [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+20:28:59 JKHY   [A2.5 Analista] T1 Não, círculo Não, Wrigley Não, modelo M3, C3 Não, franquia 2/4 sim
+20:29:01 JKHY   [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+20:33:43 JKHY   [A24 Analista]  círculo: sim · fontes de moat: 3 · poder de preço: sem_evidencia · moat: NARROW
+20:33:43 JKHY   [A5 Decisor]    REJEITAR
+20:33:44 JKHY   [V24 Avaliador] modo normal · arquétipo 1 · Quantitativa 53.0/70 · Qualitativa 42.5/100 · Nota Final 65.8 · PJ 58.22 · NÃO COMPRAR
+20:33:44 JKHY   [A7 Comparador] à espera do outro relatório…
+20:33:44 JKHY   [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 65,8
+20:33:44 JKHY   [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+20:33:44 ==================== JKHY · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 474 s ====================
+20:33:44 ==================== FOUR · fonte sec · 10 anos · início ====================
+20:33:45 FOUR   [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 1794669 · 8 anos
+20:33:45 FOUR   [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+20:33:45 FOUR   [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+20:33:48 FOUR   [A1 Coletor]    15 em falta na SEC; 37 preenchidos por reserva; 10 continuam em falta em todas as fontes
+20:33:48 FOUR   [A1 Coletor]    402 valores, 10 em falta
+20:33:48 FOUR   [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+20:33:48 FOUR   [A2 Guardião]   rejeitada: Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio -14,9%; Triagem T4: A dívida de longo prazo paga-se com 4 anos de lucro ou menos? Não — dívida LP = 35,57 anos de lucro médio (5 anos); Dados insuficientes par
+20:33:48 FOUR   [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Tech Big
+20:33:48 FOUR   [G24 Guardião]  REJEITADA: KS2 Dívida impagável: dívida líquida / EBITDA médio 5 anos = 9,16x (máximo 4x)
+20:33:48 FOUR   [A5 Decisor]    REJEITAR
+20:33:48 FOUR   [D24 Decisor]   v4.24: NÃO COMPRAR · rejeitada nos Kill Switches
+20:33:48 FOUR   [A7 Comparador] à espera do outro relatório…
+20:33:48 FOUR   [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+20:33:48 ==================== FOUR · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 4 s ====================
+20:33:48 ==================== HON · fonte sec · 10 anos · início ====================
+20:33:50 HON    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 773840 · 10 anos
+20:33:50 HON    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+20:33:50 HON    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+20:33:53 HON    [A1 Coletor]    17 em falta na SEC; 25 preenchidos por reserva; 12 continuam em falta em todas as fontes
+20:33:53 HON    [A1 Coletor]    502 valores, 12 em falta
+20:33:53 HON    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+20:33:53 HON    [A2 Guardião]   rejeitada: Triagem T4: A dívida de longo prazo paga-se com 4 anos de lucro ou menos? Não — dívida LP = 5,10 anos de lucro médio (5 anos)
+20:33:53 HON    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Consumo
+20:33:53 HON    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+20:33:53 HON    [A5 Decisor]    REJEITAR
+20:33:55 HON    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+20:38:16 HON    [A24 Analista]  modelo indisponível (analista24: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"Post \"http://127.0.0.1:53945/tokenize\": read tcp 127.0.0.1:51504-\u003e127.0.0.1:53945: wsarecv: An existing connection was forcibly closed by the remote host."})); moat não avaliado
+20:38:16 HON    [A7 Comparador] à espera do outro relatório…
+20:38:18 HON    [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 47.0/70 · Qualitativa 0.0/100 · Nota Final 47.0 · PJ 237.33 · NÃO COMPRAR
+20:38:18 HON    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 47,0
+20:38:18 HON    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+20:38:18 ==================== HON · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 269 s · 1 aviso(s) ====================
+20:38:18 ==================== MMM · fonte sec · 10 anos · início ====================
+20:38:19 MMM    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 66740 · 10 anos
+20:38:19 MMM    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+20:38:19 MMM    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+20:38:23 MMM    [A1 Coletor]    2 em falta na SEC; 17 preenchidos por reserva; 1 continuam em falta em todas as fontes
+20:38:23 MMM    [A1 Coletor]    513 valores, 1 em falta
+20:38:23 MMM    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+20:38:23 MMM    [A2 Guardião]   rejeitada: Triagem T2: O LPA não teve prejuízos e está mais alto do que há 5–10 anos? Não — LPA 2016 8,16 -> 2025 6,00; prejuízo em [2023]
+20:38:23 MMM    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Consumo
+20:38:23 MMM    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+20:38:23 MMM    [A5 Decisor]    REJEITAR
+20:38:27 MMM    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+20:40:22 MMM    [A24 Analista]  círculo: sim · fontes de moat: 2 · poder de preço: sem_evidencia · moat: NARROW
+20:40:22 MMM    [A7 Comparador] à espera do outro relatório…
+20:40:25 MMM    [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 52.0/70 · Qualitativa 42.5/100 · Nota Final 64.8 · PJ 59.45 · NÃO COMPRAR
+20:40:25 MMM    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 64,8
+20:40:25 MMM    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+20:40:25 ==================== MMM · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 126 s ====================
+20:40:25 ==================== GE · fonte sec · 10 anos · início ====================
+20:40:26 GE     [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 40545 · 10 anos
+20:40:26 GE     [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+20:40:26 GE     [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+20:40:29 GE     [A1 Coletor]    33 em falta na SEC; 34 preenchidos por reserva; 16 continuam em falta em todas as fontes
+20:40:29 GE     [A1 Coletor]    498 valores, 16 em falta
+20:40:29 GE     [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+20:40:29 GE     [A2 Guardião]   rejeitada: Triagem T2: O LPA não teve prejuízos e está mais alto do que há 5–10 anos? Não — LPA 2016 3,94 -> 2025 8,15; prejuízo em [2017, 2018, 2019, 2021]; Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 2,2%; COMMOD
+20:40:29 GE     [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Consumo
+20:40:30 GE     [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+20:40:30 GE     [A5 Decisor]    REJEITAR
+20:40:31 GE     [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+20:44:43 GE     [A24 Analista]  modelo indisponível (analista24: falhou após 5 tentativas (Ligação interrompida ([WinError 10054] Uma ligação existente foi forçada a fechar pelo anfitrião remoto). Modelo ainda a carregar?)); moat não avaliado
+20:44:43 GE     [A7 Comparador] à espera do outro relatório…
+20:44:45 GE     [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 62.0/70 · Qualitativa 0.0/100 · Nota Final 62.0 · PJ 218.66 · NÃO COMPRAR
+20:44:45 GE     [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 62,0
+20:44:45 GE     [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+20:44:45 ==================== GE · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 260 s · 1 aviso(s) ====================
+20:44:45 ==================== CAT · fonte sec · 10 anos · início ====================
+20:44:47 CAT    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 18230 · 10 anos
+20:44:47 CAT    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+20:44:47 CAT    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+20:44:51 CAT    [A1 Coletor]    12 em falta na SEC; 28 preenchidos por reserva; 7 continuam em falta em todas as fontes
+20:44:51 CAT    [A1 Coletor]    507 valores, 7 em falta
+20:44:51 CAT    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+20:44:51 CAT    [A2 Guardião]   rejeitada: Triagem T2: O LPA não teve prejuízos e está mais alto do que há 5–10 anos? Não — LPA 2016 -0,61 -> 2025 18,81; prejuízo em [2016]
+20:44:51 CAT    [G24 Guardião]  v4.24 · Passo 0: ciclico · linha da Secção 6.2: Consumo
+20:44:51 CAT    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+20:44:51 CAT    [A5 Decisor]    REJEITAR
+20:44:53 CAT    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+20:47:16 CAT    [A24 Analista]  modelo indisponível (analista24: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"Post \"http://127.0.0.1:57745/tokenize\": read tcp 127.0.0.1:57758-\u003e127.0.0.1:57745: wsarecv: An existing connection was forcibly closed by the remote host."})); moat não avaliado
+20:47:16 CAT    [A7 Comparador] à espera do outro relatório…
+20:47:18 CAT    [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 40.0/70 · Qualitativa 0.0/100 · Nota Final 40.0 · PJ 382.64 · NÃO COMPRAR
+20:47:18 CAT    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 40,0
+20:47:18 CAT    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+20:47:18 ==================== CAT · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 152 s · 1 aviso(s) ====================
+20:47:18 ==================== DE · fonte sec · 10 anos · início ====================
+20:47:20 DE     [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 315189 · 10 anos
+20:47:20 DE     [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+20:47:20 DE     [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+20:47:23 DE     [A1 Coletor]    24 em falta na SEC; 44 preenchidos por reserva; 10 continuam em falta em todas as fontes
+20:47:23 DE     [A1 Coletor]    504 valores, 10 em falta
+20:47:23 DE     [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+20:47:23 DE     [A2 Guardião]   rejeitada: Triagem T4: A dívida de longo prazo paga-se com 4 anos de lucro ou menos? Não — dívida LP = 6,15 anos de lucro médio (5 anos)
+20:47:23 DE     [G24 Guardião]  v4.24 · Passo 0: ciclico · linha da Secção 6.2: Consumo
+20:47:24 DE     [G24 Guardião]  REJEITADA: KS2 Dívida impagável: dívida líquida / EBITDA médio 5 anos = 4,72x (máximo 4x)
+20:47:24 DE     [A5 Decisor]    REJEITAR
+20:47:24 DE     [D24 Decisor]   v4.24: NÃO COMPRAR · rejeitada nos Kill Switches
+20:47:24 DE     [A7 Comparador] à espera do outro relatório…
+20:47:24 DE     [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+20:47:24 ==================== DE · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 5 s ====================
+20:47:24 ==================== EMR · fonte sec · 10 anos · início ====================
+20:47:25 EMR    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 32604 · 10 anos
+20:47:25 EMR    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+20:47:25 EMR    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+20:47:28 EMR    [A1 Coletor]    20 em falta na SEC; 12 preenchidos por reserva; 11 continuam em falta em todas as fontes
+20:47:28 EMR    [A1 Coletor]    503 valores, 11 em falta
+20:47:28 EMR    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+20:47:28 EMR    [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+20:47:28 EMR    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Consumo
+20:47:28 EMR    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+20:47:28 EMR    [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+20:49:53 EMR    [A2.5 Analista] modelo indisponível (analista: falhou após 5 tentativas (Ligação interrompida ([WinError 10054] Uma ligação existente foi forçada a fechar pelo anfitrião remoto). Modelo ainda a carregar?))
+20:49:53 EMR    [A2.5 Analista] T1 Sim, círculo Sim, Wrigley Sim, modelo hibrido, C3 Não, franquia 0/4 sim
+20:49:54 EMR    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+20:51:19 EMR    [A24 Analista]  círculo: sim · fontes de moat: 2 · poder de preço: nao_verificada · moat: NARROW
+20:51:19 EMR    [A5 Decisor]    REJEITAR
+20:51:21 EMR    [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 48.0/70 · Qualitativa 42.5/100 · Nota Final 60.8 · PJ 109.75 · NÃO COMPRAR
+20:51:21 EMR    [A7 Comparador] à espera do outro relatório…
+20:51:21 EMR    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 60,8
+20:51:21 EMR    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+20:51:21 ==================== EMR · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 237 s · 1 aviso(s) ====================
+20:51:21 ==================== ITW · fonte sec · 10 anos · início ====================
+20:51:23 ITW    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 49826 · 10 anos
+20:51:23 ITW    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+20:51:23 ITW    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+20:51:26 ITW    [A1 Coletor]    21 em falta na SEC; 28 preenchidos por reserva; 12 continuam em falta em todas as fontes
+20:51:26 ITW    [A1 Coletor]    502 valores, 12 em falta
+20:51:26 ITW    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+20:51:26 ITW    [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+20:51:26 ITW    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Consumo
+20:51:26 ITW    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+20:51:26 ITW    [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+20:53:45 ITW    [A2.5 Analista] modelo indisponível (analista: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"Post \"http://127.0.0.1:58174/tokenize\": read tcp 127.0.0.1:61902-\u003e127.0.0.1:58174: wsarecv: An existing connection was forcibly closed by the remote host."}))
+20:53:45 ITW    [A2.5 Analista] T1 Sim, círculo Sim, Wrigley Sim, modelo hibrido, C3 Não, franquia 0/4 sim
+20:53:47 ITW    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+20:57:43 ITW    [A24 Analista]  círculo: sim · fontes de moat: 2 · poder de preço: verificada · moat: WIDE
+20:57:43 ITW    [A5 Decisor]    REJEITAR
+20:57:44 ITW    [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 42.0/70 · Qualitativa 90.0/100 · Nota Final 69.0 · PJ 256.5 · NÃO COMPRAR
+20:57:44 ITW    [A7 Comparador] à espera do outro relatório…
+20:57:44 ITW    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 69,0
+20:57:44 ITW    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+20:57:44 ==================== ITW · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 383 s · 1 aviso(s) ====================
+20:57:44 ==================== PH · fonte sec · 10 anos · início ====================
+20:57:46 PH     [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 76334 · 10 anos
+20:57:46 PH     [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+20:57:46 PH     [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+20:57:49 PH     [A1 Coletor]    7 em falta na SEC; 13 preenchidos por reserva; 5 continuam em falta em todas as fontes
+20:57:49 PH     [A1 Coletor]    509 valores, 5 em falta
+20:57:49 PH     [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+20:57:49 PH     [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+20:57:49 PH     [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Consumo
+20:57:49 PH     [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+20:57:49 PH     [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+21:00:23 PH     [A2.5 Analista] modelo indisponível (analista: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"Post \"http://127.0.0.1:63221/tokenize\": read tcp 127.0.0.1:63241-\u003e127.0.0.1:63221: wsarecv: An existing connection was forcibly closed by the remote host."}))
+21:00:23 PH     [A2.5 Analista] T1 Sim, círculo Sim, Wrigley Sim, modelo hibrido, C3 Não, franquia 0/4 sim
+21:00:25 PH     [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+21:02:41 PH     [A24 Analista]  modelo indisponível (analista24: falhou após 5 tentativas (Ligação interrompida ([WinError 10054] Uma ligação existente foi forçada a fechar pelo anfitrião remoto). Modelo ainda a carregar?)); moat não avaliado
+21:02:41 PH     [A5 Decisor]    REJEITAR
+21:02:42 PH     [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 57.0/70 · Qualitativa 0.0/100 · Nota Final 57.0 · PJ 555.56 · NÃO COMPRAR
+21:02:42 PH     [A7 Comparador] à espera do outro relatório…
+21:02:42 PH     [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 57,0
+21:02:42 PH     [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+21:02:42 ==================== PH · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 297 s · 2 aviso(s) ====================
+21:02:42 ==================== ROK · fonte sec · 10 anos · início ====================
+21:02:43 ROK    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 1024478 · 10 anos
+21:02:43 ROK    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+21:02:43 ROK    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+21:02:48 ROK    [A1 Coletor]    18 em falta na SEC; 17 preenchidos por reserva; 12 continuam em falta em todas as fontes
+21:02:48 ROK    [A1 Coletor]    502 valores, 12 em falta
+21:02:48 ROK    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+21:02:48 ROK    [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+21:02:48 ROK    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Consumo
+21:02:49 ROK    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+21:02:49 ROK    [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+21:04:58 ROK    [A2.5 Analista] T1 Não, círculo Não, Wrigley Não, modelo hibrido, C3 Não, franquia 3/4 sim
+21:05:00 ROK    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+21:08:49 ROK    [A24 Analista]  modelo indisponível (analista24: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"Post \"http://127.0.0.1:59801/tokenize\": read tcp 127.0.0.1:63674-\u003e127.0.0.1:59801: wsarecv: An existing connection was forcibly closed by the remote host."})); moat não avaliado
+21:08:49 ROK    [A5 Decisor]    REJEITAR
+21:08:50 ROK    [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 57.0/70 · Qualitativa 0.0/100 · Nota Final 57.0 · PJ 317.98 · NÃO COMPRAR
+21:08:50 ROK    [A7 Comparador] à espera do outro relatório…
+21:08:50 ROK    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 57,0
+21:08:50 ROK    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+21:08:50 ==================== ROK · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 368 s · 1 aviso(s) ====================
+21:08:50 ==================== AME · fonte sec · 10 anos · início ====================
+21:08:53 AME    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 1037868 · 10 anos
+21:08:53 AME    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+21:08:53 AME    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+21:08:56 AME    [A1 Coletor]    11 em falta na SEC; 16 preenchidos por reserva; 6 continuam em falta em todas as fontes
+21:08:56 AME    [A1 Coletor]    508 valores, 6 em falta
+21:08:56 AME    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+21:08:56 AME    [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+21:08:56 AME    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Consumo
+21:08:56 AME    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+21:08:56 AME    [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+21:11:10 AME    [A2.5 Analista] T1 Não, círculo Não, Wrigley Não, modelo hibrido, C3 Não, franquia 0/4 sim
+21:11:11 AME    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+21:13:48 AME    [A24 Analista]  círculo: sim · fontes de moat: 2 · poder de preço: sem_evidencia · moat: NARROW
+21:13:48 AME    [A5 Decisor]    REJEITAR
+21:13:50 AME    [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 47.0/70 · Qualitativa 42.5/100 · Nota Final 59.8 · PJ 184.9 · NÃO COMPRAR
+21:13:50 AME    [A7 Comparador] à espera do outro relatório…
+21:13:50 AME    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 59,8
+21:13:50 AME    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+21:13:50 ==================== AME · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 299 s ====================
+21:13:50 ==================== NKE · fonte sec · 10 anos · início ====================
+21:13:51 NKE    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 320187 · 10 anos
+21:13:51 NKE    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+21:13:52 NKE    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+21:13:55 NKE    [A1 Coletor]    21 em falta na SEC; 21 preenchidos por reserva; 16 continuam em falta em todas as fontes
+21:13:55 NKE    [A1 Coletor]    498 valores, 16 em falta
+21:13:55 NKE    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+21:13:55 NKE    [A2 Guardião]   rejeitada: Triagem T2: O LPA não teve prejuízos e está mais alto do que há 5–10 anos? Não — LPA 2017 2,51 -> 2026 2,10
+21:13:55 NKE    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Consumo
+21:13:55 NKE    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+21:13:55 NKE    [A5 Decisor]    REJEITAR
+21:13:57 NKE    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+21:16:24 NKE    [A24 Analista]  modelo indisponível (analista24: falhou após 5 tentativas (Ligação interrompida ([WinError 10054] Uma ligação existente foi forçada a fechar pelo anfitrião remoto). Modelo ainda a carregar?)); moat não avaliado
+21:16:24 NKE    [A7 Comparador] à espera do outro relatório…
+21:16:25 NKE    [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 40.0/70 · Qualitativa 0.0/100 · Nota Final 40.0 · PJ 58.68 · NÃO COMPRAR
+21:16:25 NKE    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 40,0
+21:16:25 NKE    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+21:16:25 ==================== NKE · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 155 s · 1 aviso(s) ====================
+21:16:25 ==================== MCD · fonte sec · 10 anos · início ====================
+21:16:26 MCD    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 63908 · 10 anos
+21:16:26 MCD    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+21:16:26 MCD    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+21:16:29 MCD    [A1 Coletor]    23 em falta na SEC; 28 preenchidos por reserva; 14 continuam em falta em todas as fontes
+21:16:29 MCD    [A1 Coletor]    500 valores, 14 em falta
+21:16:29 MCD    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+21:16:29 MCD    [A2 Guardião]   rejeitada: Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 10,4%; Triagem T4: A dívida de longo prazo paga-se com 4 anos de lucro ou menos? Não — dívida LP = 5,13 anos de lucro médio (5 anos)
+21:16:29 MCD    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Consumo
+21:16:30 MCD    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+21:16:30 MCD    [A5 Decisor]    REJEITAR
+21:16:31 MCD    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+21:18:47 MCD    [A24 Analista]  modelo indisponível (analista24: falhou após 5 tentativas (http://localhost:11434/api/chat → 500: {"error":"Post \"http://127.0.0.1:58242/tokenize\": read tcp 127.0.0.1:51604-\u003e127.0.0.1:58242: wsarecv: An existing connection was forcibly closed by the remote host."})); moat não avaliado
+21:18:47 MCD    [A7 Comparador] à espera do outro relatório…
+21:18:49 MCD    [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 47.0/70 · Qualitativa 0.0/100 · Nota Final 47.0 · PJ None · NÃO COMPRAR
+21:18:49 MCD    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 47,0
+21:18:49 MCD    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+21:18:49 ==================== MCD · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 143 s · 1 aviso(s) ====================
+21:18:49 ==================== SBUX · fonte sec · 10 anos · início ====================
+21:18:50 SBUX   [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 829224 · 10 anos
+21:18:50 SBUX   [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+21:18:51 SBUX   [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+21:18:53 SBUX   [A1 Coletor]    8 em falta na SEC; 17 preenchidos por reserva; 3 continuam em falta em todas as fontes
+21:18:53 SBUX   [A1 Coletor]    511 valores, 3 em falta
+21:18:53 SBUX   [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+21:18:53 SBUX   [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+21:18:53 SBUX   [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Consumo
+21:18:54 SBUX   [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+21:18:54 SBUX   [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+21:21:19 SBUX   [A2.5 Analista] T1 Sim, círculo Sim, Wrigley Sim, modelo M1, C3 Não, franquia 4/4 sim
+21:21:20 SBUX   [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+21:25:20 SBUX   [A24 Analista]  círculo: sim · fontes de moat: 3 · poder de preço: sem_evidencia · moat: NARROW
+21:25:20 SBUX   [A3 Avaliador]  Portões 4/10 (falham P2, P4, P5, P6, P7, P8) · franquia não · TACE -1,1% · PMC 21,20 (VI)
+21:25:22 SBUX   [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 39.0/70 · Qualitativa 42.5/100 · Nota Final 51.8 · PJ 26.9 · NÃO COMPRAR
+21:26:30 SBUX   [A4 Crítico]    aceite com 5 objeção(ões), 0 grave(s)
+21:26:30 SBUX   [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 51,8
+21:26:30 SBUX   [A5 Decisor]    REJEITAR · Portões 4/10 · TACE -1,1%
+21:26:50 SBUX   [A7 Comparador] à espera do outro relatório…
+21:26:50 SBUX   [A6 Buffett]    Passo 9: inversão de Munger e divergência com o veredicto…
+21:27:21 SBUX   [A6 Buffett]    concorda do veredicto (sem divergência)
+21:27:21 SBUX   [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+21:27:21 ==================== SBUX · REJEITAR · Portões 4/10 · v4.24 NÃO COMPRAR · 512 s ====================
+21:27:21 ==================== YUM · fonte sec · 10 anos · início ====================
+21:27:22 YUM    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 1041061 · 10 anos
+21:27:22 YUM    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+21:27:23 YUM    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+21:27:26 YUM    [A1 Coletor]    20 em falta na SEC; 13 preenchidos por reserva; 15 continuam em falta em todas as fontes
+21:27:26 YUM    [A1 Coletor]    499 valores, 15 em falta
+21:27:26 YUM    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+21:27:26 YUM    [A2 Guardião]   rejeitada: Triagem T3: O ROE médio é de pelo menos 15%? Não — sem dados; Triagem T4: A dívida de longo prazo paga-se com 4 anos de lucro ou menos? Não — dívida LP = 7,87 anos de lucro médio (5 anos)
+21:27:26 YUM    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Consumo
+21:27:26 YUM    [G24 Guardião]  REJEITADA: KS2 Dívida impagável: dívida líquida / EBITDA médio 5 anos = 4,48x (máximo 4x)
+21:27:26 YUM    [A5 Decisor]    REJEITAR
+21:27:26 YUM    [D24 Decisor]   v4.24: NÃO COMPRAR · rejeitada nos Kill Switches
+21:27:26 YUM    [A7 Comparador] à espera do outro relatório…
+21:27:26 YUM    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+21:27:26 ==================== YUM · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 4 s ====================
+21:27:26 ==================== CMG · fonte sec · 10 anos · início ====================
+21:27:27 CMG    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 1058090 · 10 anos
+21:27:27 CMG    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+21:27:27 CMG    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+21:27:30 CMG    [A1 Coletor]    24 em falta na SEC; 18 preenchidos por reserva; 19 continuam em falta em todas as fontes
+21:27:30 CMG    [A1 Coletor]    495 valores, 19 em falta
+21:27:30 CMG    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+21:27:30 CMG    [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+21:27:30 CMG    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Consumo
+21:27:30 CMG    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+21:27:30 CMG    [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+21:29:35 CMG    [A2.5 Analista] T1 Não, círculo Não, Wrigley Não, modelo M3, C3 Não, franquia 2/4 sim
+21:29:37 CMG    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+21:31:35 CMG    [A24 Analista]  círculo: nao · fontes de moat: 2 · poder de preço: sem_evidencia · moat: NARROW
+21:31:36 CMG    [A5 Decisor]    REJEITAR
+21:31:37 CMG    [V24 Avaliador] modo normal · arquétipo 1 · Quantitativa 51.0/70 · Qualitativa 32.5/100 · Nota Final 60.8 · PJ 8.18 · NÃO COMPRAR
+21:31:37 CMG    [A7 Comparador] à espera do outro relatório…
+21:31:37 CMG    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 60,8
+21:31:37 CMG    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+21:31:37 ==================== CMG · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 250 s ====================
+21:31:37 ==================== DPZ · fonte sec · 10 anos · início ====================
+21:31:38 DPZ    [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 1286681 · 10 anos
+21:31:38 DPZ    [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+21:31:38 DPZ    [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+21:31:40 DPZ    [A1 Coletor]    1 em falta na SEC; 28 preenchidos por reserva; 0 continuam em falta em todas as fontes
+21:31:40 DPZ    [A1 Coletor]    514 valores, 0 em falta
+21:31:40 DPZ    [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+21:31:40 DPZ    [A2 Guardião]   rejeitada: Triagem T3: O ROE médio é de pelo menos 15%? Não — sem dados; Triagem T4: A dívida de longo prazo paga-se com 4 anos de lucro ou menos? Não — dívida LP = 9,02 anos de lucro médio (5 anos)
+21:31:40 DPZ    [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Consumo
+21:31:40 DPZ    [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+21:31:40 DPZ    [A5 Decisor]    REJEITAR
+21:31:42 DPZ    [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
+21:33:58 DPZ    [A24 Analista]  círculo: sim · fontes de moat: 3 · poder de preço: nao_verificada · moat: NARROW
+21:33:58 DPZ    [A7 Comparador] à espera do outro relatório…
+21:33:59 DPZ    [V24 Avaliador] modo normal · arquétipo 2 · Quantitativa 49.0/70 · Qualitativa 42.5/100 · Nota Final 61.8 · PJ 464.94 · NÃO COMPRAR
+21:33:59 DPZ    [D24 Decisor]   v4.24: NÃO COMPRAR · Nota Final 61,8
+21:33:59 DPZ    [A7 Comparador] v4.27 REJEITAR · v4.24 NÃO COMPRAR · concordam
+21:33:59 ==================== DPZ · REJEITAR · Portões None/10 · v4.24 NÃO COMPRAR · 142 s ====================
+21:33:59 ==================== POOL · fonte sec · 10 anos · início ====================
+21:34:01 POOL   [A1 Coletor]    fonte: SEC EDGAR companyfacts (US-GAAP, USD), CIK 945841 · 10 anos
+21:34:01 POOL   [A1 Coletor]    a recolher dados de mercado (Yahoo Finance) e a taxa do Estado a 10 anos em USD…
+21:34:01 POOL   [A1 Coletor]    a completar dados em falta com as fontes de reserva (yfinance, Alpha Vantage)…
+21:34:04 POOL   [A1 Coletor]    21 em falta na SEC; 28 preenchidos por reserva; 12 continuam em falta em todas as fontes
+21:34:04 POOL   [A1 Coletor]    502 valores, 12 em falta
+21:34:04 POOL   [A1 Coletor]    dados entregues aos dois protocolos: v4.27 (Buffett) e v4.24 (período paralelo)
+21:34:04 POOL   [A2 Guardião]   setor padrao: Triagem (T2–T7), Regra de Commodity e filtros base aprovados
+21:34:04 POOL   [G24 Guardião]  v4.24 · Passo 0: padrao · linha da Secção 6.2: Consumo
+21:34:05 POOL   [G24 Guardião]  Kill Switches não suspensíveis aprovados → Analista v4.24
+21:34:05 POOL   [A2.5 Analista] Triagem T1, Círculo de Competência, modelo e Teste da Franquia: a ler 10-K (Item 1 e MD&A), perfil e Wikipedia…
+21:36:57 POOL   [A2.5 Analista] T1 Não, círculo Não, Wrigley Não, modelo M3, C3 Não, franquia 2/4 sim
+21:36:59 POOL   [A24 Analista]  Passo -1 (círculo), Sistema de Moat (5 fontes) e Teste de Poder de Preço…
