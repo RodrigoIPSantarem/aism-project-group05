@@ -49,6 +49,12 @@ class LLM:
             with urllib.request.urlopen(self._url()+"/api/tags",timeout=10) as r: return r.status==200
         except Exception: return False
 
+    def _descarregar_modelo(self):
+        """Pede ao Ollama para descarregar o modelo (keep_alive 0): o processo do modelo que rebentou é deitado fora e o próximo pedido
+        arranca um novo, limpo. Se não for possível, não faz mal: a próxima tentativa segue na mesma."""
+        try: _post_http(self._url()+"/api/generate",{"model":self.modelo,"keep_alive":0},{},30)
+        except Exception: pass
+
     def _chamar(self, sistema, msg):
         """Uma chamada ao Ollama: temperatura 0 (mesma pergunta, mesma resposta) e formato JSON. Guarda tempos e tokens da chamada para as métricas."""
         r=_post_http(self._url()+"/api/chat",{"model":self.modelo,"stream":False,"format":"json","keep_alive":"30m",
@@ -78,7 +84,12 @@ class LLM:
                     erro=e; self.falhas+=1
                     if i<tentativas-1:
                         espera=self.ESPERAS[min(i,len(self.ESPERAS)-1)]
-                        print(f"   [modelo] falha de ligação ao Ollama ({str(e)[:90]}…); nova tentativa em {espera} s")
+                        linha=f"   [modelo] falha de ligação ao Ollama ({str(e)[:90]}…); nova tentativa em {espera} s (descarrego o modelo para arrancar um processo novo)"
+                        try:
+                            from nucleo.plataforma import _registar
+                            _registar(linha)                   # fica também no registo da sessão (a interface não tem terminal)
+                        except Exception: print(linha)
+                        self._descarregar_modelo()             # o processo do modelo rebentou: o próximo pedido arranca um novo
                         time.sleep(espera)
                         self._ollama_vivo()   # acorda o servidor antes de repetir
                 except (ValueError,json.JSONDecodeError) as e:
