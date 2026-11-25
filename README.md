@@ -18,6 +18,7 @@ O programa analisa uma empresa cotada segundo o Protocolo de Investimentos v4.27
 - [Instalação](#instalação)
 - [Executar o programa](#executar-o-programa)
 - [Testes e experiências](#testes-e-experiências)
+- [Resultados esperados](#resultados-esperados)
 - [Resultados e ficheiros gerados](#resultados-e-ficheiros-gerados)
 - [Estrutura do repositório](#estrutura-do-repositório)
 - [Configuração](#configuração)
@@ -323,6 +324,24 @@ python experiments/make_architecture.py --lingua en
 
 O script make_figures.py lê os CSVs existentes em experiments/results/. Para regenerar os gráficos, executa primeiro as experiências necessárias se os CSVs não existirem ou estiverem desatualizados.
 
+## Resultados esperados
+
+Com o código desta versão, estes comandos devem dar o seguinte:
+
+| Comando | Resultado esperado |
+|---|---|
+| python tests/test_agentes.py --so-regras | 9 linhas PASSOU e nenhuma FALHOU, em poucos segundos. Não precisa do Ollama nem da rede. |
+| python experiments/run_experiments.py --so e1,e4 | 19 linhas "E1 ... PASSOU" (1 COMPRAR, 3 CAIXA DEDICADA, 15 REJEITAR) e 6 linhas "E4 PASSOU". Os CSVs ficam em experiments/results/. |
+| python main.py NEVOA (com o Ollama a correr) | REJEITAR pelo Guardião, por dados insuficientes (fluxo de caixa em falta), com 4 mensagens e sem chamar o modelo. |
+| python main.py AURORA (com o Ollama a correr) | Análise completa com 6 mensagens (8 se o Crítico pedir uma revisão); com o qwen2.5:7b o veredito obtido foi COMPRAR. |
+
+Resultados dos lotes com o modelo real (qwen2.5:7b, 24 de novembro de 2026, computador só com CPU), descritos no relatório:
+
+- **19 empresas sintéticas** (python tests/test_agentes.py): 1 COMPRAR, 1 CAIXA DEDICADA e 17 REJEITAR, em cerca de 45 minutos. Das 15 empresas com veredito esperado fixo, 13 tiveram esse veredito; BOREAL e DUNA saíram REJEITAR porque a citação do modelo não foi encontrada na fonte.
+- **14 empresas reais da SEC** (python experiments/teste_real.py): 1 COMPRAR (POOL), 6 CAIXA DEDICADA (KO, AAPL, PG, MSFT, ROK, UL) e 7 REJEITAR (V, ASML, MA, AME, ROL, CHD, JNJ), em cerca de 85 minutos.
+
+Os ficheiros completos destes dois lotes estão em experiments/results/final/. Com outra versão do modelo, ou noutro dia (preços diferentes), os vereditos das empresas reais podem mudar.
+
 ## Resultados e ficheiros gerados
 
 | Caminho | Conteúdo |
@@ -396,8 +415,12 @@ As pastas saidas/ e as caches locais são geradas durante a execução e estão 
 │   ├── make_figures.py                Gráficos dos resultados
 │   ├── make_architecture.py           Figura da arquitetura
 │   └── results/                       CSVs, gráficos PT/EN e registos E6
+│       └── final/                     Resultados finais dos lotes com o modelo real (JSON)
 ├── docs/
-│   └── LEIA-ME.md                     Explicação detalhada do protocolo
+│   ├── LEIA-ME.md                     Explicação detalhada do protocolo
+│   ├── AISM_Report_Group05.docx/.pdf  Relatório (inglês, versão entregue)
+│   ├── AISM_Report_Group05_PT.docx/.pdf  Relatório (português)
+│   └── AISM_Presentation_Group05.pptx/.pdf  Apresentação
 └── LICENSE                            Licença MIT
 ~~~
 
@@ -463,5 +486,7 @@ O sistema mantém os valores em falta como desconhecidos. Consulta a secção de
 
 ## Documentação adicional
 
+- docs/AISM_Report_Group05.pdf (e .docx): relatório do projeto, em inglês; docs/AISM_Report_Group05_PT.pdf é a versão em português.
+- docs/AISM_Presentation_Group05.pdf (e .pptx): apresentação.
 - docs/LEIA-ME.md: relação entre os passos da v4.27 e os agentes, resumo da avaliação e limitações.
 - LICENSE: licença MIT.

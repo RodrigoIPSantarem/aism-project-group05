@@ -1,0 +1,2265 @@
+{
+ "meta": {
+  "data": "2026-11-24 20:41",
+  "modelo": "ollama:qwen2.5:7b",
+  "anos": 10,
+  "pedidas": [
+   "AURORA",
+   "BOREAL",
+   "CASTOR",
+   "DUNA",
+   "ESTEIO",
+   "FAROL",
+   "GRANITO",
+   "HORIZONTE",
+   "IRIS",
+   "JADE",
+   "LINCE",
+   "MARE",
+   "NEVOA",
+   "ORLA",
+   "PRISMA",
+   "QUARTZO",
+   "SILEX",
+   "TEJO",
+   "NVO"
+  ],
+  "terminado_em": "21:26",
+  "segundos_total": 2700
+ },
+ "contagem_por_veredicto": {
+  "COMPRAR": 1,
+  "REJEITAR": 17,
+  "CAIXA DEDICADA": 1
+ },
+ "empresas": [
+  {
+   "ticker": "AURORA",
+   "fonte": "sintetico",
+   "ok": true,
+   "empresa": "Aurora Software",
+   "setor": "Tecnologia",
+   "veredicto_final": "COMPRAR",
+   "veredicto_das_regras": "COMPRAR",
+   "descricao": "Passa a Triagem, os 10 Portões e as quatro condições de preço. Limite no momento da compra: 10%.",
+   "limite": "10%",
+   "portoes_ok": 10,
+   "motivos": [
+    "Passa a Triagem, os 10 Portões e as quatro condições de preço. Limite no momento da compra: 10%."
+   ],
+   "avaliacao": {
+    "r": 7.0,
+    "taxa10": 4.2,
+    "g": 12.91,
+    "g_terminal": 2.5,
+    "oe0": 1.3663505514613938,
+    "vi": 71.89,
+    "ebt_por_acao": 2.4009698343718906,
+    "rend_inicial": 9.060263525931664,
+    "rend_apos_impostos": 7.157608185487655,
+    "valor_obrigacao": 57.17,
+    "pe_alvo": 23.3,
+    "pl_hist_medio": 23.3,
+    "dpa_atual": 0.57,
+    "soma_dpa": 11.805750535489363,
+    "metodo_tace": "I",
+    "tace": 17.01,
+    "p_eb": 31.53,
+    "valor_equity_bond": 64.84,
+    "divergencia_pct": 9.8,
+    "pmc": 31.53,
+    "pmc_limitante": "P_EB",
+    "alvo_pct": 20.0,
+    "pl_atual": 13.971147540983607,
+    "pl_max_10a": null,
+    "preco": 26.5
+   },
+   "respostas_do_modelo": {
+    "t1": "Sim",
+    "t1_porque": "licenças de software aumento de 6% nos preços sem perda relevante de clientes e taxa de renovação de 97%",
+    "t1_produto": "licenças de software",
+    "t1_cliente": "aumento de 6% nos preços sem perda relevante de clientes e taxa de renovação de 97%",
+    "circulo": "Sim",
+    "wrigley": "Sim",
+    "wrigley_porque": "o produto é um software de gestão de armazenamento e backup, que é essencial para muitas empresas",
+    "patentes_mais_de_metade": false,
+    "circulo_porque": "a empresa tem uma margem bruta alta e ROIC estável, indicando um negócio rentável e previsível",
+    "modelo": "M3",
+    "modelo_porque": "a empresa oferece um produto de baixo custo, mas com margens altas e crescimento consistente",
+    "servico_de_talentos": false,
+    "dependente_patentes": false,
+    "c2": "Sim",
+    "c2_porque": "o produto é estável e a empresa tem uma taxa de renovação alta",
+    "c3_modelo": "Sim",
+    "c3_verificado": "Sim",
+    "c3_evidencia": "subimos os preços das licenças em 6% em 2025 sem perda relevante de clientes; a taxa de renovação manteve-se em 97%",
+    "c3_citacao_proposta": "subimos os preços das licenças em 6% em 2025 sem perda relevante de clientes; a taxa de renovação manteve-se em 97%",
+    "c3_porque": "a empresa aumentou os preços em 6% sem perda relevante de clientes",
+    "c3_nota": "citação verificada no texto da fonte",
+    "franquia": {
+     "f1": {
+      "resposta": "sim",
+      "porque": "o software de gestão de armazenamento e backup é necessário para muitas empresas"
+     },
+     "f2": {
+      "resposta": "sim",
+      "porque": "os clientes consideram que não têm substitutos próximos"
+     },
+     "f3": {
+      "resposta": "sim",
+      "porque": "o preço não é regulado"
+     },
+     "f4": {
+      "resposta": "sim",
+      "porque": "um concorrente com capital ilimitado não conseguiria tirar-lhe os clientes"
+     }
+    },
+    "b4_evidencia_verificada": null,
+    "verificacao": [],
+    "alteracoes": [],
+    "fontes_usadas": [
+     "Perfil do negócio",
+     "Wikipedia",
+     "Notícias recentes (só contexto)"
+    ],
+    "evidencia": {
+     "nivel": "forte",
+     "sinais": {
+      "roic": {
+       "nivel": "forte",
+       "facto": "ROIC mediano 30,3%, mínimo 28,3% em 10 anos"
+      },
+      "margem_bruta": {
+       "nivel": "forte",
+       "facto": "margem bruta mediana 62,0%, amplitude 0,0 p.p. em 10 anos"
+      }
+     },
+     "factos": [
+      "ROIC mediano 30,3%, mínimo 28,3% em 10 anos",
+      "margem bruta mediana 62,0%, amplitude 0,0 p.p. em 10 anos"
+     ]
+    },
+    "revisao": false
+   },
+   "rondas_do_critico": [
+    {
+     "objecoes": [
+      {
+       "gravidade": "media",
+       "campo": "circulo",
+       "descricao": "A afirmação de que a empresa tem uma margem bruta alta e ROIC estável, indicando um negócio rentável e previsível, não é totalmente sustentada pelos dados fornecidos. Embora a margem bruta seja alta, a ROIC não é explicitamente mencionada, e a consistência do ROIC não é verificada.",
+       "origem": "modelo"
+      },
+      {
+       "gravidade": "media",
+       "campo": "modelo",
+       "descricao": "A afirmação de que a empresa oferece um produto de baixo custo, mas com margens altas e crescimento consistente, não é totalmente sustentada pelos dados fornecidos. Embora a margem bruta seja alta, não há informações claras sobre o custo do produto ou o crescimento consistente.",
+       "origem": "modelo"
+      },
+      {
+       "gravidade": "baixa",
+       "campo": "c3",
+       "descricao": "A afirmação de que a empresa tem um poder de preço (C3) é sustentada pelos dados, pois a empresa subiu os preços das licenças em 6% em 2025 sem perda relevante de clientes e a taxa de renovação manteve-se em 97%. No entanto, seria mais robusto se houvesse mais dados sobre a flexibilidade de preços e a reação dos clientes a mudanças de preços.",
+       "origem": "modelo"
+      }
+     ],
+     "graves": 0,
+     "pediu_revisao": false
+    }
+   ],
+   "revisoes": 0,
+   "mensagens": [
+    "request: utilizador -> coletor",
+    "inform: coletor -> guardiao",
+    "request: guardiao -> avaliador",
+    "propose: avaliador -> critico",
+    "inform: critico -> decisor",
+    "inform: decisor -> utilizador"
+   ],
+   "avisos": [],
+   "segundos": 133.3,
+   "chamadas_ao_modelo": 1,
+   "decisor": {
+    "veredicto": {
+     "categoria": "COMPRAR",
+     "cor": "ok",
+     "limite": "10%",
+     "descricao": "Passa a Triagem, os 10 Portões e as quatro condições de preço. Limite no momento da compra: 10%."
+    },
+    "portoes": [
+     {
+      "id": "P1",
+      "pergunta": "Tem uma franquia ou vantagem identificável?",
+      "passa": true,
+      "detalhe": "C1 = Sim e C4 = Sim"
+     },
+     {
+      "id": "P2",
+      "pergunta": "Os lucros são fortes e com tendência de alta?",
+      "passa": true,
+      "detalhe": "A7 = Sim"
+     },
+     {
+      "id": "P3",
+      "pergunta": "É financiada de forma conservadora?",
+      "passa": true,
+      "detalhe": "A8 = Sim"
+     },
+     {
+      "id": "P4",
+      "pergunta": "Obtém consistentemente um ROE alto?",
+      "passa": true,
+      "detalhe": "A10 = Sim"
+     },
+     {
+      "id": "P5",
+      "pergunta": "Consegue reter os lucros?",
+      "passa": true,
+      "detalhe": "A11 = Sim"
+     },
+     {
+      "id": "P6",
+      "pergunta": "Gasta pouco para manter as operações?",
+      "passa": true,
+      "detalhe": "A12 = Parcial"
+     },
+     {
+      "id": "P7",
+      "pergunta": "Reinveste bem os lucros retidos?",
+      "passa": true,
+      "detalhe": "B2 = Sim"
+     },
+     {
+      "id": "P8",
+      "pergunta": "Consegue subir preços com a inflação?",
+      "passa": true,
+      "detalhe": "C3 = Sim"
+     },
+     {
+      "id": "P9",
+      "pergunta": "Os lucros retidos aumentam o valor?",
+      "passa": true,
+      "detalhe": "B1 = Sim"
+     },
+     {
+      "id": "P10",
+      "pergunta": "A gestão é íntegra e pensa como dona?",
+      "passa": true,
+      "detalhe": "B4 = Parcial"
+     }
+    ],
+    "condicoes": [
+     {
+      "id": "C1p",
+      "descricao": "Preço atual <= Preço Máximo de Compra = mínimo (VI ; P_EB ; Valor-Obrigação)",
+      "ok": true,
+      "detalhe": "preço 26,50 vs PMC 31,53"
+     },
+     {
+      "id": "C2p",
+      "descricao": "Rendimento inicial >= taxa do Estado a 10 anos",
+      "ok": true,
+      "detalhe": "9,06% vs 4,20%"
+     },
+     {
+      "id": "C3p",
+      "descricao": "TACE a 10 anos >= 15% (a mais baixa dos dois métodos)",
+      "ok": true,
+      "detalhe": "TACE 17,0% (método I)"
+     },
+     {
+      "id": "C4p",
+      "descricao": "P/L atual < 40 e abaixo do máximo dos últimos 10 anos",
+      "ok": true,
+      "detalhe": "P/L 14,0 (máximo de 10 anos n/d)"
+     }
+    ]
+   },
+   "relatorio": "\n============================================================================\nRELATÓRIO v4.27 — Método Buffett Integral: Aurora Software (AURORA) · dataset sintético\nAnos: 2016 a 2025 (10 exercícios)\n============================================================================\nVEREDICTO (Passo 8): COMPRAR — Passa a Triagem, os 10 Portões e as quatro condições de preço. Limite no momento da compra: 10%.\n\n----------------------------------------------------------------------------\nRESUMO PARA DECISÃO\n  Ao preço atual de 26,50 USD, a TACE esperada é 17,0% ao ano (exigência: 15%).\n  Preço Máximo de Compra = mínimo (VI 71,89 ; P_EB 31,53 ; Valor-Obrigação 57,17) = 31,53 USD (acima do preço atual).\n  Para 20% ao ano (o teu alvo): comprar no máximo a 20,60 USD.\n  Preço máximo por rentabilidade: 10% -> 49,17 · 12% -> 41,07 · 15% -> 31,53 · 20% -> 20,60 · 25% -> 13,69\n  10 Portões: 10/10 passam · Franquia: sim\n  Condições de preço: CP1 sim · CP2 sim · CP3 sim · CP4 sim\n  => COMPRAR · limite no momento da compra 10%\n----------------------------------------------------------------------------\n\nSíntese (Buffett):\n  A Aurora Software passa todos os dez portões, demonstrando uma sólida qualidade de negócio com um fosso económico robusto. O preço atual de 26,5 mantém-se dentro do limite de compra de 10% abaixo do preço máximo de compra de 31,53, oferecendo margem de segurança. Compra só se a tace percentual diminuir para abaixo de 17,01%.\n\nPasso -2 · Triagem Rápida (um \"não\" e a empresa sai):\n  T1  SIM            Percebo o produto e porque é que o cliente o compra? · licenças de software aumento de 6% nos preços sem perda relevante de clientes e taxa de renovação de 97%\n  T2  SIM            O LPA não teve prejuízos e está mais alto do que há 5–10 anos? · LPA 2016 0,61 -> 2025 1,90\n  T3  SIM            O ROE médio é de pelo menos 15%? · ROE médio 31,2%\n  T4  SIM            A dívida de longo prazo paga-se com 4 anos de lucro ou menos? · dívida LP = 0,70 anos de lucro médio (5 anos)\n  T5  SIM            A margem bruta é de pelo menos 20%, ou é um negócio claro de baixo custo? · margem bruta mediana 62,0%\n  T6  SIM            O número de ações não subiu mais de 10% em 3 anos? · ações -2,0% em 3 anos\n  T7  SIM            O fluxo de caixa operacional foi positivo em todos os anos? · FCO positivo em todos os anos\n\nPasso -1 · Círculo de Competência:\n  SIM · Teste Wrigley: SIM · patentes (> 50% da receita a expirar): não — a empresa tem uma margem bruta alta e ROIC estável, indicando um negócio rentável e previsível\n\nPasso 0 · Setor: método completo · setor: Tecnologia\n\nPasso 1 · Modelo de negócio:\n  M3 (baixo custo) — a empresa oferece um produto de baixo custo, mas com margens altas e crescimento consistente\n  Dependência de patentes: não · serviço de talentos individuais: não\n  LUCRO     SIM   Lucro líquido positivo nos últimos 12 meses (último exercício) · 3 050 M\n  COMMODITY SIM   Passo 1: Regra de Commodity (a) margem bruta < 20% E ROE < 15%; (b) LPA mau em 3+ anos · margem bruta média 62,0%, ROE médio 31,2%, 0 ano(s) de LPA com prejuízo ou queda > 50%\n\nPasso 2 · Bloco A — vantagem competitiva durável (Sim / Parcial / Não; não há pontos):\n  A1   Margem bruta (lucro bruto / receita, %)          não aplicável    [M3 (baixo custo): margens trocadas por volume]\n  A2   SG&A / lucro bruto (%)                           Parcial        31,74\n  A3   I&D / lucro bruto (%)                            Sim            8,00\n  A4   Depreciação / lucro bruto (%)                    Sim            5,61\n  A5   Juros / resultado operacional (%)                Sim            1,59\n  A6   Margem líquida (%)                               não aplicável    [M3 (baixo custo): margens trocadas por volume]\n  A7   LPA consistente (quedas nas variações anuais)    Sim            0 queda(s) em 9 variações, sem prejuízos  [Sim: no máximo 1; Parcial: até 3]\n  A8   Dívida LP / lucro líquido (x)                    Sim            0,51\n  A9   Passivo / (capitais próprios + ações próprias) ( Sim            0,50\n  A10  ROE (%)                                          Sim            31,21  [ROE corrigido (com ações próprias) mediano 31,2%]\n  A11  Lucros retidos (CAGR)                            Sim            25,08\n  A12  Capex / lucro líquido (%)                        Parcial        32,51\n  A13  Imposto pago (detetor de mentiras)               Sim            taxa efetiva mediana 21,0% (legal 21%); pago / contabilizado 97%  [créditos fiscais legítimos documentados não contam contra]\n  A14  Inventário                                       não aplicável    [sem inventário relevante]\n  A15  Autofinanciamento das distribuições              Sim            2,11\n  Sinais de Balanço: 0 presente(s), 0 por explicar (2 ou mais por explicar impedem a Franquia)\n    [ ] Contas a receber / receita a subir 3 anos seguidos · 2022: 12,0% -> 2023: 12,0% -> 2024: 12,0% -> 2025: 12,0%\n    [ ] ROA muito alto (> 25%) com ativos pequenos: barreira de entrada fraca · ROA mediano 19,7%\n    [ ] Dívida de curto prazo maior do que a de longo prazo · sem dados\n    [ ] Dívida de longo prazo a vencer elevada face à caixa e ao FCO (calibração: > 50%) · sem dados\n    [ ] Caixa de origem errada: subiu à custa de emissão de dívida ou de ações · não detetado\n    [ ] Alavancagem: ROE reportado mais de 1,25x o corrigido (calibração) · ROE reportado 31,2% vs corrigido 31,2%\n\nPasso 3 · Bloco B — gestão e alocação de capital:\n  B1   Dólar retido (preço normalizado)                 Sim            4,02 (P/L médio 23,3; LPA 2016 0,61 -> 2025 1,90; LPA retido 7,49)\n  B2   Rendimento dos lucros retidos                    Sim            17,2%  [limites: calibração do protocolo]\n  B3   Recompras e estrutura de capital                 Parcial        ações -0,54%/ano\n  B4   Integridade, franqueza e mentalidade de dono     Parcial        sinais de governança não verificáveis (empresa sem 8-K na SEC)  [insiders com participação desconhecida; sem evidência verificada de admitir erros; remuneração e Form 4 não verificados automaticamente]\n  B5   Aquisições e imperativo institucional            Sim            aquisições relevantes em 0 ano(s); imparidades 0 M  ['frequentes' = 4 ou mais anos com aquisições acima de 1% da receita (calibração)]\n         Bloco C — durabilidade do negócio:\n  C1   Modelo de negócio Buffett                        Sim            M3 (baixo custo)\n  C2   Produto estável, à prova de idiota               Sim            o produto é estável e a empresa tem uma taxa de renovação alta\n  C3   Poder de preço (evidência concreta e datada)     Sim            subimos os preços das licenças em 6% em 2025 sem perda relevante de clientes; a taxa de renovação manteve-se em 97%  [citação verificada no texto da fonte]\n  C4   Teste da Franquia (carta de 1991)                Sim            4 sim em 4  [Franquia confirmada (4 sim, C3 = Sim, menos de 2 Sinais de Balanço por explicar)]\n         O produto ou serviço é necessário ou desejado? SIM — o software de gestão de armazenamento e backup é necessário para muitas empresas\n         O cliente considera que não tem substituto próximo? SIM — os clientes consideram que não têm substitutos próximos\n         O preço não é regulado? SIM — o preço não é regulado\n         Se um concorrente tivesse capital ilimitado, continuaria sem conseguir tirar-lhe os clientes? SIM — um concorrente com capital ilimitado não conseguiria tirar-lhe os clientes\n\nPasso 4 · Os 10 Portões de Buffett (passam com Sim ou Parcial; um falhado é rejeição):\n  P1   PASSA  Tem uma franquia ou vantagem identificável? · C1 = Sim e C4 = Sim\n  P2   PASSA  Os lucros são fortes e com tendência de alta? · A7 = Sim\n  P3   PASSA  É financiada de forma conservadora? · A8 = Sim\n  P4   PASSA  Obtém consistentemente um ROE alto? · A10 = Sim\n  P5   PASSA  Consegue reter os lucros? · A11 = Sim\n  P6   PASSA  Gasta pouco para manter as operações? · A12 = Parcial\n  P7   PASSA  Reinveste bem os lucros retidos? · B2 = Sim\n  P8   PASSA  Consegue subir preços com a inflação? · C3 = Sim\n  P9   PASSA  Os lucros retidos aumentam o valor? · B1 = Sim\n  P10  PASSA  A gestão é íntegra e pensa como dona? · B4 = Parcial\n\nPasso 5 · Avaliação (Secção 8):\n  r = 7,00% (taxa do Estado a 10 anos 4,20%, sem prémio de risco, piso 7%)\n  g = mínimo de: (i) CAGR do LPA 13,53%; (ii) CAGR do lucro líquido 12,91%; (iii) ROE x (1 - payout) 21,86%; (iv) teto 15,00% -> g = 12,91%, constante nos anos 1–10; terminal = mínimo (2,5% ; g/2) = 2,50%\n    detalhes: (i) 2016 -> 2025; (ii) 2016 -> 2025; (iii) ROE médio 31,2%, payout 30%\n  Etapa A — Owner Earnings/ação (média de 5 anos, capex de manutenção) 1,366 -> Valor Intrínseco 71,89\n  EB1 — rendimento inicial 9,06% antes de impostos (7,16% depois) vs Estado 4,20% · Valor-Obrigação 57,17\n  EB2 — P/L-alvo 23,3 (mínimo entre a média de 10 anos 23,3 e 25) · DPA atual 0,57\n    Método I (LPA): LPA base 1,474 -> LPA10 4,97 -> preço10 115,74 -> TACE 17,01%\n    Método II (ROE): c 15,00% -> VPA10 25,21 -> LPA10 7,87 -> preço10 183,43 -> TACE 22,10%\n    TACE = 17,01% (método I, o mais baixo)\n  EB3 — P_EB (preço para 15% ao ano) 31,53\n  PMC = mínimo (VI ; P_EB ; Valor-Obrigação) = 31,53 (limitado por: P_EB)\n  Validação cruzada: VI 71,89 vs Valor Equity Bond 64,84 (divergência 9,8%)\n  Nota: taxa a 10 anos 4,20% abaixo do piso: r = 7%\n  Nota: capex de crescimento separado (capex acima da depreciação em anos de receita a crescer): 2020: 310 M; 2021: 218 M; 2023: 122 M; 2024: 427 M; 2025: 234 M\n  Nota: P/L-alvo a partir do P/L médio histórico da fonte (sem preços de fim de exercício)\n\nPasso 6 · Decisão (Secção 9): Triagem + Portões + as quatro condições de preço, cumulativas\n  [x] Preço atual <= Preço Máximo de Compra = mínimo (VI ; P_EB ; Valor-Obrigação) · preço 26,50 vs PMC 31,53\n  [x] Rendimento inicial >= taxa do Estado a 10 anos · 9,06% vs 4,20%\n  [x] TACE a 10 anos >= 15% (a mais baixa dos dois métodos) · TACE 17,0% (método I)\n  [x] P/L atual < 40 e abaixo do máximo dos últimos 10 anos · P/L 14,0 (máximo de 10 anos n/d)\n\nPasso 7 · Checklist de execução (no momento da compra):\n  [x] A Triagem e os 10 Portões continuam a passar com o último relatório anual\n  [x] Preço atual <= Preço Máximo de Compra\n  [x] Rendimento inicial >= taxa do Estado, TACE >= 15%, P/L < 40 e abaixo do máximo de 10 anos\n  [ ] Posição após a compra <= 10% (verificar na corretora)\n  [ ] Esta compra merece um furo do cartão de 20 decisões? Registar \"Decisão n.º X de 20\"\n\nSe a posição já for detida (Secção 7): nenhum gatilho de venda por preço\n\nCrítico — Munger (0 revisão(ões) pedida(s) ao Avaliador):\n  [final] media: A afirmação de que a empresa tem uma margem bruta alta e ROIC estável, indicando um negócio rentável e previsível, não é totalmente sustentada pelos dados fornecidos. Embora a margem bruta seja alta, a ROIC não é explicitamente mencionada, e a consistência do ROIC não é verificada. (modelo)\n  [final] media: A afirmação de que a empresa oferece um produto de baixo custo, mas com margens altas e crescimento consistente, não é totalmente sustentada pelos dados fornecidos. Embora a margem bruta seja alta, não há informações claras sobre o custo do produto ou o crescimento consistente. (modelo)\n  [final] baixa: A afirmação de que a empresa tem um poder de preço (C3) é sustentada pelos dados, pois a empresa subiu os preços das licenças em 6% em 2025 sem perda relevante de clientes e a taxa de renovação manteve-se em 97%. No entanto, seria mais robusto se houvesse mais dados sobre a flexibilidade de preços e a reação dos clientes a mudanças de preços. (modelo)\n\nDemonstração académica · não constitui aconselhamento financeiro.\n============================================================================",
+   "esperado": "franquia excelente abaixo do preço máximo",
+   "como_esperado": true
+  },
+  {
+   "ticker": "BOREAL",
+   "fonte": "sintetico",
+   "ok": true,
+   "empresa": "Boreal Pagamentos",
+   "setor": "Serviços financeiros",
+   "veredicto_final": "REJEITAR",
+   "veredicto_das_regras": "REJEITAR",
+   "descricao": "Portões falhados: P8 Consegue subir preços com a inflação? (C3 = Não)",
+   "limite": null,
+   "portoes_ok": 9,
+   "motivos": [
+    "Portões falhados: P8 Consegue subir preços com a inflação? (C3 = Não)"
+   ],
+   "avaliacao": {
+    "r": 7.0,
+    "taxa10": 4.2,
+    "g": 12.78,
+    "g_terminal": 2.5,
+    "oe0": 1.7963016650470438,
+    "vi": 93.5,
+    "ebt_por_acao": 2.9641505564801176,
+    "rend_inicial": 5.258383105339929,
+    "rend_apos_impostos": 4.154122653214626,
+    "valor_obrigacao": 70.58,
+    "pe_alvo": 25.0,
+    "pl_hist_medio": 26.5,
+    "dpa_atual": 0.7,
+    "soma_dpa": 14.385980030317963,
+    "metodo_tace": "I",
+    "tace": 11.63,
+    "p_eb": 41.87,
+    "valor_equity_bond": 86.1,
+    "divergencia_pct": 7.9,
+    "pmc": 41.87,
+    "pmc_limitante": "P_EB",
+    "alvo_pct": 20.0,
+    "pl_atual": 24.072471698113205,
+    "pl_max_10a": null,
+    "preco": 56.37
+   },
+   "respostas_do_modelo": {
+    "t1": "Sim",
+    "t1_porque": "Serviços de pagamento Conveniência e segurança no pagamento",
+    "t1_produto": "Serviços de pagamento",
+    "t1_cliente": "Conveniência e segurança no pagamento",
+    "circulo": "Sim",
+    "wrigley": "Sim",
+    "wrigley_porque": "Os serviços de pagamento são essenciais para a economia moderna e não há substitutos imediatos.",
+    "patentes_mais_de_metade": false,
+    "circulo_porque": "A empresa opera no setor de serviços financeiros, onde a retenção de clientes é alta devido à conveniência e segurança.",
+    "modelo": "M3",
+    "modelo_porque": "A empresa oferece serviços de baixo custo, com margens altas e crescimento consistente.",
+    "servico_de_talentos": false,
+    "dependente_patentes": false,
+    "c2": "Sim",
+    "c2_porque": "Os serviços de pagamento são estáveis e não mudam significativamente ao longo do tempo.",
+    "c3_modelo": "Sim",
+    "c3_verificado": "Não",
+    "c3_evidencia": null,
+    "c3_citacao_proposta": "ROIC mediano 29,3%, mínimo 28,7% em 10 anos",
+    "c3_porque": "A empresa tem margens altas e ROIC consistentes, indicando a capacidade de aumentar preços sem perder volume.",
+    "c3_nota": "citação não encontrada nas fontes: C3 = Não",
+    "franquia": {
+     "f1": {
+      "resposta": "sim",
+      "porque": "Os serviços de pagamento são necessários para a maioria das transações financeiras."
+     },
+     "f2": {
+      "resposta": "sim",
+      "porque": "Os clientes consideram que não têm substitutos próximos."
+     },
+     "f3": {
+      "resposta": "sim",
+      "porque": "O preço não é regulado."
+     },
+     "f4": {
+      "resposta": "sim",
+      "porque": "Um concorrente com capital ilimitado não conseguiria tirar-lhe os clientes."
+     }
+    },
+    "b4_evidencia_verificada": null,
+    "verificacao": [],
+    "alteracoes": [],
+    "fontes_usadas": [
+     "Perfil do negócio"
+    ],
+    "evidencia": {
+     "nivel": "forte",
+     "sinais": {
+      "roic": {
+       "nivel": "forte",
+       "facto": "ROIC mediano 29,3%, mínimo 28,7% em 10 anos"
+      },
+      "margem_bruta": {
+       "nivel": "forte",
+       "facto": "margem bruta mediana 62,0%, amplitude 0,0 p.p. em 10 anos"
+      }
+     },
+     "factos": [
+      "ROIC mediano 29,3%, mínimo 28,7% em 10 anos",
+      "margem bruta mediana 62,0%, amplitude 0,0 p.p. em 10 anos"
+     ]
+    },
+    "revisao": false
+   },
+   "rondas_do_critico": [
+    {
+     "objecoes": [
+      {
+       "gravidade": "media",
+       "campo": null,
+       "origem": "regra",
+       "descricao": "a citação de poder de preço não existe nas fontes: C3 = Não"
+      },
+      {
+       "gravidade": "media",
+       "campo": "franquia",
+       "descricao": "A afirmação de que 'um concorrente com capital ilimitado não conseguiria tirar-lhe os clientes' pode ser discutível, pois não há dados que sustentem essa afirmação.",
+       "origem": "modelo"
+      },
+      {
+       "gravidade": "media",
+       "campo": "c3",
+       "descricao": "A afirmação de que 'o preço não é regulado' não é verificada pelos dados fornecidos, pois não há informações sobre a regulamentação do setor.",
+       "origem": "modelo"
+      }
+     ],
+     "graves": 0,
+     "pediu_revisao": false
+    }
+   ],
+   "revisoes": 0,
+   "mensagens": [
+    "request: utilizador -> coletor",
+    "inform: coletor -> guardiao",
+    "request: guardiao -> avaliador",
+    "propose: avaliador -> critico",
+    "inform: critico -> decisor",
+    "inform: decisor -> utilizador"
+   ],
+   "avisos": [],
+   "segundos": 2.1,
+   "chamadas_ao_modelo": 0,
+   "decisor": {
+    "veredicto": {
+     "categoria": "REJEITAR",
+     "cor": "nao",
+     "descricao": "Portões falhados: P8 Consegue subir preços com a inflação? (C3 = Não)",
+     "limite": null
+    },
+    "portoes": [
+     {
+      "id": "P1",
+      "pergunta": "Tem uma franquia ou vantagem identificável?",
+      "passa": true,
+      "detalhe": "C1 = Sim e C4 = Parcial"
+     },
+     {
+      "id": "P2",
+      "pergunta": "Os lucros são fortes e com tendência de alta?",
+      "passa": true,
+      "detalhe": "A7 = Sim"
+     },
+     {
+      "id": "P3",
+      "pergunta": "É financiada de forma conservadora?",
+      "passa": true,
+      "detalhe": "A8 = Sim"
+     },
+     {
+      "id": "P4",
+      "pergunta": "Obtém consistentemente um ROE alto?",
+      "passa": true,
+      "detalhe": "A10 = Sim"
+     },
+     {
+      "id": "P5",
+      "pergunta": "Consegue reter os lucros?",
+      "passa": true,
+      "detalhe": "A11 = Sim"
+     },
+     {
+      "id": "P6",
+      "pergunta": "Gasta pouco para manter as operações?",
+      "passa": true,
+      "detalhe": "A12 = Parcial"
+     },
+     {
+      "id": "P7",
+      "pergunta": "Reinveste bem os lucros retidos?",
+      "passa": true,
+      "detalhe": "B2 = Sim"
+     },
+     {
+      "id": "P8",
+      "pergunta": "Consegue subir preços com a inflação?",
+      "passa": false,
+      "detalhe": "C3 = Não"
+     },
+     {
+      "id": "P9",
+      "pergunta": "Os lucros retidos aumentam o valor?",
+      "passa": true,
+      "detalhe": "B1 = Sim"
+     },
+     {
+      "id": "P10",
+      "pergunta": "A gestão é íntegra e pensa como dona?",
+      "passa": true,
+      "detalhe": "B4 = Parcial"
+     }
+    ],
+    "condicoes": [
+     {
+      "id": "C1p",
+      "descricao": "Preço atual <= Preço Máximo de Compra = mínimo (VI ; P_EB ; Valor-Obrigação)",
+      "ok": false,
+      "detalhe": "preço 56,37 vs PMC 41,87"
+     },
+     {
+      "id": "C2p",
+      "descricao": "Rendimento inicial >= taxa do Estado a 10 anos",
+      "ok": true,
+      "detalhe": "5,26% vs 4,20%"
+     },
+     {
+      "id": "C3p",
+      "descricao": "TACE a 10 anos >= 15% (a mais baixa dos dois métodos)",
+      "ok": false,
+      "detalhe": "TACE 11,6% (método I)"
+     },
+     {
+      "id": "C4p",
+      "descricao": "P/L atual < 40 e abaixo do máximo dos últimos 10 anos",
+      "ok": true,
+      "detalhe": "P/L 24,1 (máximo de 10 anos n/d)"
+     }
+    ]
+   },
+   "relatorio": "\n============================================================================\nRELATÓRIO v4.27 — Método Buffett Integral: Boreal Pagamentos (BOREAL) · dataset sintético\nAnos: 2016 a 2025 (10 exercícios)\n============================================================================\nVEREDICTO (Passo 8): REJEITAR — Portões falhados: P8 Consegue subir preços com a inflação? (C3 = Não)\n\n----------------------------------------------------------------------------\nRESUMO PARA DECISÃO\n  Ao preço atual de 56,37 USD, a TACE esperada é 11,6% ao ano (exigência: 15%).\n  Preço Máximo de Compra = mínimo (VI 93,50 ; P_EB 41,87 ; Valor-Obrigação 70,58) = 41,87 USD (desconto de 26% face ao preço atual).\n  Para 20% ao ano (o teu alvo): comprar no máximo a 27,36 USD.\n  Preço máximo por rentabilidade: 10% -> 65,30 · 12% -> 54,54 · 15% -> 41,87 · 20% -> 27,36 · 25% -> 18,19\n  10 Portões: 9/10 passam (falham P8) · Franquia: não confirmada\n  Condições de preço: CP1 NÃO · CP2 sim · CP3 NÃO · CP4 sim\n  => REJEITAR\n----------------------------------------------------------------------------\n\nSíntese (Buffett):\n  O negócio de Boreal Pagamentos não apresenta um potencial de crescimento sustentável, pois não consegue subir preços com a inflação. O preço atual de 56,37 é superior ao Preço Máximo de Compra, e a TACE a 10 anos está abaixo dos 15%. Para considerar uma compra, seria necessário que o negócio conseguisse manter-se resiliente face à inflação e que o preço se ajustasse para dentro da margem de segurança pretendida.\n\nPasso -2 · Triagem Rápida (um \"não\" e a empresa sai):\n  T1  SIM            Percebo o produto e porque é que o cliente o compra? · Serviços de pagamento Conveniência e segurança no pagamento\n  T2  SIM            O LPA não teve prejuízos e está mais alto do que há 5–10 anos? · LPA 2016 0,76 -> 2025 2,34\n  T3  SIM            O ROE médio é de pelo menos 15%? · ROE médio 31,2%\n  T4  SIM            A dívida de longo prazo paga-se com 4 anos de lucro ou menos? · dívida LP = 0,67 anos de lucro médio (5 anos)\n  T5  SIM            A margem bruta é de pelo menos 20%, ou é um negócio claro de baixo custo? · margem bruta mediana 62,0%\n  T6  SIM            O número de ações não subiu mais de 10% em 3 anos? · ações -1,2% em 3 anos\n  T7  SIM            O fluxo de caixa operacional foi positivo em todos os anos? · FCO positivo em todos os anos\n\nPasso -1 · Círculo de Competência:\n  SIM · Teste Wrigley: SIM · patentes (> 50% da receita a expirar): não — A empresa opera no setor de serviços financeiros, onde a retenção de clientes é alta devido à conveniência e segurança.\n\nPasso 0 · Setor: método completo · setor: Serviços financeiros\n\nPasso 1 · Modelo de negócio:\n  M3 (baixo custo) — A empresa oferece serviços de baixo custo, com margens altas e crescimento consistente.\n  Dependência de patentes: não · serviço de talentos individuais: não\n  LUCRO     SIM   Lucro líquido positivo nos últimos 12 meses (último exercício) · 3 180 M\n  COMMODITY SIM   Passo 1: Regra de Commodity (a) margem bruta < 20% E ROE < 15%; (b) LPA mau em 3+ anos · margem bruta média 62,0%, ROE médio 31,2%, 0 ano(s) de LPA com prejuízo ou queda > 50%\n\nPasso 2 · Bloco A — vantagem competitiva durável (Sim / Parcial / Não; não há pontos):\n  A1   Margem bruta (lucro bruto / receita, %)          não aplicável    [M3 (baixo custo): margens trocadas por volume]\n  A2   SG&A / lucro bruto (%)                           Parcial        36,18\n  A3   I&D / lucro bruto (%)                            não aplicável    [sem linha própria de I&D (o custo está no SG&A, em A2)]\n  A4   Depreciação / lucro bruto (%)                    Sim            8,32\n  A5   Juros / resultado operacional (%)                Sim            1,65\n  A6   Margem líquida (%)                               não aplicável    [M3 (baixo custo): margens trocadas por volume]\n  A7   LPA consistente (quedas nas variações anuais)    Sim            0 queda(s) em 9 variações, sem prejuízos  [Sim: no máximo 1; Parcial: até 3]\n  A8   Dívida LP / lucro líquido (x)                    Sim            0,53\n  A9   Passivo / (capitais próprios + ações próprias) ( Sim            0,61\n  A10  ROE (%)                                          Sim            31,24  [ROE corrigido (com ações próprias) mediano 31,2%]\n  A11  Lucros retidos (CAGR)                            Sim            24,61\n  A12  Capex / lucro líquido (%)                        Parcial        38,45\n  A13  Imposto pago (detetor de mentiras)               Sim            taxa efetiva mediana 21,0% (legal 21%); pago / contabilizado 97%  [créditos fiscais legítimos documentados não contam contra]\n  A14  Inventário                                       não aplicável    [sem inventário relevante]\n  A15  Autofinanciamento das distribuições              Sim            2,00\n  Sinais de Balanço: 0 presente(s), 0 por explicar (2 ou mais por explicar impedem a Franquia)\n    [ ] Contas a receber / receita a subir 3 anos seguidos · 2022: 12,0% -> 2023: 12,0% -> 2024: 12,0% -> 2025: 12,0%\n    [ ] ROA muito alto (> 25%) com ativos pequenos: barreira de entrada fraca · ROA mediano 20,7%\n    [ ] Dívida de curto prazo maior do que a de longo prazo · sem dados\n    [ ] Dívida de longo prazo a vencer elevada face à caixa e ao FCO (calibração: > 50%) · sem dados\n    [ ] Caixa de origem errada: subiu à custa de emissão de dívida ou de ações · não detetado\n    [ ] Alavancagem: ROE reportado mais de 1,25x o corrigido (calibração) · ROE reportado 31,2% vs corrigido 31,2%\n\nPasso 3 · Bloco B — gestão e alocação de capital:\n  B1   Dólar retido (preço normalizado)                 Sim            4,38 (P/L médio 26,5; LPA 2016 0,76 -> 2025 2,34; LPA retido 9,54)\n  B2   Rendimento dos lucros retidos                    Sim            16,5%  [limites: calibração do protocolo]\n  B3   Recompras e estrutura de capital                 Parcial        ações -0,41%/ano\n  B4   Integridade, franqueza e mentalidade de dono     Parcial        sinais de governança não verificáveis (empresa sem 8-K na SEC)  [insiders com participação desconhecida; sem evidência verificada de admitir erros; remuneração e Form 4 não verificados automaticamente]\n  B5   Aquisições e imperativo institucional            Sim            aquisições relevantes em 0 ano(s); imparidades 0 M  ['frequentes' = 4 ou mais anos com aquisições acima de 1% da receita (calibração)]\n         Bloco C — durabilidade do negócio:\n  C1   Modelo de negócio Buffett                        Sim            M3 (baixo custo)\n  C2   Produto estável, à prova de idiota               Sim            Os serviços de pagamento são estáveis e não mudam significativamente ao longo do tempo.\n  C3   Poder de preço (evidência concreta e datada)     Não            sem evidência verificada  [citação não encontrada nas fontes: C3 = Não]\n  C4   Teste da Franquia (carta de 1991)                Parcial        4 sim em 4  [4 sim, mas C3 não é Sim: franquia não confirmada]\n         O produto ou serviço é necessário ou desejado? SIM — Os serviços de pagamento são necessários para a maioria das transações financeiras.\n         O cliente considera que não tem substituto próximo? SIM — Os clientes consideram que não têm substitutos próximos.\n         O preço não é regulado? SIM — O preço não é regulado.\n         Se um concorrente tivesse capital ilimitado, continuaria sem conseguir tirar-lhe os clientes? SIM — Um concorrente com capital ilimitado não conseguiria tirar-lhe os clientes.\n\nPasso 4 · Os 10 Portões de Buffett (passam com Sim ou Parcial; um falhado é rejeição):\n  P1   PASSA  Tem uma franquia ou vantagem identificável? · C1 = Sim e C4 = Parcial\n  P2   PASSA  Os lucros são fortes e com tendência de alta? · A7 = Sim\n  P3   PASSA  É financiada de forma conservadora? · A8 = Sim\n  P4   PASSA  Obtém consistentemente um ROE alto? · A10 = Sim\n  P5   PASSA  Consegue reter os lucros? · A11 = Sim\n  P6   PASSA  Gasta pouco para manter as operações? · A12 = Parcial\n  P7   PASSA  Reinveste bem os lucros retidos? · B2 = Sim\n  P8   FALHA  Consegue subir preços com a inflação? · C3 = Não\n  P9   PASSA  Os lucros retidos aumentam o valor? · B1 = Sim\n  P10  PASSA  A gestão é íntegra e pensa como dona? · B4 = Parcial\n  Problema solucionável (Secção 6.4): se a falha vem de um problema recente e pontual, documentar por escrito (o quê, porque é pontual, porque não toca na franquia) e reavaliar. A franquia, o P3 e o FCO nunca são dispensados.\n\nPasso 5 · Avaliação (Secção 8):\n  r = 7,00% (taxa do Estado a 10 anos 4,20%, sem prémio de risco, piso 7%)\n  g = mínimo de: (i) CAGR do LPA 13,24%; (ii) CAGR do lucro líquido 12,78%; (iii) ROE x (1 - payout) 21,88%; (iv) teto 15,00% -> g = 12,78%, constante nos anos 1–10; terminal = mínimo (2,5% ; g/2) = 2,50%\n    detalhes: (i) 2016 -> 2025; (ii) 2016 -> 2025; (iii) ROE médio 31,2%, payout 30%\n  Etapa A — Owner Earnings/ação (média de 5 anos, capex de manutenção) 1,796 -> Valor Intrínseco 93,50\n  EB1 — rendimento inicial 5,26% antes de impostos (4,15% depois) vs Estado 4,20% · Valor-Obrigação 70,58\n  EB2 — P/L-alvo 25,0 (mínimo entre a média de 10 anos 26,5 e 25) · DPA atual 0,70\n    Método I (LPA): LPA base 1,863 -> LPA10 6,20 -> preço10 154,99 -> TACE 11,63%\n    Método II (ROE): c 15,00% -> VPA10 29,85 -> LPA10 9,31 -> preço10 232,80 -> TACE 15,93%\n    TACE = 11,63% (método I, o mais baixo)\n  EB3 — P_EB (preço para 15% ao ano) 41,87\n  PMC = mínimo (VI ; P_EB ; Valor-Obrigação) = 41,87 (limitado por: P_EB)\n  Validação cruzada: VI 93,50 vs Valor Equity Bond 86,10 (divergência 7,9%)\n  Nota: taxa a 10 anos 4,20% abaixo do piso: r = 7%\n  Nota: capex de crescimento separado (capex acima da depreciação em anos de receita a crescer): 2021: 277 M; 2022: 463 M; 2023: 787 M; 2024: 839 M; 2025: 80 M\n  Nota: P/L-alvo a partir do P/L médio histórico da fonte (sem preços de fim de exercício)\n\nPasso 6 · Decisão (Secção 9): Triagem + Portões + as quatro condições de preço, cumulativas\n  [ ] Preço atual <= Preço Máximo de Compra = mínimo (VI ; P_EB ; Valor-Obrigação) · preço 56,37 vs PMC 41,87\n  [x] Rendimento inicial >= taxa do Estado a 10 anos · 5,26% vs 4,20%\n  [ ] TACE a 10 anos >= 15% (a mais baixa dos dois métodos) · TACE 11,6% (método I)\n  [x] P/L atual < 40 e abaixo do máximo dos últimos 10 anos · P/L 24,1 (máximo de 10 anos n/d)\n\nPasso 7 · Checklist de execução (no momento da compra):\n  [ ] A Triagem e os 10 Portões continuam a passar com o último relatório anual\n  [ ] Preço atual <= Preço Máximo de Compra\n  [ ] Rendimento inicial >= taxa do Estado, TACE >= 15%, P/L < 40 e abaixo do máximo de 10 anos\n  [ ] Posição após a compra <= 10% (verificar na corretora)\n  [ ] Esta compra merece um furo do cartão de 20 decisões? Registar \"Decisão n.º X de 20\"\n\nSe a posição já for detida (Secção 7): nenhum gatilho de venda por preço\n\nCrítico — Munger (0 revisão(ões) pedida(s) ao Avaliador):\n  [final] media: a citação de poder de preço não existe nas fontes: C3 = Não (regra)\n  [final] media: A afirmação de que 'um concorrente com capital ilimitado não conseguiria tirar-lhe os clientes' pode ser discutível, pois não há dados que sustentem essa afirmação. (modelo)\n  [final] media: A afirmação de que 'o preço não é regulado' não é verificada pelos dados fornecidos, pois não há informações sobre a regulamentação do setor. (modelo)\n\nDemonstração académica · não constitui aconselhamento financeiro.\n============================================================================",
+   "esperado": "excelente, preço um pouco acima do valor: esperar",
+   "como_esperado": false
+  },
+  {
+   "ticker": "CASTOR",
+   "fonte": "sintetico",
+   "ok": true,
+   "empresa": "Castor Marcas",
+   "setor": "Consumo",
+   "veredicto_final": "CAIXA DEDICADA",
+   "veredicto_das_regras": "CAIXA DEDICADA",
+   "descricao": "Passa a Triagem e os 10 Portões; o preço ainda não: preço 442,75 vs PMC 187,86; 2,91% vs 4,20%; TACE 5,5% (método I); P/L 43,4 (máximo de 10 anos n/d). O capital espera em Caixa Dedicada, com alerta de preço no PMC.",
+   "limite": "10%",
+   "portoes_ok": 10,
+   "motivos": [
+    "Passa a Triagem e os 10 Portões; o preço ainda não: preço 442,75 vs PMC 187,86; 2,91% vs 4,20%; TACE 5,5% (método I); P/L 43,4 (máximo de 10 anos n/d). O capital espera em Caixa Dedicada, com alerta de preço no PMC."
+   ],
+   "avaliacao": {
+    "r": 7.0,
+    "taxa10": 4.2,
+    "g": 13.62,
+    "g_terminal": 2.5,
+    "oe0": 7.764457258365869,
+    "vi": 432.14,
+    "ebt_por_acao": 12.90336958459507,
+    "rend_inicial": 2.9143691890672097,
+    "rend_apos_impostos": 2.3023516593632944,
+    "valor_obrigacao": 307.22,
+    "pe_alvo": 24.0,
+    "pl_hist_medio": 24.0,
+    "dpa_atual": 3.06,
+    "soma_dpa": 66.01621483305259,
+    "metodo_tace": "I",
+    "tace": 5.55,
+    "p_eb": 187.86,
+    "valor_equity_bond": 386.35,
+    "divergencia_pct": 10.6,
+    "pmc": 187.86,
+    "pmc_limitante": "P_EB",
+    "alvo_pct": 20.0,
+    "pl_atual": 43.43385146804836,
+    "pl_max_10a": null,
+    "preco": 442.75
+   },
+   "respostas_do_modelo": {
+    "t1": "Sim",
+    "t1_porque": "produtos alimentares marcas reconhecidas e qualidade",
+    "t1_produto": "produtos alimentares",
+    "t1_cliente": "marcas reconhecidas e qualidade",
+    "circulo": "Sim",
+    "wrigley": "Sim",
+    "wrigley_porque": "os produtos são baseados em marcas de alimentos e não há indicação de que a tecnologia seja crucial",
+    "patentes_mais_de_metade": false,
+    "circulo_porque": "a empresa tem uma forte presença em marcas de produtos alimentares com reconhecimento de marca e qualidade",
+    "modelo": "M1",
+    "modelo_porque": "a empresa tem marcas de produtos alimentares com reconhecimento de marca e qualidade",
+    "servico_de_talentos": false,
+    "dependente_patentes": false,
+    "c2": "Sim",
+    "c2_porque": "os produtos são baseados em marcas de alimentos e não há indicação de que a tecnologia seja crucial",
+    "c3_modelo": "Sim",
+    "c3_verificado": "Sim",
+    "c3_evidencia": "aumentámos os preços médios em 5% em 2025 e o volume de unidades vendidas cresceu 2%",
+    "c3_citacao_proposta": "aumentámos os preços médios em 5% em 2025 e o volume de unidades vendidas cresceu 2%",
+    "c3_porque": "a empresa aumentou os preços em 5% em 2025 sem perda relevante de volume",
+    "c3_nota": "citação verificada no texto da fonte",
+    "franquia": {
+     "f1": {
+      "resposta": "sim",
+      "porque": "os produtos são necessários para a alimentação diária"
+     },
+     "f2": {
+      "resposta": "sim",
+      "porque": "os clientes consideram que não têm substitutos próximos"
+     },
+     "f3": {
+      "resposta": "sim",
+      "porque": "os preços não são regulados"
+     },
+     "f4": {
+      "resposta": "sim",
+      "porque": "um concorrente com capital ilimitado não conseguiria tirar-lhe os clientes"
+     }
+    },
+    "b4_evidencia_verificada": null,
+    "verificacao": [],
+    "alteracoes": [],
+    "fontes_usadas": [
+     "Perfil do negócio"
+    ],
+    "evidencia": {
+     "nivel": "forte",
+     "sinais": {
+      "roic": {
+       "nivel": "forte",
+       "facto": "ROIC mediano 22,0%, mínimo 20,2% em 10 anos"
+      },
+      "margem_bruta": {
+       "nivel": "forte",
+       "facto": "margem bruta mediana 62,0%, amplitude 0,0 p.p. em 10 anos"
+      }
+     },
+     "factos": [
+      "ROIC mediano 22,0%, mínimo 20,2% em 10 anos",
+      "margem bruta mediana 62,0%, amplitude 0,0 p.p. em 10 anos"
+     ]
+    },
+    "revisao": false
+   },
+   "rondas_do_critico": [
+    {
+     "objecoes": [
+      {
+       "gravidade": "media",
+       "campo": "franquia",
+       "descricao": "A afirmação de que os preços não são regulados pode não ser totalmente verificada com os dados fornecidos. Embora os preços tenham aumentado, não há informações sobre a regulamentação dos preços.",
+       "origem": "modelo"
+      },
+      {
+       "gravidade": "baixa",
+       "campo": "circulo",
+       "descricao": "A afirmação de que a empresa tem uma forte presença em marcas de produtos alimentares com reconhecimento de marca e qualidade é suportada pelos dados, especialmente pela margem bruta alta e pela consistência dos lucros.",
+       "origem": "modelo"
+      }
+     ],
+     "graves": 0,
+     "pediu_revisao": false
+    }
+   ],
+   "revisoes": 0,
+   "mensagens": [
+    "request: utilizador -> coletor",
+    "inform: coletor -> guardiao",
+    "request: guardiao -> avaliador",
+    "propose: avaliador -> critico",
+    "inform: critico -> decisor",
+    "inform: decisor -> utilizador"
+   ],
+   "avisos": [],
+   "segundos": 1.9,
+   "chamadas_ao_modelo": 0,
+   "decisor": {
+    "veredicto": {
+     "categoria": "CAIXA DEDICADA",
+     "cor": "cond",
+     "limite": "10%",
+     "descricao": "Passa a Triagem e os 10 Portões; o preço ainda não: preço 442,75 vs PMC 187,86; 2,91% vs 4,20%; TACE 5,5% (método I); P/L 43,4 (máximo de 10 anos n/d). O capital espera em Caixa Dedicada, com alerta de preço no PMC."
+    },
+    "portoes": [
+     {
+      "id": "P1",
+      "pergunta": "Tem uma franquia ou vantagem identificável?",
+      "passa": true,
+      "detalhe": "C1 = Sim e C4 = Sim"
+     },
+     {
+      "id": "P2",
+      "pergunta": "Os lucros são fortes e com tendência de alta?",
+      "passa": true,
+      "detalhe": "A7 = Sim"
+     },
+     {
+      "id": "P3",
+      "pergunta": "É financiada de forma conservadora?",
+      "passa": true,
+      "detalhe": "A8 = Sim"
+     },
+     {
+      "id": "P4",
+      "pergunta": "Obtém consistentemente um ROE alto?",
+      "passa": true,
+      "detalhe": "A10 = Sim"
+     },
+     {
+      "id": "P5",
+      "pergunta": "Consegue reter os lucros?",
+      "passa": true,
+      "detalhe": "A11 = Sim"
+     },
+     {
+      "id": "P6",
+      "pergunta": "Gasta pouco para manter as operações?",
+      "passa": true,
+      "detalhe": "A12 = Parcial"
+     },
+     {
+      "id": "P7",
+      "pergunta": "Reinveste bem os lucros retidos?",
+      "passa": true,
+      "detalhe": "B2 = Sim"
+     },
+     {
+      "id": "P8",
+      "pergunta": "Consegue subir preços com a inflação?",
+      "passa": true,
+      "detalhe": "C3 = Sim"
+     },
+     {
+      "id": "P9",
+      "pergunta": "Os lucros retidos aumentam o valor?",
+      "passa": true,
+      "detalhe": "B1 = Sim"
+     },
+     {
+      "id": "P10",
+      "pergunta": "A gestão é íntegra e pensa como dona?",
+      "passa": true,
+      "detalhe": "B4 = Parcial"
+     }
+    ],
+    "condicoes": [
+     {
+      "id": "C1p",
+      "descricao": "Preço atual <= Preço Máximo de Compra = mínimo (VI ; P_EB ; Valor-Obrigação)",
+      "ok": false,
+      "detalhe": "preço 442,75 vs PMC 187,86"
+     },
+     {
+      "id": "C2p",
+      "descricao": "Rendimento inicial >= taxa do Estado a 10 anos",
+      "ok": false,
+      "detalhe": "2,91% vs 4,20%"
+     },
+     {
+      "id": "C3p",
+      "descricao": "TACE a 10 anos >= 15% (a mais baixa dos dois métodos)",
+      "ok": false,
+      "detalhe": "TACE 5,5% (método I)"
+     },
+     {
+      "id": "C4p",
+      "descricao": "P/L atual < 40 e abaixo do máximo dos últimos 10 anos",
+      "ok": false,
+      "detalhe": "P/L 43,4 (máximo de 10 anos n/d)"
+     }
+    ]
+   },
+   "relatorio": "\n============================================================================\nRELATÓRIO v4.27 — Método Buffett Integral: Castor Marcas (CASTOR) · dataset sintético\nAnos: 2016 a 2025 (10 exercícios)\n============================================================================\nVEREDICTO (Passo 8): CAIXA DEDICADA — Passa a Triagem e os 10 Portões; o preço ainda não: preço 442,75 vs PMC 187,86; 2,91% vs 4,20%; TACE 5,5% (método I); P/L 43,4 (máximo de 10 anos n/d). O capital espera em Caixa Dedicada, com alerta de preço no PMC.\n\n----------------------------------------------------------------------------\nRESUMO PARA DECISÃO\n  Ao preço atual de 442,75 USD, a TACE esperada é 5,5% ao ano (exigência: 15%).\n  Preço Máximo de Compra = mínimo (VI 432,14 ; P_EB 187,86 ; Valor-Obrigação 307,22) = 187,86 USD (desconto de 58% face ao preço atual).\n  Para 20% ao ano (o teu alvo): comprar no máximo a 122,75 USD.\n  Preço máximo por rentabilidade: 10% -> 293,02 · 12% -> 244,70 · 15% -> 187,86 · 20% -> 122,75 · 25% -> 81,61\n  10 Portões: 10/10 passam · Franquia: sim\n  Condições de preço: CP1 NÃO · CP2 NÃO · CP3 NÃO · CP4 NÃO\n  => CAIXA DEDICADA · limite no momento da compra 10%\n----------------------------------------------------------------------------\n\nSíntese (Buffett):\n  Castor Marcas apresenta uma qualidade sólida, passando todos os 10 portões, mas o preço atual de 442,75 é superior ao Preço Máximo de Compra de 187,86. Para considerar uma compra, o preço teria de baixar significativamente.\n\nPasso -2 · Triagem Rápida (um \"não\" e a empresa sai):\n  T1  SIM            Percebo o produto e porque é que o cliente o compra? · produtos alimentares marcas reconhecidas e qualidade\n  T2  SIM            O LPA não teve prejuízos e está mais alto do que há 5–10 anos? · LPA 2016 3,14 -> 2025 10,19\n  T3  SIM            O ROE médio é de pelo menos 15%? · ROE médio 24,5%\n  T4  SIM            A dívida de longo prazo paga-se com 4 anos de lucro ou menos? · dívida LP = 1,14 anos de lucro médio (5 anos)\n  T5  SIM            A margem bruta é de pelo menos 20%, ou é um negócio claro de baixo custo? · margem bruta mediana 62,0%\n  T6  SIM            O número de ações não subiu mais de 10% em 3 anos? · ações -0,7% em 3 anos\n  T7  SIM            O fluxo de caixa operacional foi positivo em todos os anos? · FCO positivo em todos os anos\n\nPasso -1 · Círculo de Competência:\n  SIM · Teste Wrigley: SIM · patentes (> 50% da receita a expirar): não — a empresa tem uma forte presença em marcas de produtos alimentares com reconhecimento de marca e qualidade\n\nPasso 0 · Setor: método completo · setor: Consumo\n\nPasso 1 · Modelo de negócio:\n  M1 (produto exclusivo) — a empresa tem marcas de produtos alimentares com reconhecimento de marca e qualidade\n  Dependência de patentes: não · serviço de talentos individuais: não\n  LUCRO     SIM   Lucro líquido positivo nos últimos 12 meses (último exercício) · 5 790 M\n  COMMODITY SIM   Passo 1: Regra de Commodity (a) margem bruta < 20% E ROE < 15%; (b) LPA mau em 3+ anos · margem bruta média 62,0%, ROE médio 24,5%, 0 ano(s) de LPA com prejuízo ou queda > 50%\n\nPasso 2 · Bloco A — vantagem competitiva durável (Sim / Parcial / Não; não há pontos):\n  A1   Margem bruta (lucro bruto / receita, %)          Sim            62,00\n  A2   SG&A / lucro bruto (%)                           Parcial        45,43\n  A3   I&D / lucro bruto (%)                            não aplicável    [sem linha própria de I&D (o custo está no SG&A, em A2)]\n  A4   Depreciação / lucro bruto (%)                    Sim            8,89\n  A5   Juros / resultado operacional (%)                Sim            3,09\n  A6   Margem líquida (%)                               Sim            21,72\n  A7   LPA consistente (quedas nas variações anuais)    Sim            0 queda(s) em 9 variações, sem prejuízos  [Sim: no máximo 1; Parcial: até 3]\n  A8   Dívida LP / lucro líquido (x)                    Sim            1,01\n  A9   Passivo / (capitais próprios + ações próprias) ( Sim            0,55\n  A10  ROE (%)                                          Sim            24,57  [ROE corrigido (com ações próprias) mediano 24,6%]\n  A11  Lucros retidos (CAGR)                            Sim            22,38\n  A12  Capex / lucro líquido (%)                        Parcial        34,05\n  A13  Imposto pago (detetor de mentiras)               Sim            taxa efetiva mediana 21,0% (legal 21%); pago / contabilizado 97%  [créditos fiscais legítimos documentados não contam contra]\n  A14  Inventário                                       Sim            CAGR inventário 13,7% vs receita 13,7%; 0 episódio(s)\n  A15  Autofinanciamento das distribuições              Sim            2,41\n  Sinais de Balanço: 0 presente(s), 0 por explicar (2 ou mais por explicar impedem a Franquia)\n    [ ] Contas a receber / receita a subir 3 anos seguidos · 2022: 12,0% -> 2023: 12,0% -> 2024: 12,0% -> 2025: 12,0%\n    [ ] ROA muito alto (> 25%) com ativos pequenos: barreira de entrada fraca · ROA mediano 15,5%\n    [ ] Dívida de curto prazo maior do que a de longo prazo · sem dados\n    [ ] Dívida de longo prazo a vencer elevada face à caixa e ao FCO (calibração: > 50%) · sem dados\n    [ ] Caixa de origem errada: subiu à custa de emissão de dívida ou de ações · não detetado\n    [ ] Alavancagem: ROE reportado mais de 1,25x o corrigido (calibração) · ROE reportado 24,6% vs corrigido 24,6%\n\nPasso 3 · Bloco B — gestão e alocação de capital:\n  B1   Dólar retido (preço normalizado)                 Sim            4,16 (P/L médio 24,0; LPA 2016 3,14 -> 2025 10,19; LPA retido 40,67)\n  B2   Rendimento dos lucros retidos                    Sim            17,3%  [limites: calibração do protocolo]\n  B3   Recompras e estrutura de capital                 Parcial        ações -0,29%/ano\n  B4   Integridade, franqueza e mentalidade de dono     Parcial        sinais de governança não verificáveis (empresa sem 8-K na SEC)  [insiders com participação desconhecida; sem evidência verificada de admitir erros; remuneração e Form 4 não verificados automaticamente]\n  B5   Aquisições e imperativo institucional            Sim            aquisições relevantes em 0 ano(s); imparidades 0 M  ['frequentes' = 4 ou mais anos com aquisições acima de 1% da receita (calibração)]\n         Bloco C — durabilidade do negócio:\n  C1   Modelo de negócio Buffett                        Sim            M1 (produto exclusivo)\n  C2   Produto estável, à prova de idiota               Sim            os produtos são baseados em marcas de alimentos e não há indicação de que a tecnologia seja crucial\n  C3   Poder de preço (evidência concreta e datada)     Sim            aumentámos os preços médios em 5% em 2025 e o volume de unidades vendidas cresceu 2%  [citação verificada no texto da fonte]\n  C4   Teste da Franquia (carta de 1991)                Sim            4 sim em 4  [Franquia confirmada (4 sim, C3 = Sim, menos de 2 Sinais de Balanço por explicar)]\n         O produto ou serviço é necessário ou desejado? SIM — os produtos são necessários para a alimentação diária\n         O cliente considera que não tem substituto próximo? SIM — os clientes consideram que não têm substitutos próximos\n         O preço não é regulado? SIM — os preços não são regulados\n         Se um concorrente tivesse capital ilimitado, continuaria sem conseguir tirar-lhe os clientes? SIM — um concorrente com capital ilimitado não conseguiria tirar-lhe os clientes\n\nPasso 4 · Os 10 Portões de Buffett (passam com Sim ou Parcial; um falhado é rejeição):\n  P1   PASSA  Tem uma franquia ou vantagem identificável? · C1 = Sim e C4 = Sim\n  P2   PASSA  Os lucros são fortes e com tendência de alta? · A7 = Sim\n  P3   PASSA  É financiada de forma conservadora? · A8 = Sim\n  P4   PASSA  Obtém consistentemente um ROE alto? · A10 = Sim\n  P5   PASSA  Consegue reter os lucros? · A11 = Sim\n  P6   PASSA  Gasta pouco para manter as operações? · A12 = Parcial\n  P7   PASSA  Reinveste bem os lucros retidos? · B2 = Sim\n  P8   PASSA  Consegue subir preços com a inflação? · C3 = Sim\n  P9   PASSA  Os lucros retidos aumentam o valor? · B1 = Sim\n  P10  PASSA  A gestão é íntegra e pensa como dona? · B4 = Parcial\n\nPasso 5 · Avaliação (Secção 8):\n  r = 7,00% (taxa do Estado a 10 anos 4,20%, sem prémio de risco, piso 7%)\n  g = mínimo de: (i) CAGR do LPA 13,96%; (ii) CAGR do lucro líquido 13,62%; (iii) ROE x (1 - payout) 17,15%; (iv) teto 15,00% -> g = 13,62%, constante nos anos 1–10; terminal = mínimo (2,5% ; g/2) = 2,50%\n    detalhes: (i) 2016 -> 2025; (ii) 2016 -> 2025; (iii) ROE médio 24,5%, payout 30%\n  Etapa A — Owner Earnings/ação (média de 5 anos, capex de manutenção) 7,764 -> Valor Intrínseco 432,14\n  EB1 — rendimento inicial 2,91% antes de impostos (2,30% depois) vs Estado 4,20% · Valor-Obrigação 307,22\n  EB2 — P/L-alvo 24,0 (mínimo entre a média de 10 anos 24,0 e 25) · DPA atual 3,06\n    Método I (LPA): LPA base 8,062 -> LPA10 28,92 -> preço10 694,00 -> TACE 5,55%\n    Método II (ROE): c 15,00% -> VPA10 165,74 -> LPA10 40,60 -> preço10 974,44 -> TACE 8,92%\n    TACE = 5,55% (método I, o mais baixo)\n  EB3 — P_EB (preço para 15% ao ano) 187,86\n  PMC = mínimo (VI ; P_EB ; Valor-Obrigação) = 187,86 (limitado por: P_EB)\n  Validação cruzada: VI 432,14 vs Valor Equity Bond 386,35 (divergência 10,6%)\n  Nota: taxa a 10 anos 4,20% abaixo do piso: r = 7%\n  Nota: capex de crescimento separado (capex acima da depreciação em anos de receita a crescer): 2019: 300 M; 2020: 293 M; 2022: 543 M; 2024: 504 M; 2025: 690 M\n  Nota: P/L-alvo a partir do P/L médio histórico da fonte (sem preços de fim de exercício)\n\nPasso 6 · Decisão (Secção 9): Triagem + Portões + as quatro condições de preço, cumulativas\n  [ ] Preço atual <= Preço Máximo de Compra = mínimo (VI ; P_EB ; Valor-Obrigação) · preço 442,75 vs PMC 187,86\n  [ ] Rendimento inicial >= taxa do Estado a 10 anos · 2,91% vs 4,20%\n  [ ] TACE a 10 anos >= 15% (a mais baixa dos dois métodos) · TACE 5,5% (método I)\n  [ ] P/L atual < 40 e abaixo do máximo dos últimos 10 anos · P/L 43,4 (máximo de 10 anos n/d)\n\nPasso 7 · Checklist de execução (no momento da compra):\n  [x] A Triagem e os 10 Portões continuam a passar com o último relatório anual\n  [ ] Preço atual <= Preço Máximo de Compra\n  [ ] Rendimento inicial >= taxa do Estado, TACE >= 15%, P/L < 40 e abaixo do máximo de 10 anos\n  [ ] Posição após a compra <= 10% (verificar na corretora)\n  [ ] Esta compra merece um furo do cartão de 20 decisões? Registar \"Decisão n.º X de 20\"\n\nSe a posição já for detida (Secção 7): vender a posição, sujeito ao Filtro Fiscal: P/L 43,4 >= 40\n\nCrítico — Munger (0 revisão(ões) pedida(s) ao Avaliador):\n  [final] media: A afirmação de que os preços não são regulados pode não ser totalmente verificada com os dados fornecidos. Embora os preços tenham aumentado, não há informações sobre a regulamentação dos preços. (modelo)\n  [final] baixa: A afirmação de que a empresa tem uma forte presença em marcas de produtos alimentares com reconhecimento de marca e qualidade é suportada pelos dados, especialmente pela margem bruta alta e pela consistência dos lucros. (modelo)\n\nDemonstração académica · não constitui aconselhamento financeiro.\n============================================================================",
+   "esperado": "excelente mas muito cara: esperar",
+   "como_esperado": true
+  },
+  {
+   "ticker": "DUNA",
+   "fonte": "sintetico",
+   "ok": true,
+   "empresa": "Duna Industrial",
+   "setor": "Indústria",
+   "veredicto_final": "REJEITAR",
+   "veredicto_das_regras": "REJEITAR",
+   "descricao": "Portões falhados: P8 Consegue subir preços com a inflação? (C3 = Não)",
+   "limite": null,
+   "portoes_ok": 9,
+   "motivos": [
+    "Portões falhados: P8 Consegue subir preços com a inflação? (C3 = Não)"
+   ],
+   "avaliacao": {
+    "r": 7.0,
+    "taxa10": 4.2,
+    "g": 8.38,
+    "g_terminal": 2.5,
+    "oe0": 7.719531148462562,
+    "vi": 282.74,
+    "ebt_por_acao": 11.603375527420635,
+    "rend_inicial": 9.982256991931035,
+    "rend_apos_impostos": 7.885983023629273,
+    "valor_obrigacao": 276.27,
+    "pe_alvo": 21.4,
+    "pl_hist_medio": 21.4,
+    "dpa_atual": 2.75,
+    "soma_dpa": 43.96143917231089,
+    "metodo_tace": "I",
+    "tace": 13.68,
+    "p_eb": 103.59,
+    "valor_equity_bond": 213.04,
+    "divergencia_pct": 24.7,
+    "pmc": 103.59,
+    "pmc_limitante": "P_EB",
+    "alvo_pct": 20.0,
+    "pl_atual": 12.680727272727273,
+    "pl_max_10a": null,
+    "preco": 116.24
+   },
+   "respostas_do_modelo": {
+    "t1": "Sim",
+    "t1_porque": "Pumpas industriais A empresa repercutiu parte da inflação nos preços, com subidas médias de 2%.",
+    "t1_produto": "Pumpas industriais",
+    "t1_cliente": "A empresa repercutiu parte da inflação nos preços, com subidas médias de 2%.",
+    "circulo": "Sim",
+    "wrigley": "Sim",
+    "wrigley_porque": "O negócio é focado em pumpas industriais, um produto estável e previsível.",
+    "patentes_mais_de_metade": false,
+    "circulo_porque": "A empresa tem uma margem bruta elevada e está a crescer a uma taxa consistente, o que sugere uma compreensão clara do negócio.",
+    "modelo": "M3",
+    "modelo_porque": "A empresa opera no setor industrial, onde o baixo custo não é o principal diferencial, mas a consistência e a qualidade dos produtos.",
+    "servico_de_talentos": false,
+    "dependente_patentes": false,
+    "c2": "Sim",
+    "c2_porque": "O negócio é focado em pumpas industriais, um produto estável e previsível.",
+    "c3_modelo": "Parcial",
+    "c3_verificado": "Não",
+    "c3_evidencia": null,
+    "c3_citacao_proposta": "ROIC mediano 14,4%, mínimo 14,2% em 10 anos",
+    "c3_porque": "A empresa tem uma margem bruta elevada e está a crescer a uma taxa consistente, o que sugere uma compreensão clara do negócio.",
+    "c3_nota": "citação não encontrada nas fontes: C3 = Não",
+    "franquia": {
+     "f1": {
+      "resposta": "sim",
+      "porque": "Pumpas industriais são necessárias para muitos processos industriais."
+     },
+     "f2": {
+      "resposta": "sim",
+      "porque": "Os clientes consideram que não têm substitutos próximos."
+     },
+     "f3": {
+      "resposta": "sim",
+      "porque": "O preço não é regulado."
+     },
+     "f4": {
+      "resposta": "sim",
+      "porque": "Um concorrente com capital ilimitado não conseguiria tirar-lhe os clientes."
+     }
+    },
+    "b4_evidencia_verificada": null,
+    "verificacao": [],
+    "alteracoes": [],
+    "fontes_usadas": [
+     "Perfil do negócio",
+     "Wikipedia",
+     "Notícias recentes (só contexto)"
+    ],
+    "evidencia": {
+     "nivel": "moderada",
+     "sinais": {
+      "roic": {
+       "nivel": "moderado",
+       "facto": "ROIC mediano 14,4%, mínimo 14,2% em 10 anos"
+      },
+      "margem_bruta": {
+       "nivel": "forte",
+       "facto": "margem bruta mediana 46,0%, amplitude 0,0 p.p. em 10 anos"
+      }
+     },
+     "factos": [
+      "ROIC mediano 14,4%, mínimo 14,2% em 10 anos",
+      "margem bruta mediana 46,0%, amplitude 0,0 p.p. em 10 anos"
+     ]
+    },
+    "revisao": false
+   },
+   "rondas_do_critico": [
+    {
+     "objecoes": [
+      {
+       "gravidade": "media",
+       "campo": null,
+       "origem": "regra",
+       "descricao": "a citação de poder de preço não existe nas fontes: C3 = Não"
+      },
+      {
+       "gravidade": "media",
+       "campo": null,
+       "origem": "regra",
+       "descricao": "VI e Valor Equity Bond divergem 24,7%: documentar a causa (Secção 8.3)"
+      },
+      {
+       "gravidade": "media",
+       "campo": "circulo",
+       "descricao": "A afirmação de que a empresa tem uma compreensão clara do negócio baseia-se apenas na margem bruta elevada e no crescimento consistente, sem considerar outros aspetos relevantes para a círculo de competência.",
+       "origem": "modelo"
+      },
+      {
+       "gravidade": "media",
+       "campo": "modelo",
+       "descricao": "A afirmação de que o modelo de negócio é M3 (baseado em baixo custo) não é suportada pelos dados, que indicam uma margem bruta elevada e um crescimento consistente, sugerindo um modelo M1 ou M2.",
+       "origem": "modelo"
+      },
+      {
+       "gravidade": "baixa",
+       "campo": null,
+       "descricao": "A afirmação de que o poder de preço não foi verificado não é suportada pelos dados, que indicam que a empresa não tem um poder de preço significativo.",
+       "origem": "modelo"
+      }
+     ],
+     "graves": 0,
+     "pediu_revisao": false
+    }
+   ],
+   "revisoes": 0,
+   "mensagens": [
+    "request: utilizador -> coletor",
+    "inform: coletor -> guardiao",
+    "request: guardiao -> avaliador",
+    "propose: avaliador -> critico",
+    "inform: critico -> decisor",
+    "inform: decisor -> utilizador"
+   ],
+   "avisos": [],
+   "segundos": 342.5,
+   "chamadas_ao_modelo": 3,
+   "decisor": {
+    "veredicto": {
+     "categoria": "REJEITAR",
+     "cor": "nao",
+     "descricao": "Portões falhados: P8 Consegue subir preços com a inflação? (C3 = Não)",
+     "limite": null
+    },
+    "portoes": [
+     {
+      "id": "P1",
+      "pergunta": "Tem uma franquia ou vantagem identificável?",
+      "passa": true,
+      "detalhe": "C1 = Sim e C4 = Parcial"
+     },
+     {
+      "id": "P2",
+      "pergunta": "Os lucros são fortes e com tendência de alta?",
+      "passa": true,
+      "detalhe": "A7 = Sim"
+     },
+     {
+      "id": "P3",
+      "pergunta": "É financiada de forma conservadora?",
+      "passa": true,
+      "detalhe": "A8 = Sim"
+     },
+     {
+      "id": "P4",
+      "pergunta": "Obtém consistentemente um ROE alto?",
+      "passa": true,
+      "detalhe": "A10 = Parcial"
+     },
+     {
+      "id": "P5",
+      "pergunta": "Consegue reter os lucros?",
+      "passa": true,
+      "detalhe": "A11 = Sim"
+     },
+     {
+      "id": "P6",
+      "pergunta": "Gasta pouco para manter as operações?",
+      "passa": true,
+      "detalhe": "A12 = Parcial"
+     },
+     {
+      "id": "P7",
+      "pergunta": "Reinveste bem os lucros retidos?",
+      "passa": true,
+      "detalhe": "B2 = Parcial"
+     },
+     {
+      "id": "P8",
+      "pergunta": "Consegue subir preços com a inflação?",
+      "passa": false,
+      "detalhe": "C3 = Não"
+     },
+     {
+      "id": "P9",
+      "pergunta": "Os lucros retidos aumentam o valor?",
+      "passa": true,
+      "detalhe": "B1 = Sim"
+     },
+     {
+      "id": "P10",
+      "pergunta": "A gestão é íntegra e pensa como dona?",
+      "passa": true,
+      "detalhe": "B4 = Parcial"
+     }
+    ],
+    "condicoes": [
+     {
+      "id": "C1p",
+      "descricao": "Preço atual <= Preço Máximo de Compra = mínimo (VI ; P_EB ; Valor-Obrigação)",
+      "ok": false,
+      "detalhe": "preço 116,24 vs PMC 103,59"
+     },
+     {
+      "id": "C2p",
+      "descricao": "Rendimento inicial >= taxa do Estado a 10 anos",
+      "ok": true,
+      "detalhe": "9,98% vs 4,20%"
+     },
+     {
+      "id": "C3p",
+      "descricao": "TACE a 10 anos >= 15% (a mais baixa dos dois métodos)",
+      "ok": false,
+      "detalhe": "TACE 13,7% (método I)"
+     },
+     {
+      "id": "C4p",
+      "descricao": "P/L atual < 40 e abaixo do máximo dos últimos 10 anos",
+      "ok": true,
+      "detalhe": "P/L 12,7 (máximo de 10 anos n/d)"
+     }
+    ]
+   },
+   "relatorio": "\n============================================================================\nRELATÓRIO v4.27 — Método Buffett Integral: Duna Industrial (DUNA) · dataset sintético\nAnos: 2016 a 2025 (10 exercícios)\n============================================================================\nVEREDICTO (Passo 8): REJEITAR — Portões falhados: P8 Consegue subir preços com a inflação? (C3 = Não)\n\n----------------------------------------------------------------------------\nRESUMO PARA DECISÃO\n  Ao preço atual de 116,24 USD, a TACE esperada é 13,7% ao ano (exigência: 15%).\n  Preço Máximo de Compra = mínimo (VI 282,74 ; P_EB 103,59 ; Valor-Obrigação 276,27) = 103,59 USD (desconto de 11% face ao preço atual).\n  Para 20% ao ano (o teu alvo): comprar no máximo a 67,68 USD.\n  Preço máximo por rentabilidade: 10% -> 161,57 · 12% -> 134,93 · 15% -> 103,59 · 20% -> 67,68 · 25% -> 45,00\n  10 Portões: 9/10 passam (falham P8) · Franquia: não confirmada\n  Condições de preço: CP1 NÃO · CP2 sim · CP3 NÃO · CP4 sim\n  => REJEITAR\n----------------------------------------------------------------------------\n\nSíntese (Buffett):\n  O negócio de Duna Industrial falha na subida de preços com a inflação, não apresentando um fosso económico duradouro. O preço atual está acima do Preço Máximo de Compra, e a TACE a 10 anos é inferior ao mínimo exigido. Para considerar uma compra, seria necessário uma melhoria significativa no negócio e na situação financeira.\n\nPasso -2 · Triagem Rápida (um \"não\" e a empresa sai):\n  T1  SIM            Percebo o produto e porque é que o cliente o compra? · Pumpas industriais A empresa repercutiu parte da inflação nos preços, com subidas médias de 2%.\n  T2  SIM            O LPA não teve prejuízos e está mais alto do que há 5–10 anos? · LPA 2016 4,44 -> 2025 9,17\n  T3  SIM            O ROE médio é de pelo menos 15%? · ROE médio 17,7%\n  T4  SIM            A dívida de longo prazo paga-se com 4 anos de lucro ou menos? · dívida LP = 1,86 anos de lucro médio (5 anos)\n  T5  SIM            A margem bruta é de pelo menos 20%, ou é um negócio claro de baixo custo? · margem bruta mediana 46,0%\n  T6  SIM            O número de ações não subiu mais de 10% em 3 anos? · ações +1,2% em 3 anos\n  T7  SIM            O fluxo de caixa operacional foi positivo em todos os anos? · FCO positivo em todos os anos\n\nPasso -1 · Círculo de Competência:\n  SIM · Teste Wrigley: SIM · patentes (> 50% da receita a expirar): não — A empresa tem uma margem bruta elevada e está a crescer a uma taxa consistente, o que sugere uma compreensão clara do negócio.\n\nPasso 0 · Setor: método completo · setor: Indústria\n\nPasso 1 · Modelo de negócio:\n  M3 (baixo custo) — A empresa opera no setor industrial, onde o baixo custo não é o principal diferencial, mas a consistência e a qualidade dos produtos.\n  Dependência de patentes: não · serviço de talentos individuais: não\n  LUCRO     SIM   Lucro líquido positivo nos últimos 12 meses (último exercício) · 4 620 M\n  COMMODITY SIM   Passo 1: Regra de Commodity (a) margem bruta < 20% E ROE < 15%; (b) LPA mau em 3+ anos · margem bruta média 46,0%, ROE médio 17,7%, 0 ano(s) de LPA com prejuízo ou queda > 50%\n\nPasso 2 · Bloco A — vantagem competitiva durável (Sim / Parcial / Não; não há pontos):\n  A1   Margem bruta (lucro bruto / receita, %)          não aplicável    [M3 (baixo custo): margens trocadas por volume]\n  A2   SG&A / lucro bruto (%)                           Parcial        40,86\n  A3   I&D / lucro bruto (%)                            não aplicável    [sem linha própria de I&D (o custo está no SG&A, em A2)]\n  A4   Depreciação / lucro bruto (%)                    Parcial        12,36\n  A5   Juros / resultado operacional (%)                Sim            5,04\n  A6   Margem líquida (%)                               não aplicável    [M3 (baixo custo): margens trocadas por volume]\n  A7   LPA consistente (quedas nas variações anuais)    Sim            1 queda(s) em 9 variações, sem prejuízos  [Sim: no máximo 1; Parcial: até 3]\n  A8   Dívida LP / lucro líquido (x)                    Sim            1,68\n  A9   Passivo / (capitais próprios + ações próprias) ( Sim            0,62\n  A10  ROE (%)                                          Parcial        17,89  [ROE corrigido (com ações próprias) mediano 17,9%]\n  A11  Lucros retidos (CAGR)                            Sim            16,38\n  A12  Capex / lucro líquido (%)                        Parcial        39,02\n  A13  Imposto pago (detetor de mentiras)               Sim            taxa efetiva mediana 21,0% (legal 21%); pago / contabilizado 97%  [créditos fiscais legítimos documentados não contam contra]\n  A14  Inventário                                       Sim            CAGR inventário 9,7% vs receita 9,7%; 0 episódio(s)\n  A15  Autofinanciamento das distribuições              Sim            2,45\n  Sinais de Balanço: 0 presente(s), 0 por explicar (2 ou mais por explicar impedem a Franquia)\n    [ ] Contas a receber / receita a subir 3 anos seguidos · 2022: 12,0% -> 2023: 12,0% -> 2024: 12,0% -> 2025: 12,0%\n    [ ] ROA muito alto (> 25%) com ativos pequenos: barreira de entrada fraca · ROA mediano 10,4%\n    [ ] Dívida de curto prazo maior do que a de longo prazo · sem dados\n    [ ] Dívida de longo prazo a vencer elevada face à caixa e ao FCO (calibração: > 50%) · sem dados\n    [ ] Caixa de origem errada: subiu à custa de emissão de dívida ou de ações · não detetado\n    [ ] Alavancagem: ROE reportado mais de 1,25x o corrigido (calibração) · ROE reportado 17,9% vs corrigido 17,9%\n\nPasso 3 · Bloco B — gestão e alocação de capital:\n  B1   Dólar retido (preço normalizado)                 Sim            2,35 (P/L médio 21,4; LPA 2016 4,44 -> 2025 9,17; LPA retido 42,95)\n  B2   Rendimento dos lucros retidos                    Parcial        11,0%  [limites: calibração do protocolo]\n  B3   Recompras e estrutura de capital                 Parcial        ações 0,02%/ano\n  B4   Integridade, franqueza e mentalidade de dono     Parcial        sinais de governança não verificáveis (empresa sem 8-K na SEC)  [insiders com participação desconhecida; sem evidência verificada de admitir erros; remuneração e Form 4 não verificados automaticamente]\n  B5   Aquisições e imperativo institucional            Sim            aquisições relevantes em 0 ano(s); imparidades 0 M  ['frequentes' = 4 ou mais anos com aquisições acima de 1% da receita (calibração)]\n         Bloco C — durabilidade do negócio:\n  C1   Modelo de negócio Buffett                        Sim            M3 (baixo custo)\n  C2   Produto estável, à prova de idiota               Sim            O negócio é focado em pumpas industriais, um produto estável e previsível.\n  C3   Poder de preço (evidência concreta e datada)     Não            sem evidência verificada  [citação não encontrada nas fontes: C3 = Não]\n  C4   Teste da Franquia (carta de 1991)                Parcial        4 sim em 4  [4 sim, mas C3 não é Sim: franquia não confirmada]\n         O produto ou serviço é necessário ou desejado? SIM — Pumpas industriais são necessárias para muitos processos industriais.\n         O cliente considera que não tem substituto próximo? SIM — Os clientes consideram que não têm substitutos próximos.\n         O preço não é regulado? SIM — O preço não é regulado.\n         Se um concorrente tivesse capital ilimitado, continuaria sem conseguir tirar-lhe os clientes? SIM — Um concorrente com capital ilimitado não conseguiria tirar-lhe os clientes.\n\nPasso 4 · Os 10 Portões de Buffett (passam com Sim ou Parcial; um falhado é rejeição):\n  P1   PASSA  Tem uma franquia ou vantagem identificável? · C1 = Sim e C4 = Parcial\n  P2   PASSA  Os lucros são fortes e com tendência de alta? · A7 = Sim\n  P3   PASSA  É financiada de forma conservadora? · A8 = Sim\n  P4   PASSA  Obtém consistentemente um ROE alto? · A10 = Parcial\n  P5   PASSA  Consegue reter os lucros? · A11 = Sim\n  P6   PASSA  Gasta pouco para manter as operações? · A12 = Parcial\n  P7   PASSA  Reinveste bem os lucros retidos? · B2 = Parcial\n  P8   FALHA  Consegue subir preços com a inflação? · C3 = Não\n  P9   PASSA  Os lucros retidos aumentam o valor? · B1 = Sim\n  P10  PASSA  A gestão é íntegra e pensa como dona? · B4 = Parcial\n  Problema solucionável (Secção 6.4): se a falha vem de um problema recente e pontual, documentar por escrito (o quê, porque é pontual, porque não toca na franquia) e reavaliar. A franquia, o P3 e o FCO nunca são dispensados.\n\nPasso 5 · Avaliação (Secção 8):\n  r = 7,00% (taxa do Estado a 10 anos 4,20%, sem prémio de risco, piso 7%)\n  g = mínimo de: (i) CAGR do LPA 8,38%; (ii) CAGR do lucro líquido 8,40%; (iii) ROE x (1 - payout) 12,39%; (iv) teto 15,00% -> g = 8,38%, constante nos anos 1–10; terminal = mínimo (2,5% ; g/2) = 2,50%\n    detalhes: (i) 2016 -> 2025; (ii) 2016 -> 2025; (iii) ROE médio 17,7%, payout 30%\n  Etapa A — Owner Earnings/ação (média de 5 anos, capex de manutenção) 7,720 -> Valor Intrínseco 282,74\n  EB1 — rendimento inicial 9,98% antes de impostos (7,89% depois) vs Estado 4,20% · Valor-Obrigação 276,27\n  EB2 — P/L-alvo 21,4 (mínimo entre a média de 10 anos 21,4 e 25) · DPA atual 2,75\n    Método I (LPA): LPA base 7,840 -> LPA10 17,53 -> preço10 375,12 -> TACE 13,68%\n    Método II (ROE): c 12,39% -> VPA10 168,11 -> LPA10 29,80 -> preço10 637,64 -> TACE 19,35%\n    TACE = 13,68% (método I, o mais baixo)\n  EB3 — P_EB (preço para 15% ao ano) 103,59\n  PMC = mínimo (VI ; P_EB ; Valor-Obrigação) = 103,59 (limitado por: P_EB)\n  Validação cruzada: VI 282,74 vs Valor Equity Bond 213,04 (divergência 24,7%; acima de 20%: documentar a causa)\n  Nota: taxa a 10 anos 4,20% abaixo do piso: r = 7%\n  Nota: capex de crescimento separado (capex acima da depreciação em anos de receita a crescer): 2017: 584 M; 2018: 413 M; 2019: 384 M; 2020: 183 M; 2022: 44 M\n  Nota: P/L-alvo a partir do P/L médio histórico da fonte (sem preços de fim de exercício)\n\nPasso 6 · Decisão (Secção 9): Triagem + Portões + as quatro condições de preço, cumulativas\n  [ ] Preço atual <= Preço Máximo de Compra = mínimo (VI ; P_EB ; Valor-Obrigação) · preço 116,24 vs PMC 103,59\n  [x] Rendimento inicial >= taxa do Estado a 10 anos · 9,98% vs 4,20%\n  [ ] TACE a 10 anos >= 15% (a mais baixa dos dois métodos) · TACE 13,7% (método I)\n  [x] P/L atual < 40 e abaixo do máximo dos últimos 10 anos · P/L 12,7 (máximo de 10 anos n/d)\n\nPasso 7 · Checklist de execução (no momento da compra):\n  [ ] A Triagem e os 10 Portões continuam a passar com o último relatório anual\n  [ ] Preço atual <= Preço Máximo de Compra\n  [ ] Rendimento inicial >= taxa do Estado, TACE >= 15%, P/L < 40 e abaixo do máximo de 10 anos\n  [ ] Posição após a compra <= 10% (verificar na corretora)\n  [ ] Esta compra merece um furo do cartão de 20 decisões? Registar \"Decisão n.º X de 20\"\n\nSe a posição já for detida (Secção 7): nenhum gatilho de venda por preço\n\nCrítico — Munger (0 revisão(ões) pedida(s) ao Avaliador):\n  [final] media: a citação de poder de preço não existe nas fontes: C3 = Não (regra)\n  [final] media: VI e Valor Equity Bond divergem 24,7%: documentar a causa (Secção 8.3) (regra)\n  [final] media: A afirmação de que a empresa tem uma compreensão clara do negócio baseia-se apenas na margem bruta elevada e no crescimento consistente, sem considerar outros aspetos relevantes para a círculo de competência. (modelo)\n  [final] media: A afirmação de que o modelo de negócio é M3 (baseado em baixo custo) não é suportada pelos dados, que indicam uma margem bruta elevada e um crescimento consistente, sugerindo um modelo M1 ou M2. (modelo)\n  [final] baixa: A afirmação de que o poder de preço não foi verificado não é suportada pelos dados, que indicam que a empresa não tem um poder de preço significativo. (modelo)\n\nDemonstração académica · não constitui aconselhamento financeiro.\n============================================================================",
+   "esperado": "empresa muito boa: passa os Portões de qualidade",
+   "como_esperado": false
+  },
+  {
+   "ticker": "ESTEIO",
+   "fonte": "sintetico",
+   "ok": true,
+   "empresa": "Esteio Retalho",
+   "setor": "Retalho",
+   "veredicto_final": "REJEITAR",
+   "veredicto_das_regras": "REJEITAR",
+   "descricao": "Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 11,9%; Triagem T4: A dívida de longo prazo paga-se com 4 anos de lucro ou menos? Não — dívida LP = 4,33 anos de lucro médio (5 anos)",
+   "limite": null,
+   "portoes_ok": null,
+   "motivos": [
+    "Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 11,9%; Triagem T4: A dívida de longo prazo paga-se com 4 anos de lucro ou menos? Não — dívida LP = 4,33 anos de lucro médio (5 anos)"
+   ],
+   "avaliacao": {},
+   "respostas_do_modelo": {},
+   "rondas_do_critico": [],
+   "revisoes": 0,
+   "mensagens": [
+    "request: utilizador -> coletor",
+    "inform: coletor -> guardiao",
+    "inform: guardiao -> decisor",
+    "inform: decisor -> utilizador"
+   ],
+   "avisos": [],
+   "segundos": 0.0,
+   "chamadas_ao_modelo": 0,
+   "decisor": {
+    "veredicto": {
+     "categoria": "REJEITAR",
+     "cor": "nao",
+     "descricao": "Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 11,9%; Triagem T4: A dívida de longo prazo paga-se com 4 anos de lucro ou menos? Não — dívida LP = 4,33 anos de lucro médio (5 anos)",
+     "limite": null
+    },
+    "portoes": null,
+    "condicoes": []
+   },
+   "relatorio": "\n============================================================================\nRELATÓRIO v4.27 — Método Buffett Integral: Esteio Retalho (ESTEIO) · dataset sintético\nAnos: 2016 a 2025 (10 exercícios)\n============================================================================\nVEREDICTO (Passo 8): REJEITAR — Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 11,9%; Triagem T4: A dívida de longo prazo paga-se com 4 anos de lucro ou menos? Não — dívida LP = 4,33 anos de lucro médio (5 anos)\n\nPasso -2 · Triagem Rápida (um \"não\" e a empresa sai):\n  T1  PENDENTE       Percebo o produto e porque é que o cliente o compra? · pergunta qualitativa: respondida pelo Avaliador (parte qualitativa, com o modelo)\n  T2  SIM            O LPA não teve prejuízos e está mais alto do que há 5–10 anos? · LPA 2016 0,31 -> 2025 0,41\n  T3  NÃO            O ROE médio é de pelo menos 15%? · ROE médio 11,9%\n  T4  NÃO            A dívida de longo prazo paga-se com 4 anos de lucro ou menos? · dívida LP = 4,33 anos de lucro médio (5 anos)\n  T5  SIM            A margem bruta é de pelo menos 20%, ou é um negócio claro de baixo custo? · margem bruta mediana 33,0%\n  T6  SIM            O número de ações não subiu mais de 10% em 3 anos? · ações +0,5% em 3 anos\n  T7  SIM            O fluxo de caixa operacional foi positivo em todos os anos? · FCO positivo em todos os anos\n\nPasso 0 · Setor: método completo · setor: Retalho\n  LUCRO     SIM   Lucro líquido positivo nos últimos 12 meses (último exercício) · 991 M\n  COMMODITY SIM   Passo 1: Regra de Commodity (a) margem bruta < 20% E ROE < 15%; (b) LPA mau em 3+ anos · margem bruta média 33,0%, ROE médio 11,9%, 0 ano(s) de LPA com prejuízo ou queda > 50%\n\nDemonstração académica · não constitui aconselhamento financeiro.\n============================================================================",
+   "esperado": "empresa razoável perto do valor justo: não comprar",
+   "como_esperado": true
+  },
+  {
+   "ticker": "FAROL",
+   "fonte": "sintetico",
+   "ok": true,
+   "empresa": "Farol Telecom",
+   "setor": "Telecomunicações",
+   "veredicto_final": "REJEITAR",
+   "veredicto_das_regras": "REJEITAR",
+   "descricao": "Triagem T2: O LPA não teve prejuízos e está mais alto do que há 5–10 anos? Não — LPA 2016 0,65 -> 2025 0,52; Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 5,2%; Triagem T4: A dívida de longo prazo paga-se com 4 anos de lucro ou menos? Não — dívida LP = 12,19 anos de lucro médio (5 anos)",
+   "limite": null,
+   "portoes_ok": null,
+   "motivos": [
+    "Triagem T2: O LPA não teve prejuízos e está mais alto do que há 5–10 anos? Não — LPA 2016 0,65 -> 2025 0,52; Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 5,2%; Triagem T4: A dívida de longo prazo paga-se com 4 anos de lucro ou menos? Não — dívida LP = 12,19 anos de lucro médio (5 anos)"
+   ],
+   "avaliacao": {},
+   "respostas_do_modelo": {},
+   "rondas_do_critico": [],
+   "revisoes": 0,
+   "mensagens": [
+    "request: utilizador -> coletor",
+    "inform: coletor -> guardiao",
+    "inform: guardiao -> decisor",
+    "inform: decisor -> utilizador"
+   ],
+   "avisos": [],
+   "segundos": 0.0,
+   "chamadas_ao_modelo": 0,
+   "decisor": {
+    "veredicto": {
+     "categoria": "REJEITAR",
+     "cor": "nao",
+     "descricao": "Triagem T2: O LPA não teve prejuízos e está mais alto do que há 5–10 anos? Não — LPA 2016 0,65 -> 2025 0,52; Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 5,2%; Triagem T4: A dívida de longo prazo paga-se com 4 anos de lucro ou menos? Não — dívida LP = 12,19 anos de lucro médio (5 anos)",
+     "limite": null
+    },
+    "portoes": null,
+    "condicoes": []
+   },
+   "relatorio": "\n============================================================================\nRELATÓRIO v4.27 — Método Buffett Integral: Farol Telecom (FAROL) · dataset sintético\nAnos: 2016 a 2025 (10 exercícios)\n============================================================================\nVEREDICTO (Passo 8): REJEITAR — Triagem T2: O LPA não teve prejuízos e está mais alto do que há 5–10 anos? Não — LPA 2016 0,65 -> 2025 0,52; Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 5,2%; Triagem T4: A dívida de longo prazo paga-se com 4 anos de lucro ou menos? Não — dívida LP = 12,19 anos de lucro médio (5 anos)\n\nPasso -2 · Triagem Rápida (um \"não\" e a empresa sai):\n  T1  PENDENTE       Percebo o produto e porque é que o cliente o compra? · pergunta qualitativa: respondida pelo Avaliador (parte qualitativa, com o modelo)\n  T2  NÃO            O LPA não teve prejuízos e está mais alto do que há 5–10 anos? · LPA 2016 0,65 -> 2025 0,52\n  T3  NÃO            O ROE médio é de pelo menos 15%? · ROE médio 5,2%\n  T4  NÃO            A dívida de longo prazo paga-se com 4 anos de lucro ou menos? · dívida LP = 12,19 anos de lucro médio (5 anos)\n  T5  SIM            A margem bruta é de pelo menos 20%, ou é um negócio claro de baixo custo? · margem bruta mediana 22,0%\n  T6  SIM            O número de ações não subiu mais de 10% em 3 anos? · ações +3,5% em 3 anos\n  T7  SIM            O fluxo de caixa operacional foi positivo em todos os anos? · FCO positivo em todos os anos\n\nPasso 0 · Setor: método completo · setor: Telecomunicações\n  LUCRO     SIM   Lucro líquido positivo nos últimos 12 meses (último exercício) · 1 060 M\n  COMMODITY SIM   Passo 1: Regra de Commodity (a) margem bruta < 20% E ROE < 15%; (b) LPA mau em 3+ anos · margem bruta média 22,0%, ROE médio 5,2%, 0 ano(s) de LPA com prejuízo ou queda > 50%\n\nDemonstração académica · não constitui aconselhamento financeiro.\n============================================================================",
+   "esperado": "empresa fraca: rejeitar",
+   "como_esperado": true
+  },
+  {
+   "ticker": "GRANITO",
+   "fonte": "sintetico",
+   "ok": true,
+   "empresa": "Granito Construções",
+   "setor": "Construção",
+   "veredicto_final": "REJEITAR",
+   "veredicto_das_regras": "REJEITAR",
+   "descricao": "Triagem T7: O fluxo de caixa operacional foi positivo em todos os anos? Não — FCO não positivo em [2024, 2025]",
+   "limite": null,
+   "portoes_ok": null,
+   "motivos": [
+    "Triagem T7: O fluxo de caixa operacional foi positivo em todos os anos? Não — FCO não positivo em [2024, 2025]"
+   ],
+   "avaliacao": {},
+   "respostas_do_modelo": {},
+   "rondas_do_critico": [],
+   "revisoes": 0,
+   "mensagens": [
+    "request: utilizador -> coletor",
+    "inform: coletor -> guardiao",
+    "inform: guardiao -> decisor",
+    "inform: decisor -> utilizador"
+   ],
+   "avisos": [],
+   "segundos": 0.0,
+   "chamadas_ao_modelo": 0,
+   "decisor": {
+    "veredicto": {
+     "categoria": "REJEITAR",
+     "cor": "nao",
+     "descricao": "Triagem T7: O fluxo de caixa operacional foi positivo em todos os anos? Não — FCO não positivo em [2024, 2025]",
+     "limite": null
+    },
+    "portoes": null,
+    "condicoes": []
+   },
+   "relatorio": "\n============================================================================\nRELATÓRIO v4.27 — Método Buffett Integral: Granito Construções (GRANITO) · dataset sintético\nAnos: 2016 a 2025 (10 exercícios)\n============================================================================\nVEREDICTO (Passo 8): REJEITAR — Triagem T7: O fluxo de caixa operacional foi positivo em todos os anos? Não — FCO não positivo em [2024, 2025]\n\nPasso -2 · Triagem Rápida (um \"não\" e a empresa sai):\n  T1  PENDENTE       Percebo o produto e porque é que o cliente o compra? · pergunta qualitativa: respondida pelo Avaliador (parte qualitativa, com o modelo)\n  T2  SIM            O LPA não teve prejuízos e está mais alto do que há 5–10 anos? · LPA 2016 0,72 -> 2025 1,65\n  T3  SIM            O ROE médio é de pelo menos 15%? · ROE médio 15,8%\n  T4  SIM            A dívida de longo prazo paga-se com 4 anos de lucro ou menos? · dívida LP = 2,52 anos de lucro médio (5 anos)\n  T5  SIM            A margem bruta é de pelo menos 20%, ou é um negócio claro de baixo custo? · margem bruta mediana 46,0%\n  T6  SIM            O número de ações não subiu mais de 10% em 3 anos? · ações +0,6% em 3 anos\n  T7  NÃO            O fluxo de caixa operacional foi positivo em todos os anos? · FCO não positivo em [2024, 2025]\n\nPasso 0 · Setor: método completo · setor: Construção\n  LUCRO     SIM   Lucro líquido positivo nos últimos 12 meses (último exercício) · 2 590 M\n  COMMODITY SIM   Passo 1: Regra de Commodity (a) margem bruta < 20% E ROE < 15%; (b) LPA mau em 3+ anos · margem bruta média 46,0%, ROE médio 15,8%, 0 ano(s) de LPA com prejuízo ou queda > 50%\n\nDemonstração académica · não constitui aconselhamento financeiro.\n============================================================================",
+   "esperado": "fluxo de caixa operacional negativo: rejeitar na triagem T7",
+   "como_esperado": true
+  },
+  {
+   "ticker": "HORIZONTE",
+   "fonte": "sintetico",
+   "ok": true,
+   "empresa": "Horizonte Energia",
+   "setor": "Energia",
+   "veredicto_final": "REJEITAR",
+   "veredicto_das_regras": "REJEITAR",
+   "descricao": "Passo 0: fora do método (cíclica, MLP ou REIT) — setor: Energia",
+   "limite": null,
+   "portoes_ok": null,
+   "motivos": [
+    "Passo 0: fora do método (cíclica, MLP ou REIT) — setor: Energia"
+   ],
+   "avaliacao": {},
+   "respostas_do_modelo": {},
+   "rondas_do_critico": [],
+   "revisoes": 0,
+   "mensagens": [
+    "request: utilizador -> coletor",
+    "inform: coletor -> guardiao",
+    "inform: guardiao -> decisor",
+    "inform: decisor -> utilizador"
+   ],
+   "avisos": [],
+   "segundos": 0.0,
+   "chamadas_ao_modelo": 0,
+   "decisor": {
+    "veredicto": {
+     "categoria": "REJEITAR",
+     "cor": "nao",
+     "descricao": "Passo 0: fora do método (cíclica, MLP ou REIT) — setor: Energia",
+     "limite": null
+    },
+    "portoes": null,
+    "condicoes": []
+   },
+   "relatorio": "\n============================================================================\nRELATÓRIO v4.27 — Método Buffett Integral: Horizonte Energia (HORIZONTE) · dataset sintético\nAnos: 2016 a 2025 (10 exercícios)\n============================================================================\nVEREDICTO (Passo 8): REJEITAR — Passo 0: fora do método (cíclica, MLP ou REIT) — setor: Energia\n\nPasso 0 · Setor: FORA DO MÉTODO · setor: Energia\n\nDemonstração académica · não constitui aconselhamento financeiro.\n============================================================================",
+   "esperado": "energia: fora do método (Passo 0)",
+   "como_esperado": true
+  },
+  {
+   "ticker": "IRIS",
+   "fonte": "sintetico",
+   "ok": true,
+   "empresa": "Iris Biotech",
+   "setor": "Saúde",
+   "veredicto_final": "REJEITAR",
+   "veredicto_das_regras": "REJEITAR",
+   "descricao": "Triagem T6: O número de ações não subiu mais de 10% em 3 anos? Não — ações +19,1% em 3 anos",
+   "limite": null,
+   "portoes_ok": null,
+   "motivos": [
+    "Triagem T6: O número de ações não subiu mais de 10% em 3 anos? Não — ações +19,1% em 3 anos"
+   ],
+   "avaliacao": {},
+   "respostas_do_modelo": {},
+   "rondas_do_critico": [],
+   "revisoes": 0,
+   "mensagens": [
+    "request: utilizador -> coletor",
+    "inform: coletor -> guardiao",
+    "inform: guardiao -> decisor",
+    "inform: decisor -> utilizador"
+   ],
+   "avisos": [],
+   "segundos": 0.0,
+   "chamadas_ao_modelo": 0,
+   "decisor": {
+    "veredicto": {
+     "categoria": "REJEITAR",
+     "cor": "nao",
+     "descricao": "Triagem T6: O número de ações não subiu mais de 10% em 3 anos? Não — ações +19,1% em 3 anos",
+     "limite": null
+    },
+    "portoes": null,
+    "condicoes": []
+   },
+   "relatorio": "\n============================================================================\nRELATÓRIO v4.27 — Método Buffett Integral: Iris Biotech (IRIS) · dataset sintético\nAnos: 2016 a 2025 (10 exercícios)\n============================================================================\nVEREDICTO (Passo 8): REJEITAR — Triagem T6: O número de ações não subiu mais de 10% em 3 anos? Não — ações +19,1% em 3 anos\n\nPasso -2 · Triagem Rápida (um \"não\" e a empresa sai):\n  T1  PENDENTE       Percebo o produto e porque é que o cliente o compra? · pergunta qualitativa: respondida pelo Avaliador (parte qualitativa, com o modelo)\n  T2  SIM            O LPA não teve prejuízos e está mais alto do que há 5–10 anos? · LPA 2016 0,86 -> 2025 1,50\n  T3  SIM            O ROE médio é de pelo menos 15%? · ROE médio 16,1%\n  T4  SIM            A dívida de longo prazo paga-se com 4 anos de lucro ou menos? · dívida LP = 1,78 anos de lucro médio (5 anos)\n  T5  SIM            A margem bruta é de pelo menos 20%, ou é um negócio claro de baixo custo? · margem bruta mediana 46,0%\n  T6  NÃO            O número de ações não subiu mais de 10% em 3 anos? · ações +19,1% em 3 anos\n  T7  SIM            O fluxo de caixa operacional foi positivo em todos os anos? · FCO positivo em todos os anos\n\nPasso 0 · Setor: método completo · setor: Saúde\n  LUCRO     SIM   Lucro líquido positivo nos últimos 12 meses (último exercício) · 2 150 M\n  COMMODITY SIM   Passo 1: Regra de Commodity (a) margem bruta < 20% E ROE < 15%; (b) LPA mau em 3+ anos · margem bruta média 46,0%, ROE médio 16,1%, 0 ano(s) de LPA com prejuízo ou queda > 50%\n\nDemonstração académica · não constitui aconselhamento financeiro.\n============================================================================",
+   "esperado": "diluição de 19% em 3 anos: rejeitar na triagem T6",
+   "como_esperado": true
+  },
+  {
+   "ticker": "JADE",
+   "fonte": "sintetico",
+   "ok": true,
+   "empresa": "Jade Media",
+   "setor": "Media",
+   "veredicto_final": "REJEITAR",
+   "veredicto_das_regras": "REJEITAR",
+   "descricao": "Portões falhados: P7 Reinveste bem os lucros retidos? (B2 = Não); P8 Consegue subir preços com a inflação? (C3 = Não)",
+   "limite": null,
+   "portoes_ok": 8,
+   "motivos": [
+    "Portões falhados: P7 Reinveste bem os lucros retidos? (B2 = Não); P8 Consegue subir preços com a inflação? (C3 = Não)"
+   ],
+   "avaliacao": {
+    "r": 7.0,
+    "taxa10": 4.2,
+    "g": 6.63,
+    "g_terminal": 2.5,
+    "oe0": 0.9642257783419548,
+    "vi": 30.66,
+    "ebt_por_acao": 1.2932903119084969,
+    "rend_inicial": 12.212373105840387,
+    "rend_apos_impostos": 9.647774753590452,
+    "valor_obrigacao": 30.79,
+    "pe_alvo": 19.0,
+    "pl_hist_medio": 19.0,
+    "dpa_atual": 0.31,
+    "soma_dpa": 4.486835874476704,
+    "metodo_tace": "I",
+    "tace": 13.3,
+    "p_eb": 9.12,
+    "valor_equity_bond": 18.77,
+    "divergencia_pct": 38.8,
+    "pmc": 9.12,
+    "pmc_limitante": "P_EB",
+    "alvo_pct": 20.0,
+    "pl_atual": 10.365084442169907,
+    "pl_max_10a": null,
+    "preco": 10.59
+   },
+   "respostas_do_modelo": {
+    "t1": "Sim",
+    "t1_porque": "Conteúdo e serviços de mídia Lealdade aos canais e aos conteúdos",
+    "t1_produto": "Conteúdo e serviços de mídia",
+    "t1_cliente": "Lealdade aos canais e aos conteúdos",
+    "circulo": "Não",
+    "wrigley": "Sim",
+    "wrigley_porque": "Os produtos de mídia tendem a ser reconhecíveis e leais ao longo do tempo",
+    "patentes_mais_de_metade": false,
+    "circulo_porque": "A empresa opera em um setor com marcas estabelecidas e lealdade do cliente",
+    "modelo": "M1",
+    "modelo_porque": "A empresa oferece conteúdo e serviços de mídia, que são produtos exclusivos com marcas estabelecidas",
+    "servico_de_talentos": false,
+    "dependente_patentes": false,
+    "c2": "Sim",
+    "c2_porque": "Os produtos de mídia tendem a ser estáveis e à prova de idiota",
+    "c3_modelo": "Não",
+    "c3_verificado": "Não",
+    "c3_evidencia": null,
+    "c3_citacao_proposta": null,
+    "c3_porque": "Não há evidência clara de subida de preços sem perda relevante de volume",
+    "c3_nota": "sem citação de evidência: C3 = Não",
+    "franquia": {
+     "f1": {
+      "resposta": "sim",
+      "porque": "Os produtos de mídia são desejados e necessários para muitos clientes"
+     },
+     "f2": {
+      "resposta": "sim",
+      "porque": "Os clientes consideram que não têm substitutos próximos"
+     },
+     "f3": {
+      "resposta": "sim",
+      "porque": "O preço não é regulado"
+     },
+     "f4": {
+      "resposta": "sim",
+      "porque": "Um concorrente com capital ilimitado não conseguiria tirar os clientes"
+     }
+    },
+    "b4_evidencia_verificada": null,
+    "verificacao": [],
+    "alteracoes": [],
+    "segunda_leitura": {
+     "produto": "Jade Media vende conteúdo de entretenimento e informação através de várias plataformas, incluindo televisão, rádio e internet.",
+     "descreve": true,
+     "cliente_volta": "hábito e necessidade de informação e entretenimento",
+     "cliente_volta_resposta": "sim",
+     "mesmo_em_15_anos": "o entretenimento e a informação continuarão a ser necessários",
+     "mesmo_em_15_anos_resposta": "sim"
+    },
+    "duvidas": [
+     {
+      "campo": "circulo",
+      "primeira": "A empresa opera em um setor com marcas estabelecidas e lealdade do cliente",
+      "segunda": "o entretenimento e a informação continuarão a ser necessários"
+     }
+    ],
+    "fontes_usadas": [
+     "Wikipedia",
+     "Notícias recentes (só contexto)"
+    ],
+    "evidencia": {
+     "nivel": "moderada",
+     "sinais": {
+      "roic": {
+       "nivel": "moderado",
+       "facto": "ROIC mediano 13,1%, mínimo 12,6% em 10 anos"
+      },
+      "margem_bruta": {
+       "nivel": "forte",
+       "facto": "margem bruta mediana 46,0%, amplitude 0,0 p.p. em 10 anos"
+      }
+     },
+     "factos": [
+      "ROIC mediano 13,1%, mínimo 12,6% em 10 anos",
+      "margem bruta mediana 46,0%, amplitude 0,0 p.p. em 10 anos"
+     ]
+    },
+    "revisao": false
+   },
+   "rondas_do_critico": [
+    {
+     "objecoes": [
+      {
+       "gravidade": "media",
+       "campo": null,
+       "origem": "regra",
+       "descricao": "VI e Valor Equity Bond divergem 38,8%: documentar a causa (Secção 8.3)"
+      },
+      {
+       "gravidade": "media",
+       "campo": "circulo",
+       "descricao": "A afirmação de que a empresa opera em um setor com marcas estabelecidas e lealdade do cliente não é suportada pelos dados fornecidos, que indicam uma margem bruta relativamente baixa (46%) e uma margem líquida parcial (17.15%), sugerindo que a empresa pode não ter uma forte posição de marca ou lealdade do cliente.",
+       "origem": "modelo"
+      },
+      {
+       "gravidade": "media",
+       "campo": "c3",
+       "descricao": "A afirmação de que a empresa não tem poder de preço (C3) não é suportada pelos dados, que mostram uma margem bruta (46%) e uma margem líquida (17.15%) relativamente estáveis, indicando que a empresa pode ter algum poder de preço, embora limitado.",
+       "origem": "modelo"
+      },
+      {
+       "gravidade": "baixa",
+       "campo": "franquia",
+       "descricao": "A afirmação de que a empresa tem uma franquia (f1, f2, f3, f4) é suportada pelos dados, que indicam que os produtos de mídia são desejados e necessários para muitos clientes, os clientes consideram que não têm substitutos próximos, o preço não é regulado, e um concorrente com capital ilimitado não conseguiria tirar os clientes.",
+       "origem": "modelo"
+      }
+     ],
+     "graves": 0,
+     "pediu_revisao": false
+    }
+   ],
+   "revisoes": 0,
+   "mensagens": [
+    "request: utilizador -> coletor",
+    "inform: coletor -> guardiao",
+    "request: guardiao -> avaliador",
+    "propose: avaliador -> critico",
+    "inform: critico -> decisor",
+    "inform: decisor -> utilizador"
+   ],
+   "avisos": [],
+   "segundos": 371.3,
+   "chamadas_ao_modelo": 4,
+   "decisor": {
+    "veredicto": {
+     "categoria": "REJEITAR",
+     "cor": "nao",
+     "descricao": "Portões falhados: P7 Reinveste bem os lucros retidos? (B2 = Não); P8 Consegue subir preços com a inflação? (C3 = Não)",
+     "limite": null
+    },
+    "portoes": [
+     {
+      "id": "P1",
+      "pergunta": "Tem uma franquia ou vantagem identificável?",
+      "passa": true,
+      "detalhe": "C1 = Sim e C4 = Parcial"
+     },
+     {
+      "id": "P2",
+      "pergunta": "Os lucros são fortes e com tendência de alta?",
+      "passa": true,
+      "detalhe": "A7 = Sim"
+     },
+     {
+      "id": "P3",
+      "pergunta": "É financiada de forma conservadora?",
+      "passa": true,
+      "detalhe": "A8 = Sim"
+     },
+     {
+      "id": "P4",
+      "pergunta": "Obtém consistentemente um ROE alto?",
+      "passa": true,
+      "detalhe": "A10 = Parcial"
+     },
+     {
+      "id": "P5",
+      "pergunta": "Consegue reter os lucros?",
+      "passa": true,
+      "detalhe": "A11 = Sim"
+     },
+     {
+      "id": "P6",
+      "pergunta": "Gasta pouco para manter as operações?",
+      "passa": true,
+      "detalhe": "A12 = Sim"
+     },
+     {
+      "id": "P7",
+      "pergunta": "Reinveste bem os lucros retidos?",
+      "passa": false,
+      "detalhe": "B2 = Não"
+     },
+     {
+      "id": "P8",
+      "pergunta": "Consegue subir preços com a inflação?",
+      "passa": false,
+      "detalhe": "C3 = Não"
+     },
+     {
+      "id": "P9",
+      "pergunta": "Os lucros retidos aumentam o valor?",
+      "passa": true,
+      "detalhe": "B1 = Sim"
+     },
+     {
+      "id": "P10",
+      "pergunta": "A gestão é íntegra e pensa como dona?",
+      "passa": true,
+      "detalhe": "B4 = Parcial"
+     }
+    ],
+    "condicoes": [
+     {
+      "id": "C1p",
+      "descricao": "Preço atual <= Preço Máximo de Compra = mínimo (VI ; P_EB ; Valor-Obrigação)",
+      "ok": false,
+      "detalhe": "preço 10,59 vs PMC 9,12"
+     },
+     {
+      "id": "C2p",
+      "descricao": "Rendimento inicial >= taxa do Estado a 10 anos",
+      "ok": true,
+      "detalhe": "12,21% vs 4,20%"
+     },
+     {
+      "id": "C3p",
+      "descricao": "TACE a 10 anos >= 15% (a mais baixa dos dois métodos)",
+      "ok": false,
+      "detalhe": "TACE 13,3% (método I)"
+     },
+     {
+      "id": "C4p",
+      "descricao": "P/L atual < 40 e abaixo do máximo dos últimos 10 anos",
+      "ok": true,
+      "detalhe": "P/L 10,4 (máximo de 10 anos n/d)"
+     }
+    ]
+   },
+   "relatorio": "\n============================================================================\nRELATÓRIO v4.27 — Método Buffett Integral: Jade Media (JADE) · dataset sintético\nAnos: 2016 a 2025 (10 exercícios)\n============================================================================\nVEREDICTO (Passo 8): REJEITAR — Portões falhados: P7 Reinveste bem os lucros retidos? (B2 = Não); P8 Consegue subir preços com a inflação? (C3 = Não)\n\n----------------------------------------------------------------------------\nRESUMO PARA DECISÃO\n  Ao preço atual de 10,59 USD, a TACE esperada é 13,3% ao ano (exigência: 15%).\n  Preço Máximo de Compra = mínimo (VI 30,66 ; P_EB 9,12 ; Valor-Obrigação 30,79) = 9,12 USD (desconto de 14% face ao preço atual).\n  Para 20% ao ano (o teu alvo): comprar no máximo a 5,96 USD.\n  Preço máximo por rentabilidade: 10% -> 14,23 · 12% -> 11,89 · 15% -> 9,12 · 20% -> 5,96 · 25% -> 3,96\n  10 Portões: 8/10 passam (falham P7, P8) · Franquia: não confirmada\n  Condições de preço: CP1 NÃO · CP2 sim · CP3 NÃO · CP4 sim\n  => REJEITAR\n----------------------------------------------------------------------------\n\nSíntese (Buffett):\n  O negócio de Jade Media não apresenta uma gestão eficiente dos lucros e não consegue aumentar preços face à inflação, falhando os portões P7 e P8. O preço atual de 10,59 é superior ao Preço Máximo de Compra, e a TACE a 10 anos está abaixo dos 15%. Para considerar uma compra, seria necessário que a empresa melhorasse significativamente a gestão dos lucros e conseguisse passar os portões P7 e P8.\n\nPasso -2 · Triagem Rápida (um \"não\" e a empresa sai):\n  T1  SIM            Percebo o produto e porque é que o cliente o compra? · Conteúdo e serviços de mídia Lealdade aos canais e aos conteúdos\n  T2  SIM            O LPA não teve prejuízos e está mais alto do que há 5–10 anos? · LPA 2016 0,57 -> 2025 1,02\n  T3  SIM            O ROE médio é de pelo menos 15%? · ROE médio 16,8%\n  T4  SIM            A dívida de longo prazo paga-se com 4 anos de lucro ou menos? · dívida LP = 2,38 anos de lucro médio (5 anos)\n  T5  SIM            A margem bruta é de pelo menos 20%, ou é um negócio claro de baixo custo? · margem bruta mediana 46,0%\n  T6  SIM            O número de ações não subiu mais de 10% em 3 anos? · ações +0,5% em 3 anos\n  T7  SIM            O fluxo de caixa operacional foi positivo em todos os anos? · FCO positivo em todos os anos\n\nPasso -1 · Círculo de Competência:\n  NÃO · Teste Wrigley: SIM · patentes (> 50% da receita a expirar): não — A empresa opera em um setor com marcas estabelecidas e lealdade do cliente\n  Segunda leitura (outra formulação) discorda da primeira — a empresa não foi rejeitada por isto:\n    CIRCULO: 1.ª leitura — A empresa opera em um setor com marcas estabelecidas e lealdade do cliente\n             2.ª leitura — o entretenimento e a informação continuarão a ser necessários\n\nPasso 0 · Setor: método completo · setor: Media\n\nPasso 1 · Modelo de negócio:\n  M1 (produto exclusivo) — A empresa oferece conteúdo e serviços de mídia, que são produtos exclusivos com marcas estabelecidas\n  Dependência de patentes: não · serviço de talentos individuais: não\n  LUCRO     SIM   Lucro líquido positivo nos últimos 12 meses (último exercício) · 782 M\n  COMMODITY SIM   Passo 1: Regra de Commodity (a) margem bruta < 20% E ROE < 15%; (b) LPA mau em 3+ anos · margem bruta média 46,0%, ROE médio 16,8%, 0 ano(s) de LPA com prejuízo ou queda > 50%\n\nPasso 2 · Bloco A — vantagem competitiva durável (Sim / Parcial / Não; não há pontos):\n  A1   Margem bruta (lucro bruto / receita, %)          Sim            46,00\n  A2   SG&A / lucro bruto (%)                           Parcial        35,67\n  A3   I&D / lucro bruto (%)                            não aplicável    [sem linha própria de I&D (o custo está no SG&A, em A2)]\n  A4   Depreciação / lucro bruto (%)                    Parcial        14,46\n  A5   Juros / resultado operacional (%)                Sim            6,50\n  A6   Margem líquida (%)                               Parcial        17,15\n  A7   LPA consistente (quedas nas variações anuais)    Sim            1 queda(s) em 9 variações, sem prejuízos  [Sim: no máximo 1; Parcial: até 3]\n  A8   Dívida LP / lucro líquido (x)                    Sim            2,20\n  A9   Passivo / (capitais próprios + ações próprias) ( Sim            0,68\n  A10  ROE (%)                                          Parcial        16,76  [ROE corrigido (com ações próprias) mediano 16,8%]\n  A11  Lucros retidos (CAGR)                            Sim            15,01\n  A12  Capex / lucro líquido (%)                        Sim            22,62\n  A13  Imposto pago (detetor de mentiras)               Sim            taxa efetiva mediana 21,0% (legal 21%); pago / contabilizado 97%  [créditos fiscais legítimos documentados não contam contra]\n  A14  Inventário                                       não aplicável    [sem inventário relevante]\n  A15  Autofinanciamento das distribuições              Sim            2,79\n  Sinais de Balanço: 0 presente(s), 0 por explicar (2 ou mais por explicar impedem a Franquia)\n    [ ] Contas a receber / receita a subir 3 anos seguidos · 2022: 12,0% -> 2023: 12,0% -> 2024: 12,0% -> 2025: 12,0%\n    [ ] ROA muito alto (> 25%) com ativos pequenos: barreira de entrada fraca · ROA mediano 9,8%\n    [ ] Dívida de curto prazo maior do que a de longo prazo · sem dados\n    [ ] Dívida de longo prazo a vencer elevada face à caixa e ao FCO (calibração: > 50%) · sem dados\n    [ ] Caixa de origem errada: subiu à custa de emissão de dívida ou de ações · não detetado\n    [ ] Alavancagem: ROE reportado mais de 1,25x o corrigido (calibração) · ROE reportado 16,8% vs corrigido 16,8%\n\nPasso 3 · Bloco B — gestão e alocação de capital:\n  B1   Dólar retido (preço normalizado)                 Sim            1,70 (P/L médio 19,0; LPA 2016 0,57 -> 2025 1,02; LPA retido 5,05)\n  B2   Rendimento dos lucros retidos                    Não            9,0%  [limites: calibração do protocolo]\n  B3   Recompras e estrutura de capital                 Parcial        ações -0,09%/ano\n  B4   Integridade, franqueza e mentalidade de dono     Parcial        sinais de governança não verificáveis (empresa sem 8-K na SEC)  [insiders com participação desconhecida; sem evidência verificada de admitir erros; remuneração e Form 4 não verificados automaticamente]\n  B5   Aquisições e imperativo institucional            Sim            aquisições relevantes em 0 ano(s); imparidades 0 M  ['frequentes' = 4 ou mais anos com aquisições acima de 1% da receita (calibração)]\n         Bloco C — durabilidade do negócio:\n  C1   Modelo de negócio Buffett                        Sim            M1 (produto exclusivo)\n  C2   Produto estável, à prova de idiota               Sim            Os produtos de mídia tendem a ser estáveis e à prova de idiota\n  C3   Poder de preço (evidência concreta e datada)     Não            sem evidência verificada  [sem citação de evidência: C3 = Não]\n  C4   Teste da Franquia (carta de 1991)                Parcial        4 sim em 4  [4 sim, mas C3 não é Sim: franquia não confirmada]\n         O produto ou serviço é necessário ou desejado? SIM — Os produtos de mídia são desejados e necessários para muitos clientes\n         O cliente considera que não tem substituto próximo? SIM — Os clientes consideram que não têm substitutos próximos\n         O preço não é regulado? SIM — O preço não é regulado\n         Se um concorrente tivesse capital ilimitado, continuaria sem conseguir tirar-lhe os clientes? SIM — Um concorrente com capital ilimitado não conseguiria tirar os clientes\n\nPasso 4 · Os 10 Portões de Buffett (passam com Sim ou Parcial; um falhado é rejeição):\n  P1   PASSA  Tem uma franquia ou vantagem identificável? · C1 = Sim e C4 = Parcial\n  P2   PASSA  Os lucros são fortes e com tendência de alta? · A7 = Sim\n  P3   PASSA  É financiada de forma conservadora? · A8 = Sim\n  P4   PASSA  Obtém consistentemente um ROE alto? · A10 = Parcial\n  P5   PASSA  Consegue reter os lucros? · A11 = Sim\n  P6   PASSA  Gasta pouco para manter as operações? · A12 = Sim\n  P7   FALHA  Reinveste bem os lucros retidos? · B2 = Não\n  P8   FALHA  Consegue subir preços com a inflação? · C3 = Não\n  P9   PASSA  Os lucros retidos aumentam o valor? · B1 = Sim\n  P10  PASSA  A gestão é íntegra e pensa como dona? · B4 = Parcial\n  Problema solucionável (Secção 6.4): se a falha vem de um problema recente e pontual, documentar por escrito (o quê, porque é pontual, porque não toca na franquia) e reavaliar. A franquia, o P3 e o FCO nunca são dispensados.\n\nPasso 5 · Avaliação (Secção 8):\n  r = 7,00% (taxa do Estado a 10 anos 4,20%, sem prémio de risco, piso 7%)\n  g = mínimo de: (i) CAGR do LPA 6,72%; (ii) CAGR do lucro líquido 6,63%; (iii) ROE x (1 - payout) 11,79%; (iv) teto 15,00% -> g = 6,63%, constante nos anos 1–10; terminal = mínimo (2,5% ; g/2) = 2,50%\n    detalhes: (i) 2016 -> 2025; (ii) 2016 -> 2025; (iii) ROE médio 16,8%, payout 30%\n  Etapa A — Owner Earnings/ação (média de 5 anos, capex de manutenção) 0,964 -> Valor Intrínseco 30,66\n  EB1 — rendimento inicial 12,21% antes de impostos (9,65% depois) vs Estado 4,20% · Valor-Obrigação 30,79\n  EB2 — P/L-alvo 19,0 (mínimo entre a média de 10 anos 19,0 e 25) · DPA atual 0,31\n    Método I (LPA): LPA base 0,899 -> LPA10 1,71 -> preço10 32,43 -> TACE 13,30%\n    Método II (ROE): c 11,79% -> VPA10 19,53 -> LPA10 3,28 -> preço10 62,24 -> TACE 20,21%\n    TACE = 13,30% (método I, o mais baixo)\n  EB3 — P_EB (preço para 15% ao ano) 9,12\n  PMC = mínimo (VI ; P_EB ; Valor-Obrigação) = 9,12 (limitado por: P_EB)\n  Validação cruzada: VI 30,66 vs Valor Equity Bond 18,77 (divergência 38,8%; acima de 20%: documentar a causa)\n  Nota: taxa a 10 anos 4,20% abaixo do piso: r = 7%\n  Nota: capex de crescimento separado (capex acima da depreciação em anos de receita a crescer): 2023: 27 M\n  Nota: P/L-alvo a partir do P/L médio histórico da fonte (sem preços de fim de exercício)\n\nPasso 6 · Decisão (Secção 9): Triagem + Portões + as quatro condições de preço, cumulativas\n  [ ] Preço atual <= Preço Máximo de Compra = mínimo (VI ; P_EB ; Valor-Obrigação) · preço 10,59 vs PMC 9,12\n  [x] Rendimento inicial >= taxa do Estado a 10 anos · 12,21% vs 4,20%\n  [ ] TACE a 10 anos >= 15% (a mais baixa dos dois métodos) · TACE 13,3% (método I)\n  [x] P/L atual < 40 e abaixo do máximo dos últimos 10 anos · P/L 10,4 (máximo de 10 anos n/d)\n\nPasso 7 · Checklist de execução (no momento da compra):\n  [ ] A Triagem e os 10 Portões continuam a passar com o último relatório anual\n  [ ] Preço atual <= Preço Máximo de Compra\n  [ ] Rendimento inicial >= taxa do Estado, TACE >= 15%, P/L < 40 e abaixo do máximo de 10 anos\n  [ ] Posição após a compra <= 10% (verificar na corretora)\n  [ ] Esta compra merece um furo do cartão de 20 decisões? Registar \"Decisão n.º X de 20\"\n\nSe a posição já for detida (Secção 7): nenhum gatilho de venda por preço\n\nCrítico — Munger (0 revisão(ões) pedida(s) ao Avaliador):\n  [final] media: VI e Valor Equity Bond divergem 38,8%: documentar a causa (Secção 8.3) (regra)\n  [final] media: A afirmação de que a empresa opera em um setor com marcas estabelecidas e lealdade do cliente não é suportada pelos dados fornecidos, que indicam uma margem bruta relativamente baixa (46%) e uma margem líquida parcial (17.15%), sugerindo que a empresa pode não ter uma forte posição de marca ou lealdade do cliente. (modelo)\n  [final] media: A afirmação de que a empresa não tem poder de preço (C3) não é suportada pelos dados, que mostram uma margem bruta (46%) e uma margem líquida (17.15%) relativamente estáveis, indicando que a empresa pode ter algum poder de preço, embora limitado. (modelo)\n  [final] baixa: A afirmação de que a empresa tem uma franquia (f1, f2, f3, f4) é suportada pelos dados, que indicam que os produtos de mídia são desejados e necessários para muitos clientes, os clientes consideram que não têm substitutos próximos, o preço não é regulado, e um concorrente com capital ilimitado não conseguiria tirar os clientes. (modelo)\n\nDemonstração académica · não constitui aconselhamento financeiro.\n============================================================================",
+   "esperado": "goodwill alto, só por si, não é regra de rejeição na v4.27",
+   "como_esperado": null
+  },
+  {
+   "ticker": "LINCE",
+   "fonte": "sintetico",
+   "ok": true,
+   "empresa": "Lince Semicondutores",
+   "setor": "Tecnologia",
+   "veredicto_final": "REJEITAR",
+   "veredicto_das_regras": "REJEITAR",
+   "descricao": "Portões falhados: P8 Consegue subir preços com a inflação? (C3 = Não)",
+   "limite": null,
+   "portoes_ok": 9,
+   "motivos": [
+    "Portões falhados: P8 Consegue subir preços com a inflação? (C3 = Não)"
+   ],
+   "avaliacao": {
+    "r": 7.0,
+    "taxa10": 4.2,
+    "g": 9.51,
+    "g_terminal": 2.5,
+    "oe0": 1.4673995980791643,
+    "vi": 58.85,
+    "ebt_por_acao": 2.420848131618705,
+    "rend_inicial": 16.171330204533767,
+    "rend_apos_impostos": 12.775350861595292,
+    "valor_obrigacao": 57.64,
+    "pe_alvo": 22.3,
+    "pl_hist_medio": 22.3,
+    "dpa_atual": 0.57,
+    "soma_dpa": 9.716955006423152,
+    "metodo_tace": "I",
+    "tace": 20.91,
+    "p_eb": 24.7,
+    "valor_equity_bond": 50.8,
+    "divergencia_pct": 13.7,
+    "pmc": 24.7,
+    "pmc_limitante": "P_EB",
+    "alvo_pct": 20.0,
+    "pl_atual": 7.827573667711599,
+    "pl_max_10a": null,
+    "preco": 14.97
+   },
+   "respostas_do_modelo": {
+    "t1": "Sim",
+    "t1_porque": "Componentes semicondutores Produtos de alta qualidade e confiabilidade",
+    "t1_produto": "Componentes semicondutores",
+    "t1_cliente": "Produtos de alta qualidade e confiabilidade",
+    "circulo": "Sim",
+    "wrigley": "Sim",
+    "wrigley_porque": "Os semicondutores são produtos essenciais para a indústria eletrônica, com uma demanda constante.",
+    "patentes_mais_de_metade": false,
+    "circulo_porque": "A empresa opera em um setor tecnológico com clientes que valorizam a confiabilidade e a qualidade dos componentes semicondutores.",
+    "modelo": "M1",
+    "modelo_porque": "A empresa vende um produto exclusivo (componentes semicondutores) que é essencial para a indústria eletrônica.",
+    "servico_de_talentos": false,
+    "dependente_patentes": false,
+    "c2": "Sim",
+    "c2_porque": "Os semicondutores são produtos estáveis e à prova de idiota, com aplicações duradouras em diversos dispositivos eletrônicos.",
+    "c3_modelo": "Sim",
+    "c3_verificado": "Não",
+    "c3_evidencia": null,
+    "c3_citacao_proposta": "margem bruta mediana 46,0%, amplitude 0,0 p.p. em 10 anos",
+    "c3_porque": "A empresa tem uma margem bruta alta e consistente, o que sugere a capacidade de aumentar os preços sem perder volume.",
+    "c3_nota": "citação não encontrada nas fontes: C3 = Não",
+    "franquia": {
+     "f1": {
+      "resposta": "sim",
+      "porque": "Os semicondutores são componentes essenciais para a fabricação de dispositivos eletrônicos, com uma demanda constante."
+     },
+     "f2": {
+      "resposta": "sim",
+      "porque": "Os clientes valorizam a confiabilidade e a qualidade dos semicondutores, dificultando a substituição por produtos alternativos."
+     },
+     "f3": {
+      "resposta": "sim",
+      "porque": "O preço dos semicondutores não é regulado, permitindo que a empresa ajuste os preços conforme necessário."
+     },
+     "f4": {
+      "resposta": "sim",
+      "porque": "Um concorrente com capital ilimitado teria dificuldades em substituir a Lince Semicondutores devido à sua reputação e qualidade."
+     }
+    },
+    "b4_evidencia_verificada": null,
+    "verificacao": [],
+    "alteracoes": [],
+    "fontes_usadas": [],
+    "evidencia": {
+     "nivel": "moderada",
+     "sinais": {
+      "roic": {
+       "nivel": "moderado",
+       "facto": "ROIC mediano 14,8%, mínimo 13,9% em 10 anos"
+      },
+      "margem_bruta": {
+       "nivel": "forte",
+       "facto": "margem bruta mediana 46,0%, amplitude 0,0 p.p. em 10 anos"
+      }
+     },
+     "factos": [
+      "ROIC mediano 14,8%, mínimo 13,9% em 10 anos",
+      "margem bruta mediana 46,0%, amplitude 0,0 p.p. em 10 anos"
+     ]
+    },
+    "revisao": false
+   },
+   "rondas_do_critico": [
+    {
+     "objecoes": [
+      {
+       "gravidade": "media",
+       "campo": null,
+       "origem": "regra",
+       "descricao": "a citação de poder de preço não existe nas fontes: C3 = Não"
+      },
+      {
+       "gravidade": "media",
+       "campo": "franquia",
+       "descricao": "A afirmação de que um concorrente com capital ilimitado teria dificuldades em substituir a Lince Semicondutores devido à sua reputação e qualidade não é suportada pelos dados fornecidos. Os números não apresentam informações sobre a dificuldade de entrada do concorrente.",
+       "origem": "modelo"
+      },
+      {
+       "gravidade": "baixa",
+       "campo": "c3",
+       "descricao": "A afirmação de que o poder de preço não é verificado não é diretamente contraditória pelos dados, mas não há evidências claras de poder de preço elevado.",
+       "origem": "modelo"
+      }
+     ],
+     "graves": 0,
+     "pediu_revisao": false
+    }
+   ],
+   "revisoes": 0,
+   "mensagens": [
+    "request: utilizador -> coletor",
+    "inform: coletor -> guardiao",
+    "request: guardiao -> avaliador",
+    "propose: avaliador -> critico",
+    "inform: critico -> decisor",
+    "inform: decisor -> utilizador"
+   ],
+   "avisos": [],
+   "segundos": 1342.8,
+   "chamadas_ao_modelo": 3,
+   "decisor": {
+    "veredicto": {
+     "categoria": "REJEITAR",
+     "cor": "nao",
+     "descricao": "Portões falhados: P8 Consegue subir preços com a inflação? (C3 = Não)",
+     "limite": null
+    },
+    "portoes": [
+     {
+      "id": "P1",
+      "pergunta": "Tem uma franquia ou vantagem identificável?",
+      "passa": true,
+      "detalhe": "C1 = Sim e C4 = Parcial"
+     },
+     {
+      "id": "P2",
+      "pergunta": "Os lucros são fortes e com tendência de alta?",
+      "passa": true,
+      "detalhe": "A7 = Sim"
+     },
+     {
+      "id": "P3",
+      "pergunta": "É financiada de forma conservadora?",
+      "passa": true,
+      "detalhe": "A8 = Sim"
+     },
+     {
+      "id": "P4",
+      "pergunta": "Obtém consistentemente um ROE alto?",
+      "passa": true,
+      "detalhe": "A10 = Parcial"
+     },
+     {
+      "id": "P5",
+      "pergunta": "Consegue reter os lucros?",
+      "passa": true,
+      "detalhe": "A11 = Sim"
+     },
+     {
+      "id": "P6",
+      "pergunta": "Gasta pouco para manter as operações?",
+      "passa": true,
+      "detalhe": "A12 = Parcial"
+     },
+     {
+      "id": "P7",
+      "pergunta": "Reinveste bem os lucros retidos?",
+      "passa": true,
+      "detalhe": "B2 = Parcial"
+     },
+     {
+      "id": "P8",
+      "pergunta": "Consegue subir preços com a inflação?",
+      "passa": false,
+      "detalhe": "C3 = Não"
+     },
+     {
+      "id": "P9",
+      "pergunta": "Os lucros retidos aumentam o valor?",
+      "passa": true,
+      "detalhe": "B1 = Sim"
+     },
+     {
+      "id": "P10",
+      "pergunta": "A gestão é íntegra e pensa como dona?",
+      "passa": true,
+      "detalhe": "B4 = Parcial"
+     }
+    ],
+    "condicoes": [
+     {
+      "id": "C1p",
+      "descricao": "Preço atual <= Preço Máximo de Compra = mínimo (VI ; P_EB ; Valor-Obrigação)",
+      "ok": true,
+      "detalhe": "preço 14,97 vs PMC 24,70"
+     },
+     {
+      "id": "C2p",
+      "descricao": "Rendimento inicial >= taxa do Estado a 10 anos",
+      "ok": true,
+      "detalhe": "16,17% vs 4,20%"
+     },
+     {
+      "id": "C3p",
+      "descricao": "TACE a 10 anos >= 15% (a mais baixa dos dois métodos)",
+      "ok": true,
+      "detalhe": "TACE 20,9% (método I)"
+     },
+     {
+      "id": "C4p",
+      "descricao": "P/L atual < 40 e abaixo do máximo dos últimos 10 anos",
+      "ok": true,
+      "detalhe": "P/L 7,8 (máximo de 10 anos n/d)"
+     }
+    ]
+   },
+   "relatorio": "\n============================================================================\nRELATÓRIO v4.27 — Método Buffett Integral: Lince Semicondutores (LINCE) · dataset sintético\nAnos: 2016 a 2025 (10 exercícios)\n============================================================================\nVEREDICTO (Passo 8): REJEITAR — Portões falhados: P8 Consegue subir preços com a inflação? (C3 = Não)\n\n----------------------------------------------------------------------------\nRESUMO PARA DECISÃO\n  Ao preço atual de 14,97 USD, a TACE esperada é 20,9% ao ano (exigência: 15%).\n  Preço Máximo de Compra = mínimo (VI 58,85 ; P_EB 24,70 ; Valor-Obrigação 57,64) = 24,70 USD (acima do preço atual).\n  Para 20% ao ano (o teu alvo): comprar no máximo a 16,14 USD.\n  Preço máximo por rentabilidade: 10% -> 38,53 · 12% -> 32,18 · 15% -> 24,70 · 20% -> 16,14 · 25% -> 10,73\n  10 Portões: 9/10 passam (falham P8) · Franquia: não confirmada\n  Condições de preço: CP1 sim · CP2 sim · CP3 sim · CP4 sim\n  => REJEITAR\n----------------------------------------------------------------------------\n\nSíntese (Buffett):\n  O negócio de Lince Semicondutores falha na P8, pois não consegue subir preços com a inflação, o que questiona a sustentabilidade do fosso económico. O preço atual de 14,97 é superior ao Preço Máximo de Compra de 24,7, não oferecendo margem de segurança. Para considerar a compra, seria necessário que a empresa conseguisse manter ou aumentar os preços face à inflação.\n\nPasso -2 · Triagem Rápida (um \"não\" e a empresa sai):\n  T1  SIM            Percebo o produto e porque é que o cliente o compra? · Componentes semicondutores Produtos de alta qualidade e confiabilidade\n  T2  SIM            O LPA não teve prejuízos e está mais alto do que há 5–10 anos? · LPA 2016 0,83 -> 2025 1,91\n  T3  SIM            O ROE médio é de pelo menos 15%? · ROE médio 18,3%\n  T4  SIM            A dívida de longo prazo paga-se com 4 anos de lucro ou menos? · dívida LP = 2,05 anos de lucro médio (5 anos)\n  T5  SIM            A margem bruta é de pelo menos 20%, ou é um negócio claro de baixo custo? · margem bruta mediana 46,0%\n  T6  SIM            O número de ações não subiu mais de 10% em 3 anos? · ações -0,4% em 3 anos\n  T7  SIM            O fluxo de caixa operacional foi positivo em todos os anos? · FCO positivo em todos os anos\n\nPasso -1 · Círculo de Competência:\n  SIM · Teste Wrigley: SIM · patentes (> 50% da receita a expirar): não — A empresa opera em um setor tecnológico com clientes que valorizam a confiabilidade e a qualidade dos componentes semicondutores.\n\nPasso 0 · Setor: método completo · setor: Tecnologia\n\nPasso 1 · Modelo de negócio:\n  M1 (produto exclusivo) — A empresa vende um produto exclusivo (componentes semicondutores) que é essencial para a indústria eletrônica.\n  Dependência de patentes: não · serviço de talentos individuais: não\n  LUCRO     SIM   Lucro líquido positivo nos últimos 12 meses (último exercício) · 3 190 M\n  COMMODITY SIM   Passo 1: Regra de Commodity (a) margem bruta < 20% E ROE < 15%; (b) LPA mau em 3+ anos · margem bruta média 46,0%, ROE médio 18,3%, 0 ano(s) de LPA com prejuízo ou queda > 50%\n\nPasso 2 · Bloco A — vantagem competitiva durável (Sim / Parcial / Não; não há pontos):\n  A1   Margem bruta (lucro bruto / receita, %)          Sim            46,00\n  A2   SG&A / lucro bruto (%)                           Sim            27,29\n  A3   I&D / lucro bruto (%)                            Sim            8,00\n  A4   Depreciação / lucro bruto (%)                    Sim            5,17\n  A5   Juros / resultado operacional (%)                Sim            5,14\n  A6   Margem líquida (%)                               Sim            20,20\n  A7   LPA consistente (quedas nas variações anuais)    Sim            0 queda(s) em 9 variações, sem prejuízos  [Sim: no máximo 1; Parcial: até 3]\n  A8   Dívida LP / lucro líquido (x)                    Sim            1,72\n  A9   Passivo / (capitais próprios + ações próprias) ( Sim            0,59\n  A10  ROE (%)                                          Parcial        18,39  [ROE corrigido (com ações próprias) mediano 18,4%]\n  A11  Lucros retidos (CAGR)                            Sim            17,32\n  A12  Capex / lucro líquido (%)                        Parcial        35,36\n  A13  Imposto pago (detetor de mentiras)               Sim            taxa efetiva mediana 21,0% (legal 21%); pago / contabilizado 97%  [créditos fiscais legítimos documentados não contam contra]\n  A14  Inventário                                       não aplicável    [sem inventário relevante]\n  A15  Autofinanciamento das distribuições              Sim            2,36\n  Sinais de Balanço: 0 presente(s), 0 por explicar (2 ou mais por explicar impedem a Franquia)\n    [ ] Contas a receber / receita a subir 3 anos seguidos · 2022: 12,0% -> 2023: 12,0% -> 2024: 12,0% -> 2025: 12,0%\n    [ ] ROA muito alto (> 25%) com ativos pequenos: barreira de entrada fraca · ROA mediano 11,4%\n    [ ] Dívida de curto prazo maior do que a de longo prazo · sem dados\n    [ ] Dívida de longo prazo a vencer elevada face à caixa e ao FCO (calibração: > 50%) · sem dados\n    [ ] Caixa de origem errada: subiu à custa de emissão de dívida ou de ações · não detetado\n    [ ] Alavancagem: ROE reportado mais de 1,25x o corrigido (calibração) · ROE reportado 18,4% vs corrigido 18,4%\n\nPasso 3 · Bloco B — gestão e alocação de capital:\n  B1   Dólar retido (preço normalizado)                 Sim            2,81 (P/L médio 22,3; LPA 2016 0,83 -> 2025 1,91; LPA retido 8,63)\n  B2   Rendimento dos lucros retidos                    Parcial        12,6%  [limites: calibração do protocolo]\n  B3   Recompras e estrutura de capital                 Parcial        ações -0,26%/ano\n  B4   Integridade, franqueza e mentalidade de dono     Parcial        sinais de governança não verificáveis (empresa sem 8-K na SEC)  [insiders com participação desconhecida; sem evidência verificada de admitir erros; remuneração e Form 4 não verificados automaticamente]\n  B5   Aquisições e imperativo institucional            Sim            aquisições relevantes em 0 ano(s); imparidades 0 M  ['frequentes' = 4 ou mais anos com aquisições acima de 1% da receita (calibração)]\n         Bloco C — durabilidade do negócio:\n  C1   Modelo de negócio Buffett                        Sim            M1 (produto exclusivo)\n  C2   Produto estável, à prova de idiota               Sim            Os semicondutores são produtos estáveis e à prova de idiota, com aplicações duradouras em diversos dispositivos eletrônicos.\n  C3   Poder de preço (evidência concreta e datada)     Não            sem evidência verificada  [citação não encontrada nas fontes: C3 = Não]\n  C4   Teste da Franquia (carta de 1991)                Parcial        4 sim em 4  [4 sim, mas C3 não é Sim: franquia não confirmada]\n         O produto ou serviço é necessário ou desejado? SIM — Os semicondutores são componentes essenciais para a fabricação de dispositivos eletrônicos, com uma demanda constante.\n         O cliente considera que não tem substituto próximo? SIM — Os clientes valorizam a confiabilidade e a qualidade dos semicondutores, dificultando a substituição por produtos alternativos.\n         O preço não é regulado? SIM — O preço dos semicondutores não é regulado, permitindo que a empresa ajuste os preços conforme necessário.\n         Se um concorrente tivesse capital ilimitado, continuaria sem conseguir tirar-lhe os clientes? SIM — Um concorrente com capital ilimitado teria dificuldades em substituir a Lince Semicondutores devido à sua reputação e qualidade.\n\nPasso 4 · Os 10 Portões de Buffett (passam com Sim ou Parcial; um falhado é rejeição):\n  P1   PASSA  Tem uma franquia ou vantagem identificável? · C1 = Sim e C4 = Parcial\n  P2   PASSA  Os lucros são fortes e com tendência de alta? · A7 = Sim\n  P3   PASSA  É financiada de forma conservadora? · A8 = Sim\n  P4   PASSA  Obtém consistentemente um ROE alto? · A10 = Parcial\n  P5   PASSA  Consegue reter os lucros? · A11 = Sim\n  P6   PASSA  Gasta pouco para manter as operações? · A12 = Parcial\n  P7   PASSA  Reinveste bem os lucros retidos? · B2 = Parcial\n  P8   FALHA  Consegue subir preços com a inflação? · C3 = Não\n  P9   PASSA  Os lucros retidos aumentam o valor? · B1 = Sim\n  P10  PASSA  A gestão é íntegra e pensa como dona? · B4 = Parcial\n  Problema solucionável (Secção 6.4): se a falha vem de um problema recente e pontual, documentar por escrito (o quê, porque é pontual, porque não toca na franquia) e reavaliar. A franquia, o P3 e o FCO nunca são dispensados.\n\nPasso 5 · Avaliação (Secção 8):\n  r = 7,00% (taxa do Estado a 10 anos 4,20%, sem prémio de risco, piso 7%)\n  g = mínimo de: (i) CAGR do LPA 9,79%; (ii) CAGR do lucro líquido 9,51%; (iii) ROE x (1 - payout) 12,82%; (iv) teto 15,00% -> g = 9,51%, constante nos anos 1–10; terminal = mínimo (2,5% ; g/2) = 2,50%\n    detalhes: (i) 2016 -> 2025; (ii) 2016 -> 2025; (iii) ROE médio 18,3%, payout 30%\n  Etapa A — Owner Earnings/ação (média de 5 anos, capex de manutenção) 1,467 -> Valor Intrínseco 58,85\n  EB1 — rendimento inicial 16,17% antes de impostos (12,78% depois) vs Estado 4,20% · Valor-Obrigação 57,64\n  EB2 — P/L-alvo 22,3 (mínimo entre a média de 10 anos 22,3 e 25) · DPA atual 0,57\n    Método I (LPA): LPA base 1,631 -> LPA10 4,05 -> preço10 90,22 -> TACE 20,91%\n    Método II (ROE): c 12,82% -> VPA10 35,84 -> LPA10 6,57 -> preço10 146,53 -> TACE 26,43%\n    TACE = 20,91% (método I, o mais baixo)\n  EB3 — P_EB (preço para 15% ao ano) 24,70\n  PMC = mínimo (VI ; P_EB ; Valor-Obrigação) = 24,70 (limitado por: P_EB)\n  Validação cruzada: VI 58,85 vs Valor Equity Bond 50,80 (divergência 13,7%)\n  Nota: taxa a 10 anos 4,20% abaixo do piso: r = 7%\n  Nota: capex de crescimento separado (capex acima da depreciação em anos de receita a crescer): 2021: 137 M; 2022: 254 M; 2023: 358 M; 2024: 572 M; 2025: 632 M\n  Nota: P/L-alvo a partir do P/L médio histórico da fonte (sem preços de fim de exercício)\n\nPasso 6 · Decisão (Secção 9): Triagem + Portões + as quatro condições de preço, cumulativas\n  [x] Preço atual <= Preço Máximo de Compra = mínimo (VI ; P_EB ; Valor-Obrigação) · preço 14,97 vs PMC 24,70\n  [x] Rendimento inicial >= taxa do Estado a 10 anos · 16,17% vs 4,20%\n  [x] TACE a 10 anos >= 15% (a mais baixa dos dois métodos) · TACE 20,9% (método I)\n  [x] P/L atual < 40 e abaixo do máximo dos últimos 10 anos · P/L 7,8 (máximo de 10 anos n/d)\n\nPasso 7 · Checklist de execução (no momento da compra):\n  [ ] A Triagem e os 10 Portões continuam a passar com o último relatório anual\n  [x] Preço atual <= Preço Máximo de Compra\n  [x] Rendimento inicial >= taxa do Estado, TACE >= 15%, P/L < 40 e abaixo do máximo de 10 anos\n  [ ] Posição após a compra <= 10% (verificar na corretora)\n  [ ] Esta compra merece um furo do cartão de 20 decisões? Registar \"Decisão n.º X de 20\"\n\nSe a posição já for detida (Secção 7): nenhum gatilho de venda por preço\n\nCrítico — Munger (0 revisão(ões) pedida(s) ao Avaliador):\n  [final] media: a citação de poder de preço não existe nas fontes: C3 = Não (regra)\n  [final] media: A afirmação de que um concorrente com capital ilimitado teria dificuldades em substituir a Lince Semicondutores devido à sua reputação e qualidade não é suportada pelos dados fornecidos. Os números não apresentam informações sobre a dificuldade de entrada do concorrente. (modelo)\n  [final] baixa: A afirmação de que o poder de preço não é verificado não é diretamente contraditória pelos dados, mas não há evidências claras de poder de preço elevado. (modelo)\n\nDemonstração académica · não constitui aconselhamento financeiro.\n============================================================================",
+   "esperado": "beta alto é ignorado pela v4.27",
+   "como_esperado": null
+  },
+  {
+   "ticker": "MARE",
+   "fonte": "sintetico",
+   "ok": true,
+   "empresa": "Maré Transportes",
+   "setor": "Transportes",
+   "veredicto_final": "REJEITAR",
+   "veredicto_das_regras": "REJEITAR",
+   "descricao": "Passo 0: fora do método (cíclica, MLP ou REIT) — setor: Transportes",
+   "limite": null,
+   "portoes_ok": null,
+   "motivos": [
+    "Passo 0: fora do método (cíclica, MLP ou REIT) — setor: Transportes"
+   ],
+   "avaliacao": {},
+   "respostas_do_modelo": {},
+   "rondas_do_critico": [],
+   "revisoes": 0,
+   "mensagens": [
+    "request: utilizador -> coletor",
+    "inform: coletor -> guardiao",
+    "inform: guardiao -> decisor",
+    "inform: decisor -> utilizador"
+   ],
+   "avisos": [],
+   "segundos": 0.0,
+   "chamadas_ao_modelo": 0,
+   "decisor": {
+    "veredicto": {
+     "categoria": "REJEITAR",
+     "cor": "nao",
+     "descricao": "Passo 0: fora do método (cíclica, MLP ou REIT) — setor: Transportes",
+     "limite": null
+    },
+    "portoes": null,
+    "condicoes": []
+   },
+   "relatorio": "\n============================================================================\nRELATÓRIO v4.27 — Método Buffett Integral: Maré Transportes (MARE) · dataset sintético\nAnos: 2016 a 2025 (10 exercícios)\n============================================================================\nVEREDICTO (Passo 8): REJEITAR — Passo 0: fora do método (cíclica, MLP ou REIT) — setor: Transportes\n\nPasso 0 · Setor: FORA DO MÉTODO · setor: Transportes\n\nDemonstração académica · não constitui aconselhamento financeiro.\n============================================================================",
+   "esperado": "transportes: fora do método (Passo 0)",
+   "como_esperado": true
+  },
+  {
+   "ticker": "NEVOA",
+   "fonte": "sintetico",
+   "ok": true,
+   "empresa": "Névoa Logística",
+   "setor": "Logística",
+   "veredicto_final": "REJEITAR",
+   "veredicto_das_regras": "REJEITAR",
+   "descricao": "só 3 anos de demonstrações completas: com menos de 5, rejeitar (Secção 6.1)",
+   "limite": null,
+   "portoes_ok": null,
+   "motivos": [
+    "só 3 anos de demonstrações completas: com menos de 5, rejeitar (Secção 6.1)"
+   ],
+   "avaliacao": {},
+   "respostas_do_modelo": {},
+   "rondas_do_critico": [],
+   "revisoes": 0,
+   "mensagens": [
+    "request: utilizador -> coletor",
+    "inform: coletor -> guardiao",
+    "inform: guardiao -> decisor",
+    "inform: decisor -> utilizador"
+   ],
+   "avisos": [],
+   "segundos": 0.1,
+   "chamadas_ao_modelo": 0,
+   "decisor": {
+    "veredicto": {
+     "categoria": "REJEITAR",
+     "cor": "nao",
+     "descricao": "só 3 anos de demonstrações completas: com menos de 5, rejeitar (Secção 6.1)",
+     "limite": null
+    },
+    "portoes": null,
+    "condicoes": []
+   },
+   "relatorio": "\n============================================================================\nRELATÓRIO v4.27 — Método Buffett Integral: Névoa Logística (NEVOA) · dataset sintético\nAnos: 2020 a 2025 (6 exercícios)\n============================================================================\nVEREDICTO (Passo 8): REJEITAR — só 3 anos de demonstrações completas: com menos de 5, rejeitar (Secção 6.1)\n\nPasso -2 · Triagem Rápida (um \"não\" e a empresa sai):\n  T1  PENDENTE       Percebo o produto e porque é que o cliente o compra? · pergunta qualitativa: respondida pelo Avaliador (parte qualitativa, com o modelo)\n  T2  SIM            O LPA não teve prejuízos e está mais alto do que há 5–10 anos? · LPA 2020 5,12 -> 2025 7,93\n  T3  SIM            O ROE médio é de pelo menos 15%? · ROE médio 18,3%\n  T4  SIM            A dívida de longo prazo paga-se com 4 anos de lucro ou menos? · dívida LP = 3,28 anos de lucro médio (5 anos)\n  T5  SIM            A margem bruta é de pelo menos 20%, ou é um negócio claro de baixo custo? · margem bruta mediana 46,0%\n  T6  SIM            O número de ações não subiu mais de 10% em 3 anos? · ações +0,6% em 3 anos\n  T7  SIM            O fluxo de caixa operacional foi positivo em todos os anos? · FCO positivo em todos os anos\n\nPasso 0 · Setor: método completo · setor: Logística\n  DADOS: só 3 anos de demonstrações completas: com menos de 5, rejeitar (Secção 6.1)\n  LUCRO     SIM   Lucro líquido positivo nos últimos 12 meses (último exercício) · 8 690 M\n  COMMODITY SIM   Passo 1: Regra de Commodity (a) margem bruta < 20% E ROE < 15%; (b) LPA mau em 3+ anos · margem bruta média 46,0%, ROE médio 18,3%, 0 ano(s) de LPA com prejuízo ou queda > 50%\n\nDemonstração académica · não constitui aconselhamento financeiro.\n============================================================================",
+   "esperado": "fluxo de caixa apagado em 3 de 5 anos: dados insuficientes, nada inventado",
+   "como_esperado": true
+  },
+  {
+   "ticker": "ORLA",
+   "fonte": "sintetico",
+   "ok": true,
+   "empresa": "Orla Turismo",
+   "setor": "Turismo",
+   "veredicto_final": "REJEITAR",
+   "veredicto_das_regras": "REJEITAR",
+   "descricao": "só 3 anos de demonstrações completas: com menos de 5, rejeitar (Secção 6.1); Dados insuficientes para a Triagem T2: só 3 anos de LPA nas fontes (a SEC guarda as ações por classe nalgumas empresas) (completar com a chave gratuita da Alpha Vantage no .env (histórico de LPA) ou com o roic.ai)",
+   "limite": null,
+   "portoes_ok": null,
+   "motivos": [
+    "só 3 anos de demonstrações completas: com menos de 5, rejeitar (Secção 6.1); Dados insuficientes para a Triagem T2: só 3 anos de LPA nas fontes (a SEC guarda as ações por classe nalgumas empresas) (completar com a chave gratuita da Alpha Vantage no .env (histórico de LPA) ou com o roic.ai)"
+   ],
+   "avaliacao": {},
+   "respostas_do_modelo": {},
+   "rondas_do_critico": [],
+   "revisoes": 0,
+   "mensagens": [
+    "request: utilizador -> coletor",
+    "inform: coletor -> guardiao",
+    "inform: guardiao -> decisor",
+    "inform: decisor -> utilizador"
+   ],
+   "avisos": [],
+   "segundos": 0.1,
+   "chamadas_ao_modelo": 0,
+   "decisor": {
+    "veredicto": {
+     "categoria": "REJEITAR",
+     "cor": "nao",
+     "descricao": "só 3 anos de demonstrações completas: com menos de 5, rejeitar (Secção 6.1); Dados insuficientes para a Triagem T2: só 3 anos de LPA nas fontes (a SEC guarda as ações por classe nalgumas empresas) (completar com a chave gratuita da Alpha Vantage no .env (histórico de LPA) ou com o roic.ai)",
+     "limite": null
+    },
+    "portoes": null,
+    "condicoes": []
+   },
+   "relatorio": "\n============================================================================\nRELATÓRIO v4.27 — Método Buffett Integral: Orla Turismo (ORLA) · dataset sintético\nAnos: 2023 a 2025 (3 exercícios)\n============================================================================\nVEREDICTO (Passo 8): REJEITAR — só 3 anos de demonstrações completas: com menos de 5, rejeitar (Secção 6.1); Dados insuficientes para a Triagem T2: só 3 anos de LPA nas fontes (a SEC guarda as ações por classe nalgumas empresas) (completar com a chave gratuita da Alpha Vantage no .env (histórico de LPA) ou com o roic.ai)\n\nPasso -2 · Triagem Rápida (um \"não\" e a empresa sai):\n  T1  PENDENTE       Percebo o produto e porque é que o cliente o compra? · pergunta qualitativa: respondida pelo Avaliador (parte qualitativa, com o modelo)\n  T2  SEM DADOS      O LPA não teve prejuízos e está mais alto do que há 5–10 anos? · só 3 anos de LPA nas fontes (a SEC guarda as ações por classe nalgumas empresas)\n  T3  SIM            O ROE médio é de pelo menos 15%? · ROE médio 15,5%\n  T4  SIM            A dívida de longo prazo paga-se com 4 anos de lucro ou menos? · dívida LP = 2,62 anos de lucro médio (5 anos)\n  T5  SIM            A margem bruta é de pelo menos 20%, ou é um negócio claro de baixo custo? · margem bruta mediana 46,0%\n  T6  SIM            O número de ações não subiu mais de 10% em 3 anos? · ações -0,2% em 3 anos\n  T7  SIM            O fluxo de caixa operacional foi positivo em todos os anos? · FCO positivo em todos os anos\n\nPasso 0 · Setor: método completo · setor: Turismo\n  DADOS: só 3 anos de demonstrações completas: com menos de 5, rejeitar (Secção 6.1)\n  LUCRO     SIM   Lucro líquido positivo nos últimos 12 meses (último exercício) · 1 050 M\n  COMMODITY SIM   Passo 1: Regra de Commodity (a) margem bruta < 20% E ROE < 15%; (b) LPA mau em 3+ anos · margem bruta média 46,0%, ROE médio 15,5%, 0 ano(s) de LPA com prejuízo ou queda > 50%\n\nDemonstração académica · não constitui aconselhamento financeiro.\n============================================================================",
+   "esperado": "só 3 anos de histórico: dados insuficientes",
+   "como_esperado": true
+  },
+  {
+   "ticker": "PRISMA",
+   "fonte": "sintetico",
+   "ok": true,
+   "empresa": "Prisma Química",
+   "setor": "Higiene e limpeza",
+   "veredicto_final": "REJEITAR",
+   "veredicto_das_regras": "REJEITAR",
+   "descricao": "Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 14,8%; Dados insuficientes para a Triagem T5: sem lucro bruto nas fontes (a margem bruta é obrigatória na Triagem)",
+   "limite": null,
+   "portoes_ok": null,
+   "motivos": [
+    "Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 14,8%; Dados insuficientes para a Triagem T5: sem lucro bruto nas fontes (a margem bruta é obrigatória na Triagem)"
+   ],
+   "avaliacao": {},
+   "respostas_do_modelo": {},
+   "rondas_do_critico": [],
+   "revisoes": 0,
+   "mensagens": [
+    "request: utilizador -> coletor",
+    "inform: coletor -> guardiao",
+    "inform: guardiao -> decisor",
+    "inform: decisor -> utilizador"
+   ],
+   "avisos": [],
+   "segundos": 0.1,
+   "chamadas_ao_modelo": 0,
+   "decisor": {
+    "veredicto": {
+     "categoria": "REJEITAR",
+     "cor": "nao",
+     "descricao": "Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 14,8%; Dados insuficientes para a Triagem T5: sem lucro bruto nas fontes (a margem bruta é obrigatória na Triagem)",
+     "limite": null
+    },
+    "portoes": null,
+    "condicoes": []
+   },
+   "relatorio": "\n============================================================================\nRELATÓRIO v4.27 — Método Buffett Integral: Prisma Química (PRISMA) · dataset sintético\nAnos: 2016 a 2025 (10 exercícios)\n============================================================================\nVEREDICTO (Passo 8): REJEITAR — Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 14,8%; Dados insuficientes para a Triagem T5: sem lucro bruto nas fontes (a margem bruta é obrigatória na Triagem)\n\nPasso -2 · Triagem Rápida (um \"não\" e a empresa sai):\n  T1  PENDENTE       Percebo o produto e porque é que o cliente o compra? · pergunta qualitativa: respondida pelo Avaliador (parte qualitativa, com o modelo)\n  T2  SIM            O LPA não teve prejuízos e está mais alto do que há 5–10 anos? · LPA 2016 1,99 -> 2025 3,60\n  T3  NÃO            O ROE médio é de pelo menos 15%? · ROE médio 14,8%\n  T4  SIM            A dívida de longo prazo paga-se com 4 anos de lucro ou menos? · dívida LP = 2,77 anos de lucro médio (5 anos)\n  T5  SEM DADOS      A margem bruta é de pelo menos 20%, ou é um negócio claro de baixo custo? · sem lucro bruto nas fontes\n  T6  SIM            O número de ações não subiu mais de 10% em 3 anos? · ações +0,4% em 3 anos\n  T7  SIM            O fluxo de caixa operacional foi positivo em todos os anos? · FCO positivo em todos os anos\n\nPasso 0 · Setor: método completo · setor: Higiene e limpeza\n  LUCRO     SIM   Lucro líquido positivo nos últimos 12 meses (último exercício) · 5 610 M\n  COMMODITY SIM   Passo 1: Regra de Commodity (a) margem bruta < 20% E ROE < 15%; (b) LPA mau em 3+ anos · margem bruta n/d, ROE médio 14,8%, 0 ano(s) de LPA com prejuízo ou queda > 50%\n\nDemonstração académica · não constitui aconselhamento financeiro.\n============================================================================",
+   "esperado": "rótulos desconhecidos mapeados pelo Coletor",
+   "como_esperado": null
+  },
+  {
+   "ticker": "QUARTZO",
+   "fonte": "sintetico",
+   "ok": true,
+   "empresa": "Quartzo Têxtil",
+   "setor": "Têxtil",
+   "veredicto_final": "REJEITAR",
+   "veredicto_das_regras": "REJEITAR",
+   "descricao": "Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 11,6%",
+   "limite": null,
+   "portoes_ok": null,
+   "motivos": [
+    "Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 11,6%"
+   ],
+   "avaliacao": {},
+   "respostas_do_modelo": {},
+   "rondas_do_critico": [],
+   "revisoes": 0,
+   "mensagens": [
+    "request: utilizador -> coletor",
+    "inform: coletor -> guardiao",
+    "inform: guardiao -> decisor",
+    "inform: decisor -> utilizador"
+   ],
+   "avisos": [],
+   "segundos": 0.0,
+   "chamadas_ao_modelo": 0,
+   "decisor": {
+    "veredicto": {
+     "categoria": "REJEITAR",
+     "cor": "nao",
+     "descricao": "Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 11,6%",
+     "limite": null
+    },
+    "portoes": null,
+    "condicoes": []
+   },
+   "relatorio": "\n============================================================================\nRELATÓRIO v4.27 — Método Buffett Integral: Quartzo Têxtil (QUARTZO) · dataset sintético\nAnos: 2016 a 2025 (10 exercícios)\n============================================================================\nVEREDICTO (Passo 8): REJEITAR — Triagem T3: O ROE médio é de pelo menos 15%? Não — ROE médio 11,6%\n\nPasso -2 · Triagem Rápida (um \"não\" e a empresa sai):\n  T1  PENDENTE       Percebo o produto e porque é que o cliente o compra? · pergunta qualitativa: respondida pelo Avaliador (parte qualitativa, com o modelo)\n  T2  SIM            O LPA não teve prejuízos e está mais alto do que há 5–10 anos? · LPA 2016 0,92 -> 2025 1,28\n  T3  NÃO            O ROE médio é de pelo menos 15%? · ROE médio 11,6%\n  T4  SIM            A dívida de longo prazo paga-se com 4 anos de lucro ou menos? · dívida LP = 1,20 anos de lucro médio (5 anos)\n  T5  SIM            A margem bruta é de pelo menos 20%, ou é um negócio claro de baixo custo? · margem bruta mediana 33,0%\n  T6  SIM            O número de ações não subiu mais de 10% em 3 anos? · ações +0,6% em 3 anos\n  T7  SIM            O fluxo de caixa operacional foi positivo em todos os anos? · FCO positivo em todos os anos\n\nPasso 0 · Setor: método completo · setor: Têxtil\n  LUCRO     SIM   Lucro líquido positivo nos últimos 12 meses (último exercício) · 2 520 M\n  COMMODITY SIM   Passo 1: Regra de Commodity (a) margem bruta < 20% E ROE < 15%; (b) LPA mau em 3+ anos · margem bruta média 33,0%, ROE médio 11,6%, 0 ano(s) de LPA com prejuízo ou queda > 50%\n\nDemonstração académica · não constitui aconselhamento financeiro.\n============================================================================",
+   "esperado": "promessas da gestão não contam: rejeitar na triagem T3",
+   "como_esperado": true
+  },
+  {
+   "ticker": "SILEX",
+   "fonte": "sintetico",
+   "ok": true,
+   "empresa": "Sílex Mineração",
+   "setor": "Serviços",
+   "veredicto_final": "REJEITAR",
+   "veredicto_das_regras": "REJEITAR",
+   "descricao": "último ano (2025) incompleto",
+   "limite": null,
+   "portoes_ok": null,
+   "motivos": [
+    "último ano (2025) incompleto"
+   ],
+   "avaliacao": {},
+   "respostas_do_modelo": {},
+   "rondas_do_critico": [],
+   "revisoes": 0,
+   "mensagens": [
+    "request: utilizador -> coletor",
+    "inform: coletor -> guardiao",
+    "inform: guardiao -> decisor",
+    "inform: decisor -> utilizador"
+   ],
+   "avisos": [],
+   "segundos": 0.0,
+   "chamadas_ao_modelo": 0,
+   "decisor": {
+    "veredicto": {
+     "categoria": "REJEITAR",
+     "cor": "nao",
+     "descricao": "último ano (2025) incompleto",
+     "limite": null
+    },
+    "portoes": null,
+    "condicoes": []
+   },
+   "relatorio": "\n============================================================================\nRELATÓRIO v4.27 — Método Buffett Integral: Sílex Mineração (SILEX) · dataset sintético\nAnos: 2016 a 2025 (10 exercícios)\n============================================================================\nVEREDICTO (Passo 8): REJEITAR — último ano (2025) incompleto\n\nPasso -2 · Triagem Rápida (um \"não\" e a empresa sai):\n  T1  PENDENTE       Percebo o produto e porque é que o cliente o compra? · pergunta qualitativa: respondida pelo Avaliador (parte qualitativa, com o modelo)\n  T2  SIM            O LPA não teve prejuízos e está mais alto do que há 5–10 anos? · LPA 2016 0,74 -> 2024 2,12\n  T3  SIM            O ROE médio é de pelo menos 15%? · ROE médio 19,0%\n  T4  SIM            A dívida de longo prazo paga-se com 4 anos de lucro ou menos? · dívida LP = 2,65 anos de lucro médio (5 anos)\n  T5  SIM            A margem bruta é de pelo menos 20%, ou é um negócio claro de baixo custo? · margem bruta mediana 46,0%\n  T6  SIM            O número de ações não subiu mais de 10% em 3 anos? · ações +0,0% em 3 anos\n  T7  SIM            O fluxo de caixa operacional foi positivo em todos os anos? · FCO positivo em todos os anos\n\nPasso 0 · Setor: método completo · setor: Serviços\n  DADOS: último ano (2025) incompleto\n  LUCRO     SIM   Lucro líquido positivo nos últimos 12 meses (último exercício) · 4 960 M\n  COMMODITY SIM   Passo 1: Regra de Commodity (a) margem bruta < 20% E ROE < 15%; (b) LPA mau em 3+ anos · margem bruta média 59,9%, ROE médio 19,0%, 0 ano(s) de LPA com prejuízo ou queda > 50%\n\nDemonstração académica · não constitui aconselhamento financeiro.\n============================================================================",
+   "esperado": "dados incoerentes (lucro acima da receita): rejeitar",
+   "como_esperado": true
+  },
+  {
+   "ticker": "TEJO",
+   "fonte": "sintetico",
+   "ok": true,
+   "empresa": "Tejo Alimentar",
+   "setor": "Consumo",
+   "veredicto_final": "REJEITAR",
+   "veredicto_das_regras": "REJEITAR",
+   "descricao": "Portões falhados: P7 Reinveste bem os lucros retidos? (B2 = Não); P8 Consegue subir preços com a inflação? (C3 = Não)",
+   "limite": null,
+   "portoes_ok": 8,
+   "motivos": [
+    "Portões falhados: P7 Reinveste bem os lucros retidos? (B2 = Não); P8 Consegue subir preços com a inflação? (C3 = Não)"
+   ],
+   "avaliacao": {
+    "r": 7.0,
+    "taxa10": 4.2,
+    "g": 6.75,
+    "g_terminal": 2.5,
+    "oe0": 0.41346104037389403,
+    "vi": 13.28,
+    "ebt_por_acao": 0.6003703124432045,
+    "rend_inicial": 11.015969035655127,
+    "rend_apos_impostos": 8.702615538190953,
+    "valor_obrigacao": 14.29,
+    "pe_alvo": 22.2,
+    "pl_hist_medio": 22.2,
+    "dpa_atual": 0.14,
+    "soma_dpa": 2.040744631032022,
+    "metodo_tace": "I",
+    "tace": 14.02,
+    "p_eb": 5.0,
+    "valor_equity_bond": 10.28,
+    "divergencia_pct": 22.6,
+    "pmc": 5.0,
+    "pmc_limitante": "P_EB",
+    "alvo_pct": 20.0,
+    "pl_atual": 11.490798319327732,
+    "pl_max_10a": null,
+    "preco": 5.45
+   },
+   "respostas_do_modelo": {
+    "t1": "Sim",
+    "t1_porque": "bebidas e outros produtos alimentares porque são produtos essenciais e com marca reconhecida",
+    "t1_produto": "bebidas e outros produtos alimentares",
+    "t1_cliente": "porque são produtos essenciais e com marca reconhecida",
+    "circulo": "Sim",
+    "wrigley": "Sim",
+    "wrigley_porque": "a empresa vende bebidas e outros produtos alimentares, que são produtos estáveis e reconhecidos",
+    "patentes_mais_de_metade": false,
+    "circulo_porque": "a empresa opera em setores com produtos essenciais e com marcas fortes",
+    "modelo": "M1",
+    "modelo_porque": "a empresa tem marcas fortes e produtos essenciais",
+    "servico_de_talentos": false,
+    "dependente_patentes": false,
+    "c2": "Sim",
+    "c2_porque": "os produtos são essenciais e a marca é reconhecida, mantendo-se ao longo do tempo",
+    "c3_modelo": "Não",
+    "c3_verificado": "Não",
+    "c3_evidencia": null,
+    "c3_citacao_proposta": null,
+    "c3_porque": "a empresa tem margens consistentes e ROIC estável",
+    "c3_nota": "sem citação de evidência: C3 = Não",
+    "franquia": {
+     "f1": {
+      "resposta": "sim",
+      "porque": "os produtos são essenciais e a marca é reconhecida"
+     },
+     "f2": {
+      "resposta": "sim",
+      "porque": "os clientes consideram que não têm substitutos próximos"
+     },
+     "f3": {
+      "resposta": "sim",
+      "porque": "o preço não é regulado"
+     },
+     "f4": {
+      "resposta": "sim",
+      "porque": "um concorrente com capital ilimitado não conseguiria tirar-lhe os clientes"
+     }
+    },
+    "b4_evidencia_verificada": null,
+    "verificacao": [],
+    "alteracoes": [],
+    "fontes_usadas": [],
+    "evidencia": {
+     "nivel": "moderada",
+     "sinais": {
+      "roic": {
+       "nivel": "moderado",
+       "facto": "ROIC mediano 12,6%, mínimo 11,7% em 10 anos"
+      },
+      "margem_bruta": {
+       "nivel": "forte",
+       "facto": "margem bruta mediana 46,0%, amplitude 0,0 p.p. em 10 anos"
+      }
+     },
+     "factos": [
+      "ROIC mediano 12,6%, mínimo 11,7% em 10 anos",
+      "margem bruta mediana 46,0%, amplitude 0,0 p.p. em 10 anos"
+     ]
+    },
+    "revisao": false
+   },
+   "rondas_do_critico": [
+    {
+     "objecoes": [
+      {
+       "gravidade": "media",
+       "campo": null,
+       "origem": "regra",
+       "descricao": "VI e Valor Equity Bond divergem 22,6%: documentar a causa (Secção 8.3)"
+      },
+      {
+       "gravidade": "media",
+       "campo": "franquia",
+       "descricao": "A afirmação de que a empresa tem uma franquia de preço só pode ser verificada com dados sobre a elasticidade de preços e a capacidade de manter preços superiores aos dos concorrentes, o que não foi apresentado.",
+       "origem": "modelo"
+      },
+      {
+       "gravidade": "media",
+       "campo": "c3",
+       "descricao": "A afirmação de que a empresa tem poder de preço só pode ser verificada com dados sobre a elasticidade de preços e a capacidade de manter preços superiores aos dos concorrentes, o que não foi apresentado.",
+       "origem": "modelo"
+      }
+     ],
+     "graves": 0,
+     "pediu_revisao": false
+    }
+   ],
+   "revisoes": 0,
+   "mensagens": [
+    "request: utilizador -> coletor",
+    "inform: coletor -> guardiao",
+    "request: guardiao -> avaliador",
+    "propose: avaliador -> critico",
+    "inform: critico -> decisor",
+    "inform: decisor -> utilizador"
+   ],
+   "avisos": [],
+   "segundos": 261.2,
+   "chamadas_ao_modelo": 3,
+   "decisor": {
+    "veredicto": {
+     "categoria": "REJEITAR",
+     "cor": "nao",
+     "descricao": "Portões falhados: P7 Reinveste bem os lucros retidos? (B2 = Não); P8 Consegue subir preços com a inflação? (C3 = Não)",
+     "limite": null
+    },
+    "portoes": [
+     {
+      "id": "P1",
+      "pergunta": "Tem uma franquia ou vantagem identificável?",
+      "passa": true,
+      "detalhe": "C1 = Sim e C4 = Parcial"
+     },
+     {
+      "id": "P2",
+      "pergunta": "Os lucros são fortes e com tendência de alta?",
+      "passa": true,
+      "detalhe": "A7 = Sim"
+     },
+     {
+      "id": "P3",
+      "pergunta": "É financiada de forma conservadora?",
+      "passa": true,
+      "detalhe": "A8 = Sim"
+     },
+     {
+      "id": "P4",
+      "pergunta": "Obtém consistentemente um ROE alto?",
+      "passa": true,
+      "detalhe": "A10 = Parcial"
+     },
+     {
+      "id": "P5",
+      "pergunta": "Consegue reter os lucros?",
+      "passa": true,
+      "detalhe": "A11 = Sim"
+     },
+     {
+      "id": "P6",
+      "pergunta": "Gasta pouco para manter as operações?",
+      "passa": true,
+      "detalhe": "A12 = Parcial"
+     },
+     {
+      "id": "P7",
+      "pergunta": "Reinveste bem os lucros retidos?",
+      "passa": false,
+      "detalhe": "B2 = Não"
+     },
+     {
+      "id": "P8",
+      "pergunta": "Consegue subir preços com a inflação?",
+      "passa": false,
+      "detalhe": "C3 = Não"
+     },
+     {
+      "id": "P9",
+      "pergunta": "Os lucros retidos aumentam o valor?",
+      "passa": true,
+      "detalhe": "B1 = Sim"
+     },
+     {
+      "id": "P10",
+      "pergunta": "A gestão é íntegra e pensa como dona?",
+      "passa": true,
+      "detalhe": "B4 = Parcial"
+     }
+    ],
+    "condicoes": [
+     {
+      "id": "C1p",
+      "descricao": "Preço atual <= Preço Máximo de Compra = mínimo (VI ; P_EB ; Valor-Obrigação)",
+      "ok": false,
+      "detalhe": "preço 5,45 vs PMC 5,00"
+     },
+     {
+      "id": "C2p",
+      "descricao": "Rendimento inicial >= taxa do Estado a 10 anos",
+      "ok": true,
+      "detalhe": "11,02% vs 4,20%"
+     },
+     {
+      "id": "C3p",
+      "descricao": "TACE a 10 anos >= 15% (a mais baixa dos dois métodos)",
+      "ok": false,
+      "detalhe": "TACE 14,0% (método I)"
+     },
+     {
+      "id": "C4p",
+      "descricao": "P/L atual < 40 e abaixo do máximo dos últimos 10 anos",
+      "ok": true,
+      "detalhe": "P/L 11,5 (máximo de 10 anos n/d)"
+     }
+    ]
+   },
+   "relatorio": "\n============================================================================\nRELATÓRIO v4.27 — Método Buffett Integral: Tejo Alimentar (TEJO) · dataset sintético\nAnos: 2016 a 2025 (10 exercícios)\n============================================================================\nVEREDICTO (Passo 8): REJEITAR — Portões falhados: P7 Reinveste bem os lucros retidos? (B2 = Não); P8 Consegue subir preços com a inflação? (C3 = Não)\n\n----------------------------------------------------------------------------\nRESUMO PARA DECISÃO\n  Ao preço atual de 5,45 USD, a TACE esperada é 14,0% ao ano (exigência: 15%).\n  Preço Máximo de Compra = mínimo (VI 13,28 ; P_EB 5,00 ; Valor-Obrigação 14,29) = 5,00 USD (desconto de 8% face ao preço atual).\n  Para 20% ao ano (o teu alvo): comprar no máximo a 3,27 USD.\n  Preço máximo por rentabilidade: 10% -> 7,80 · 12% -> 6,51 · 15% -> 5,00 · 20% -> 3,27 · 25% -> 2,17\n  10 Portões: 8/10 passam (falham P7, P8) · Franquia: não confirmada\n  Condições de preço: CP1 NÃO · CP2 sim · CP3 NÃO · CP4 sim\n  => REJEITAR\n----------------------------------------------------------------------------\n\nSíntese (Buffett):\n  Tejo Alimentar falha nos portões de reinvestimento e subida de preços, não apresentando uma gestão eficiente. O preço atual está acima do Preço Máximo de Compra, e a TACE a 10 anos é inferior ao mínimo exigido. Compreenderia apenas se a situação mudasse significativamente.\n\nPasso -2 · Triagem Rápida (um \"não\" e a empresa sai):\n  T1  SIM            Percebo o produto e porque é que o cliente o compra? · bebidas e outros produtos alimentares porque são produtos essenciais e com marca reconhecida\n  T2  SIM            O LPA não teve prejuízos e está mais alto do que há 5–10 anos? · LPA 2016 0,26 -> 2025 0,47\n  T3  SIM            O ROE médio é de pelo menos 15%? · ROE médio 16,3%\n  T4  SIM            A dívida de longo prazo paga-se com 4 anos de lucro ou menos? · dívida LP = 2,46 anos de lucro médio (5 anos)\n  T5  SIM            A margem bruta é de pelo menos 20%, ou é um negócio claro de baixo custo? · margem bruta mediana 46,0%\n  T6  SIM            O número de ações não subiu mais de 10% em 3 anos? · ações +0,6% em 3 anos\n  T7  SIM            O fluxo de caixa operacional foi positivo em todos os anos? · FCO positivo em todos os anos\n\nPasso -1 · Círculo de Competência:\n  SIM · Teste Wrigley: SIM · patentes (> 50% da receita a expirar): não — a empresa opera em setores com produtos essenciais e com marcas fortes\n\nPasso 0 · Setor: método completo · setor: Consumo\n\nPasso 1 · Modelo de negócio:\n  M1 (produto exclusivo) — a empresa tem marcas fortes e produtos essenciais\n  Dependência de patentes: não · serviço de talentos individuais: não\n  LUCRO     SIM   Lucro líquido positivo nos últimos 12 meses (último exercício) · 1 190 M\n  COMMODITY SIM   Passo 1: Regra de Commodity (a) margem bruta < 20% E ROE < 15%; (b) LPA mau em 3+ anos · margem bruta média 46,0%, ROE médio 16,3%, 0 ano(s) de LPA com prejuízo ou queda > 50%\n\nPasso 2 · Bloco A — vantagem competitiva durável (Sim / Parcial / Não; não há pontos):\n  A1   Margem bruta (lucro bruto / receita, %)          Sim            46,00\n  A2   SG&A / lucro bruto (%)                           Parcial        43,62\n  A3   I&D / lucro bruto (%)                            não aplicável    [sem linha própria de I&D (o custo está no SG&A, em A2)]\n  A4   Depreciação / lucro bruto (%)                    Parcial        8,49  [Regra de Consistência: limiar do Sim cumprido em 6 de 10 anos (exige 70%)]\n  A5   Juros / resultado operacional (%)                Sim            6,62\n  A6   Margem líquida (%)                               Parcial        16,14\n  A7   LPA consistente (quedas nas variações anuais)    Sim            0 queda(s) em 9 variações, sem prejuízos  [Sim: no máximo 1; Parcial: até 3]\n  A8   Dívida LP / lucro líquido (x)                    Sim            2,24\n  A9   Passivo / (capitais próprios + ações próprias) ( Sim            0,65\n  A10  ROE (%)                                          Parcial        16,36  [ROE corrigido (com ações próprias) mediano 16,4%]\n  A11  Lucros retidos (CAGR)                            Sim            14,86\n  A12  Capex / lucro líquido (%)                        Parcial        24,21  [Regra de Consistência: limiar do Sim cumprido em 6 de 10 anos (exige 70%)]\n  A13  Imposto pago (detetor de mentiras)               Sim            taxa efetiva mediana 21,0% (legal 21%); pago / contabilizado 97%  [créditos fiscais legítimos documentados não contam contra]\n  A14  Inventário                                       Sim            CAGR inventário 7,4% vs receita 7,4%; 0 episódio(s)\n  A15  Autofinanciamento das distribuições              Sim            2,57\n  Sinais de Balanço: 0 presente(s), 0 por explicar (2 ou mais por explicar impedem a Franquia)\n    [ ] Contas a receber / receita a subir 3 anos seguidos · 2022: 12,0% -> 2023: 12,0% -> 2024: 12,0% -> 2025: 12,0%\n    [ ] ROA muito alto (> 25%) com ativos pequenos: barreira de entrada fraca · ROA mediano 9,4%\n    [ ] Dívida de curto prazo maior do que a de longo prazo · sem dados\n    [ ] Dívida de longo prazo a vencer elevada face à caixa e ao FCO (calibração: > 50%) · sem dados\n    [ ] Caixa de origem errada: subiu à custa de emissão de dívida ou de ações · não detetado\n    [ ] Alavancagem: ROE reportado mais de 1,25x o corrigido (calibração) · ROE reportado 16,4% vs corrigido 16,4%\n\nPasso 3 · Bloco B — gestão e alocação de capital:\n  B1   Dólar retido (preço normalizado)                 Sim            1,99 (P/L médio 22,2; LPA 2016 0,26 -> 2025 0,47; LPA retido 2,37)\n  B2   Rendimento dos lucros retidos                    Não            9,0%  [limites: calibração do protocolo]\n  B3   Recompras e estrutura de capital                 Parcial        ações -0,08%/ano\n  B4   Integridade, franqueza e mentalidade de dono     Parcial        sinais de governança não verificáveis (empresa sem 8-K na SEC)  [insiders com participação desconhecida; sem evidência verificada de admitir erros; remuneração e Form 4 não verificados automaticamente]\n  B5   Aquisições e imperativo institucional            Sim            aquisições relevantes em 0 ano(s); imparidades 0 M  ['frequentes' = 4 ou mais anos com aquisições acima de 1% da receita (calibração)]\n         Bloco C — durabilidade do negócio:\n  C1   Modelo de negócio Buffett                        Sim            M1 (produto exclusivo)\n  C2   Produto estável, à prova de idiota               Sim            os produtos são essenciais e a marca é reconhecida, mantendo-se ao longo do tempo\n  C3   Poder de preço (evidência concreta e datada)     Não            sem evidência verificada  [sem citação de evidência: C3 = Não]\n  C4   Teste da Franquia (carta de 1991)                Parcial        4 sim em 4  [4 sim, mas C3 não é Sim: franquia não confirmada]\n         O produto ou serviço é necessário ou desejado? SIM — os produtos são essenciais e a marca é reconhecida\n         O cliente considera que não tem substituto próximo? SIM — os clientes consideram que não têm substitutos próximos\n         O preço não é regulado? SIM — o preço não é regulado\n         Se um concorrente tivesse capital ilimitado, continuaria sem conseguir tirar-lhe os clientes? SIM — um concorrente com capital ilimitado não conseguiria tirar-lhe os clientes\n\nPasso 4 · Os 10 Portões de Buffett (passam com Sim ou Parcial; um falhado é rejeição):\n  P1   PASSA  Tem uma franquia ou vantagem identificável? · C1 = Sim e C4 = Parcial\n  P2   PASSA  Os lucros são fortes e com tendência de alta? · A7 = Sim\n  P3   PASSA  É financiada de forma conservadora? · A8 = Sim\n  P4   PASSA  Obtém consistentemente um ROE alto? · A10 = Parcial\n  P5   PASSA  Consegue reter os lucros? · A11 = Sim\n  P6   PASSA  Gasta pouco para manter as operações? · A12 = Parcial\n  P7   FALHA  Reinveste bem os lucros retidos? · B2 = Não\n  P8   FALHA  Consegue subir preços com a inflação? · C3 = Não\n  P9   PASSA  Os lucros retidos aumentam o valor? · B1 = Sim\n  P10  PASSA  A gestão é íntegra e pensa como dona? · B4 = Parcial\n  Problema solucionável (Secção 6.4): se a falha vem de um problema recente e pontual, documentar por escrito (o quê, porque é pontual, porque não toca na franquia) e reavaliar. A franquia, o P3 e o FCO nunca são dispensados.\n\nPasso 5 · Avaliação (Secção 8):\n  r = 7,00% (taxa do Estado a 10 anos 4,20%, sem prémio de risco, piso 7%)\n  g = mínimo de: (i) CAGR do LPA 6,83%; (ii) CAGR do lucro líquido 6,75%; (iii) ROE x (1 - payout) 11,46%; (iv) teto 15,00% -> g = 6,75%, constante nos anos 1–10; terminal = mínimo (2,5% ; g/2) = 2,50%\n    detalhes: (i) 2016 -> 2025; (ii) 2016 -> 2025; (iii) ROE médio 16,3%, payout 30%\n  Etapa A — Owner Earnings/ação (média de 5 anos, capex de manutenção) 0,413 -> Valor Intrínseco 13,28\n  EB1 — rendimento inicial 11,02% antes de impostos (8,70% depois) vs Estado 4,20% · Valor-Obrigação 14,29\n  EB2 — P/L-alvo 22,2 (mínimo entre a média de 10 anos 22,2 e 25) · DPA atual 0,14\n    Método I (LPA): LPA base 0,426 -> LPA10 0,82 -> preço10 18,19 -> TACE 14,02%\n    Método II (ROE): c 11,46% -> VPA10 8,57 -> LPA10 1,40 -> preço10 30,98 -> TACE 19,74%\n    TACE = 14,02% (método I, o mais baixo)\n  EB3 — P_EB (preço para 15% ao ano) 5,00\n  PMC = mínimo (VI ; P_EB ; Valor-Obrigação) = 5,00 (limitado por: P_EB)\n  Validação cruzada: VI 13,28 vs Valor Equity Bond 10,28 (divergência 22,6%; acima de 20%: documentar a causa)\n  Nota: taxa a 10 anos 4,20% abaixo do piso: r = 7%\n  Nota: capex de crescimento separado (capex acima da depreciação em anos de receita a crescer): 2019: 7 M; 2021: 81 M; 2022: 171 M; 2023: 173 M; 2025: 34 M\n  Nota: P/L-alvo a partir do P/L médio histórico da fonte (sem preços de fim de exercício)\n\nPasso 6 · Decisão (Secção 9): Triagem + Portões + as quatro condições de preço, cumulativas\n  [ ] Preço atual <= Preço Máximo de Compra = mínimo (VI ; P_EB ; Valor-Obrigação) · preço 5,45 vs PMC 5,00\n  [x] Rendimento inicial >= taxa do Estado a 10 anos · 11,02% vs 4,20%\n  [ ] TACE a 10 anos >= 15% (a mais baixa dos dois métodos) · TACE 14,0% (método I)\n  [x] P/L atual < 40 e abaixo do máximo dos últimos 10 anos · P/L 11,5 (máximo de 10 anos n/d)\n\nPasso 7 · Checklist de execução (no momento da compra):\n  [ ] A Triagem e os 10 Portões continuam a passar com o último relatório anual\n  [ ] Preço atual <= Preço Máximo de Compra\n  [ ] Rendimento inicial >= taxa do Estado, TACE >= 15%, P/L < 40 e abaixo do máximo de 10 anos\n  [ ] Posição após a compra <= 10% (verificar na corretora)\n  [ ] Esta compra merece um furo do cartão de 20 decisões? Registar \"Decisão n.º X de 20\"\n\nSe a posição já for detida (Secção 7): nenhum gatilho de venda por preço\n\nCrítico — Munger (0 revisão(ões) pedida(s) ao Avaliador):\n  [final] media: VI e Valor Equity Bond divergem 22,6%: documentar a causa (Secção 8.3) (regra)\n  [final] media: A afirmação de que a empresa tem uma franquia de preço só pode ser verificada com dados sobre a elasticidade de preços e a capacidade de manter preços superiores aos dos concorrentes, o que não foi apresentado. (modelo)\n  [final] media: A afirmação de que a empresa tem poder de preço só pode ser verificada com dados sobre a elasticidade de preços e a capacidade de manter preços superiores aos dos concorrentes, o que não foi apresentado. (modelo)\n\nDemonstração académica · não constitui aconselhamento financeiro.\n============================================================================",
+   "esperado": "beta não divulgado: a análise continua",
+   "como_esperado": null
+  },
+  {
+   "ticker": "NVO",
+   "fonte": "sintetico",
+   "ok": true,
+   "empresa": "Novo Nordisk A/S",
+   "setor": "Saúde",
+   "veredicto_final": "REJEITAR",
+   "veredicto_das_regras": "REJEITAR",
+   "descricao": "Dados insuficientes para a Triagem T5: sem lucro bruto nas fontes (a margem bruta é obrigatória na Triagem)",
+   "limite": null,
+   "portoes_ok": null,
+   "motivos": [
+    "Dados insuficientes para a Triagem T5: sem lucro bruto nas fontes (a margem bruta é obrigatória na Triagem)"
+   ],
+   "avaliacao": {},
+   "respostas_do_modelo": {},
+   "rondas_do_critico": [],
+   "revisoes": 0,
+   "mensagens": [
+    "request: utilizador -> coletor",
+    "inform: coletor -> guardiao",
+    "inform: guardiao -> decisor",
+    "inform: decisor -> utilizador"
+   ],
+   "avisos": [],
+   "segundos": 0.0,
+   "chamadas_ao_modelo": 0,
+   "decisor": {
+    "veredicto": {
+     "categoria": "REJEITAR",
+     "cor": "nao",
+     "descricao": "Dados insuficientes para a Triagem T5: sem lucro bruto nas fontes (a margem bruta é obrigatória na Triagem)",
+     "limite": null
+    },
+    "portoes": null,
+    "condicoes": []
+   },
+   "relatorio": "\n============================================================================\nRELATÓRIO v4.27 — Método Buffett Integral: Novo Nordisk A/S (NVO) · dataset sintético\nAnos: 2020 a 2024 (5 exercícios)\n============================================================================\nVEREDICTO (Passo 8): REJEITAR — Dados insuficientes para a Triagem T5: sem lucro bruto nas fontes (a margem bruta é obrigatória na Triagem)\n\nPasso -2 · Triagem Rápida (um \"não\" e a empresa sai):\n  T1  PENDENTE       Percebo o produto e porque é que o cliente o compra? · pergunta qualitativa: respondida pelo Avaliador (parte qualitativa, com o modelo)\n  T2  SIM            O LPA não teve prejuízos e está mais alto do que há 5–10 anos? · LPA 2020 9,22 -> 2024 22,72\n  T3  SIM            O ROE médio é de pelo menos 15%? · ROE médio 69,9%\n  T4  SIM            A dívida de longo prazo paga-se com 4 anos de lucro ou menos? · dívida LP = 1,56 anos de lucro médio (5 anos)\n  T5  SEM DADOS      A margem bruta é de pelo menos 20%, ou é um negócio claro de baixo custo? · sem lucro bruto nas fontes\n  T6  SIM            O número de ações não subiu mais de 10% em 3 anos? · ações -2,5% em 3 anos\n  T7  SIM            O fluxo de caixa operacional foi positivo em todos os anos? · FCO positivo em todos os anos\n\nPasso 0 · Setor: método completo · setor: Saúde\n  LUCRO     SIM   Lucro líquido positivo nos últimos 12 meses (último exercício) · 0 M\n  COMMODITY SIM   Passo 1: Regra de Commodity (a) margem bruta < 20% E ROE < 15%; (b) LPA mau em 3+ anos · margem bruta n/d, ROE médio 69,9%, 0 ano(s) de LPA com prejuízo ou queda > 50%\n\nDemonstração académica · não constitui aconselhamento financeiro.\n============================================================================",
+   "esperado": "5 anos e sem lucro bruto: dados insuficientes",
+   "como_esperado": true
+  }
+ ]
+}
