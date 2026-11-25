@@ -85,7 +85,6 @@ def main():
     if inst is None: print("ERRO: o Ollama não está a correr. Abra o Ollama e volte a correr."); sys.exit(2)
     if not tem_modelo(llm.modelo, inst): print(f"ERRO: o modelo {llm.modelo} não está instalado: ollama pull {llm.modelo}"); sys.exit(2)
 
-    print("A carregar o modelo na memória (pode demorar um minuto)...", flush=True); llm.aquecer()
     lista = [t.strip().upper() for t in (a.tickers.split(",") if a.tickers else POR_DEFEITO) if t.strip()]
     saida = Path(a.saida)
     feitas = {}
@@ -103,15 +102,19 @@ def main():
             fonte = "sec"                                  # só empresas reais; as sintéticas testam-se com tests/test_agentes.py
             print(f"[{i}/{len(lista)}] {t} ({fonte}) ...", flush=True)
             n0 = len(llm.metricas); t0 = time.perf_counter()
-            try: r = analisar(t, a.anos, fonte, llm, mostrar=False, jsonl=RAIZ / "saidas" / f"{t}.jsonl")
-            except Exception as e: r = {"performativa": "failure", "motivo": f"{type(e).__name__}: {e}"}
+            try:
+                llm.aquecer()
+                try: r = analisar(t, a.anos, fonte, llm, mostrar=False, jsonl=RAIZ / "saidas" / f"{t}.jsonl")
+                except Exception as e: r = {"performativa": "failure", "motivo": f"{type(e).__name__}: {e}"}
+            finally:
+                llm._descarregar_modelo()
             dt = time.perf_counter() - t0
             linha = resumir(t, fonte, r, dt, len(llm.metricas) - n0)
             linhas.append(linha)
             meta["terminado_em"] = datetime.datetime.now().strftime("%H:%M")
             guardar(saida, meta, linhas)                                      # guarda depois de cada empresa
             print(f"      {linha.get('veredicto_final', 'ERRO')} · {linha.get('segundos')} s · "
-                  f"{linha.get('chamadas_ao_modelo', 0)} chamadas ao modelo", flush=True)
+                  f"{linha.get('chamadas_ao_modelo', 0)} chamadas ao modelo · descarga pedida ao Ollama", flush=True)
     except KeyboardInterrupt:
         print("\nInterrompido: o que já foi feito está guardado; volte a correr para continuar.")
     meta["segundos_total"] = round(time.perf_counter() - t_total)

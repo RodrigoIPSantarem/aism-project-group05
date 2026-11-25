@@ -26,13 +26,13 @@ A plataforma (`nucleo/plataforma.py`) entrega as mensagens FIPA-ACL entre eles e
 | 2–3 | Testes A1–A15, B1–B5, C1–C4: Sim / Parcial / Não | A3 Avaliador (Python, com as respostas verificadas do modelo) | — |
 | 4 | Os 10 Portões | A3 Avaliador | um Portão falhado |
 | 5 | Valor intrínseco, Equity Bond, Valor-Obrigação, PMC | A3 Avaliador | — |
-| 6–8 | Decisão, checklist e veredicto | A5 Decisor | preço acima do PMC |
+| 6–8 | Decisão, checklist e veredito | A5 Decisor | preço acima do PMC |
 
 O A4 Crítico (papel de Munger) confronta as respostas qualitativas do Avaliador com os números e pode devolvê-las uma vez.
 
-Veredicto: **COMPRAR** (Triagem + Portões + as quatro condições de preço CP1 a CP4), **CAIXA DEDICADA** (passa tudo menos o
-preço: esperar), **REVISÃO MANUAL** (passaria, mas o modelo discordou de si próprio ou o Crítico manteve uma objeção séria) ou
-**REJEITAR**. Limite no momento da compra: 15% com Franquia e TACE de pelo menos 20%; 10% nos outros casos.
+Veredito: **COMPRAR** (Triagem + Portões + as quatro condições de preço CP1 a CP4), **CAIXA DEDICADA** (passa tudo menos o
+preço: esperar) ou **REJEITAR**. Se o modelo discordou de si próprio ou o Crítico manteve uma objeção séria, um COMPRAR ou
+CAIXA DEDICADA sai com uma *ressalva* (um aviso para confirmar antes de agir; nunca muda o veredito). Limite no momento da compra: 15% com Franquia e TACE de pelo menos 20%; 10% nos outros casos.
 
 Diferenças em relação à proposta: a proposta descrevia o protocolo anterior (kill switches, DCF com margem de 25% e uma nota
 de 0 a 100). O sistema aplica a versão atual, a v4.27, que decide por Portões e condições de preço, sem nota nem margem fixa.
@@ -65,4 +65,4 @@ A «zona condicional» da proposta corresponde, na v4.27, a CAIXA DEDICADA (bom 
 - Não verificados automaticamente: remuneração dos gestores e Form 4 (B4), problema solucionável (Secção 6.4) e o cartão de
   20 decisões.
 - O modelo local (qwen2.5:7b) é pequeno: as respostas qualitativas podem errar. Por isso cada citação é verificada nas fontes,
-  números inventados são assinalados, o Crítico confronta as respostas com os números e o veredicto é sempre das regras.
+  números inventados são assinalados, o Crítico confronta as respostas com os números e o veredito é sempre das regras.

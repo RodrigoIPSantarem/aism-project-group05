@@ -23,7 +23,8 @@ def _anos_ok(d):
     return [a for a in _anos(d) if _val(d, "receita", a) is not None and _val(d, "resultado_liquido", a) is not None]
 
 def _resposta(v, direcao, lim_sim, lim_parcial):
-    """Converte um valor numérico em Sim / Parcial / Não conforme dois limiares do protocolo ('maior' = quanto mais alto melhor; 'menor' = quanto mais baixo melhor). Sem valor devolve None (Sem dados)."""
+    """Converte um valor numérico em Sim / Parcial / Não conforme dois limiares do protocolo ('maior' = quanto mais alto melhor;
+    'menor' = quanto mais baixo melhor). Sem valor devolve None (Sem dados)."""
     if v is None: return None
     if direcao == "maior": return SIM if v >= lim_sim else (PARCIAL if v >= lim_parcial else NAO_)
     sim = v < lim_sim if lim_sim == 0.80 else v <= lim_sim       # A9: "< 0,80"
@@ -34,7 +35,8 @@ def _cumpre_sim(v, direcao, lim_sim):
     return v >= lim_sim if direcao == "maior" else (v < lim_sim if lim_sim == 0.80 else v <= lim_sim)
 
 def _t(id_, nome, resposta, valor=None, anos=None, nota=""):
-    """Cria o dicionário de um teste (id, nome, resposta Sim/Parcial/Não/Sem dados, valor mostrado, valores por ano e nota). É o formato que a parte qualitativa do Avaliador, o Crítico e o relatório leem."""
+    """Cria o dicionário de um teste (id, nome, resposta Sim/Parcial/Não/Sem dados, valor mostrado, valores por ano e nota).
+    É o formato que a parte qualitativa do Avaliador, o Crítico e o relatório leem."""
     return {"id": id_, "nome": nome, "resposta": resposta, "valor": valor, "anos": anos or {}, "nota": nota}
 
 def _cagr(v0, v1, n):
@@ -175,7 +177,8 @@ def _a13(d):
               nota=(nota + "; " if nota else "") + "créditos fiscais legítimos documentados não contam contra")
 
 def _a14(d):
-    """A14: compara o crescimento do inventário com o da receita (CAGR) e conta episódios de inventário que sobe mais de 25% e depois cai mais de 15%. Sim = diferença <= 2 pontos e nenhum episódio. Não se aplica se o inventário for menos de 2% da receita."""
+    """A14: compara o crescimento do inventário com o da receita (CAGR) e conta episódios de inventário que sobe mais de 25% e 
+    depois cai mais de 15%. Sim = diferença <= 2 pontos e nenhum episódio. Não se aplica se o inventário for menos de 2% da receita."""
     anos = _anos_ok(d)
     inv = [(a, _v(d, "inventario", a)) for a in anos if _v(d, "inventario", a) is not None]
     rec = {a: _v(d, "receita", a) for a in anos}
@@ -204,7 +207,8 @@ def _a15(d):
 
 # ─────────────────────────────── Sinais de Balanço (sem resposta própria)
 def sinais_balanco(d):
-    """Os seis Sinais de Balanço SB1 a SB6 (contas a receber a subir, ROA muito alto, dívida de curto prazo maior que a de longo, dívida a vencer elevada, caixa de origem errada, alavancagem). Não têm resposta Sim/Não própria: o Bloco C usa o número de sinais presentes no Teste da Franquia (C4)."""
+    """Os seis Sinais de Balanço SB1 a SB6 (contas a receber a subir, ROA muito alto, dívida de curto prazo maior que a de longo, 
+    dívida a vencer elevada, caixa de origem errada, alavancagem). Não têm resposta Sim/Não própria: o Bloco C usa o número de sinais presentes no Teste da Franquia (C4)."""
     anos = _anos_ok(d); out = []
     def sinal(id_, desc, presente, det): out.append({"id": id_, "descricao": desc, "presente": bool(presente), "detalhe": det})
     cr = [(a, _v(d, "contas_receber", a) / _v(d, "receita", a)) for a in anos[-4:]
@@ -327,7 +331,8 @@ def bloco_a(d, lpa, dpa, modelo="M1", setor="padrao"):
 
 # ─────────────────────────────── Bloco B
 def bloco_b(d, lpa, dpa, a15, a13, analise):
-    """Bloco B (B1 a B5): o que a gestão fez com o dinheiro dos acionistas. B1 dólar retido e B2 rendimento dos lucros retidos; B3 recompras e número de ações; B4 integridade (mudança de auditor, reexpressões, insiders); B5 aquisições e imparidades de goodwill."""
+    """Bloco B (B1 a B5): o que a gestão fez com o dinheiro dos acionistas. B1 dólar retido e B2 rendimento dos lucros retidos; 
+    B3 recompras e número de ações; B4 integridade (mudança de auditor, reexpressões, insiders); B5 aquisições e imparidades de goodwill."""
     anos = [a for a in _anos_ok(d) if lpa.get(a) is not None]; mk = d.get("mercado") or {}; t = []
     if len(anos) >= 5:
         a0, resto = anos[0], anos[1:]
@@ -390,7 +395,8 @@ def bloco_b(d, lpa, dpa, a15, a13, analise):
 
 # ─────────────────────────────── Bloco C (respostas verificadas do modelo + regras)
 def bloco_c(prop, sinais, margem_bruta_cai_3):
-    """Bloco C (C1 a C4): a parte qualitativa (modelo de negócio, produto estável, poder de preço, Teste da Franquia). A parte qualitativa do Avaliador propõe as respostas; aqui aplicam-se as regras do protocolo, p. ex. patentes forçam C2 = Não."""
+    """Bloco C (C1 a C4): a parte qualitativa (modelo de negócio, produto estável, poder de preço, Teste da Franquia). 
+    A parte qualitativa do Avaliador propõe as respostas; aqui aplicam-se as regras do protocolo, p. ex. patentes forçam C2 = Não."""
     modelo = prop.get("modelo"); pat = bool(prop.get("dependente_patentes"))
     c1 = SIM if modelo in ("M1", "M2", "M3") and not pat else PARCIAL
     c2 = NAO_ if pat else prop.get("c2", PARCIAL)
@@ -411,7 +417,8 @@ def bloco_c(prop, sinais, margem_bruta_cai_3):
 
 # ─────────────────────────────── os 10 Portões
 def portoes(testes, setor, d):
-    """Os 10 Portões: cada portão agrupa testes dos blocos A, B e C e só passa se todos tiverem resposta aceite (PASSA). Bancos e seguradoras têm portões adaptados (P3, P4, P6, P8)."""
+    """Os 10 Portões: cada portão agrupa testes dos blocos A, B e C e só passa se todos tiverem resposta aceite (PASSA). 
+    Bancos e seguradoras têm portões adaptados (P3, P4, P6, P8)."""
     por_id = {t["id"]: t for t in testes}; out = []
     for pid, (pergunta, ids) in PORTOES.items():
         if setor == "banco" and pid in ("P3", "P8") and (d.get("banco") or {}).get("por_ano"):
