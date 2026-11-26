@@ -8,6 +8,7 @@ O programa analisa uma empresa cotada segundo o Protocolo de Investimentos v4.27
 
 **Elementos do grupo:** Rodrigo Silva (240000762) e Guilherme Caçador (240000675)
 **Repositório:** https://github.com/RodrigoIPSantarem/aism-project-group05
+**Link do video:** https://youtu.be/Zcs-Wd0fAE0
 
 ## Índice
 
